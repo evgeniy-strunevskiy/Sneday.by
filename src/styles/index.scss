@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// font-family: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+// font-family: 'Marck Script', cursive;
+
+:root {
+  --color-body: #666a6b;
+  --color-background: linear-gradient(114deg, #a2cc4e, #90c527);
+  --color-header: #34383a;
+  --color-logo-one: #f5c86e;
+  --color-logo-two: #ff9155;
+  --color-drawer: #03070a;
+}
+
+ 
 /*Обнуление*/
 * {
   padding: 0;
@@ -131,7 +146,7 @@ address {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   height: 100%;
-  background: limegreen;
+  background: var(--color-background);
 }
 
 .container {
@@ -139,3 +154,5 @@ address {
   width: 95%;
   margin: 0 auto;
 }
+
+
