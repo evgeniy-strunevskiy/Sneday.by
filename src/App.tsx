@@ -1,11 +1,12 @@
 import "normalize.css";
 import './App.scss';
+import { Router } from "./components/Router";
 
 
 function App() {
   return (
     <div className="App">
-      Strava.by
+      <Router />
     </div>
   );
 }
