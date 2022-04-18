@@ -1,5 +1,9 @@
+@import '../global';
+
 .header {
   background: var(--color-header);
+  @include container;
+  font-size: toRem(150);
 }
 
 .header_container {

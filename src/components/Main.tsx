@@ -4,10 +4,10 @@ import React, { FC } from 'react'
 
 // const cl = classNames.bind(styles);
 
-export const Main:FC = () => {
+export const Main:FC = ({children}) => {
   return (
     <main>
-      main
+      {children}
     </main>
   )
 }

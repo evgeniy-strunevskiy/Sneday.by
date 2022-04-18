@@ -3,6 +3,13 @@
   @return $remValue;
 }
 
+@mixin container {
+  height: 100%;
+  width: 95%;
+  margin: 0 auto;
+	
+}
+
 @mixin tablets {
 	@media screen and (max-width: $tablets) {
 		@content;
