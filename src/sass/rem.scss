@@ -1,0 +1,27 @@
+@use '/src/sass/media' as *;
+
+// $fontSize: 16;
+
+// @include tablets {
+// 	$fontSize: 15;
+// }
+
+// @include phones {
+// 	$fontSize: 14;
+// }
+
+@function toRem($value) {
+
+	@if var(--html-font-size) == 16 {
+		$remValue: ($value / 16) + rem; 
+		@return $remValue;
+	}
+	@if var(--html-font-size) {
+		$remValue: ($value / 15) + rem; 
+		@return $remValue;
+	}
+	@if var(--html-font-size) {
+		$remValue: ($value / 14) + rem; 
+		@return $remValue;
+	}
+}

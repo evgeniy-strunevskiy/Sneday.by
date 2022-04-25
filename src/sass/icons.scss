@@ -1,0 +1,6 @@
+@use './rem' as *;
+
+@mixin icons {
+  width: toRem(15);
+  height: toRem(15);
+}

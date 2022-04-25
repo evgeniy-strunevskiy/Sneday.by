@@ -1,0 +1,19 @@
+@use '/src/sass/rem' as *;
+@use '/src/sass/media.scss' as *;
+
+.logo {
+  grid-area: logo;
+  color: var(--color-font);
+  @include tablets {
+    z-index: 10;
+  }
+}
+
+.logo_text {
+  font-family: 'Marck Script', cursive;
+  flex: 0 0 auto;
+  font-size: toRem(40);
+  text-shadow: 1px 1px 10px white;
+  // font-size: calc(18px + 16 * (100vw / 1200));
+  // font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1200px));
+}

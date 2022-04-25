@@ -8,10 +8,7 @@ import { Wrapper } from './Wrapper';
 // const cl = classNames.bind(styles);
 
 export const Router: FC = () => {
-
   const isAuth = false;
-
-
 
   const privatePages = privateRoutes.map((route) => (
     route.path === 'index'

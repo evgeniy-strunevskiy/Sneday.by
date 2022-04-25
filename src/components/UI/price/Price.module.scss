@@ -1,0 +1,18 @@
+@use '../../../sass/icons' as *;
+
+.price {
+  display: flex;
+  align-items: baseline;
+  &:hover {
+    color: var(--color-background-one);
+    .price_icon {
+      stroke: var(--color-background-one);
+    }
+  }
+}
+
+.price_icon  {
+  @include icons;
+  stroke: var(--color-font);
+  margin-right: 5px;
+}

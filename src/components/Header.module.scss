@@ -1,11 +1,40 @@
-@import '../global';
+@use '../sass/media' as *;
 
 .header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100% ;
+  padding: 1% 0;
   background: var(--color-header);
-  @include container;
-  font-size: toRem(150);
+  box-shadow: 0px 1px 30px black;
+  color: white;
+  margin-bottom: 10px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 100%;
+    background: var(--color-header);
+    // background: blue;
+  }
 }
 
 .header_container {
+  @include container;
   color: var(--color-font);
 }
+
+.header_body {
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    'logo burger menu';
+  align-items: center;
+}
+

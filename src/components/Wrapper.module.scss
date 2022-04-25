@@ -1,16 +1,29 @@
-.wrapper {
-  overflow: hidden;
-  margin: 0 auto;
+// .wrapper {
+//   overflow: hidden;
+//   margin: 0 auto;
 
-  width: 100%;
-  max-width: 1200px;
-  min-height: 100%;
-  height: 100%;
+//   width: 100%;
+//   max-width: 1200px;
+//   min-height: 100%;
+//   height: 100%;
   
-  background-image: linear-gradient(114deg, var(--color-background-one), var(--color-background-two));
 
+//   display: grid;
+//   grid-template-columns: 1fr;
+
+// } 
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(114deg, var(--color-background-one), var(--color-background-two));
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
+}
 
+.wrapper_content {
+  margin-top: 100px;
 }

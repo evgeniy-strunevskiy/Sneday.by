@@ -1,27 +1,8 @@
-@import './global';
+@use './sass/media' as *;
 
 .App {
-  max-width: 100%;
   min-height: 100%;
-
-  background-color: var(--color-body);
-
-  font-family: 'Montserrat', sans-serif;
-  font-size: toRem(60);
-  font-weight: 400;
-  font-style: normal;
-
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-}
-
-
-////////////////////////////
-
-.App-icon,
-.App-icon svg {
-  width: 100px;
-  height: 100px;
-  fill: red;
 }
