@@ -1,0 +1,17 @@
+@use '/src/sass/rem.scss' as *;
+
+.button {
+  color: var(--color-font);
+  background: var(--color-header);
+
+  width: 100%;
+  font-size: toRem(26);
+  padding: 16px 0;
+  border-radius: 70px;
+  &:disabled {
+    background: #D8D7D5;
+  }
+  &:active {
+    background: var(--color-background-two);
+  }
+}

@@ -1,0 +1,19 @@
+@use '/src/sass/rem.scss' as *;
+
+.login-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: toRem(30);
+}
+
+.login-form_row {
+  position: relative;
+  &__center {
+    text-align: center;
+  }
+}
+
+.login-form_registration-btn {
+  color: var(--color-logo-one)
+}
