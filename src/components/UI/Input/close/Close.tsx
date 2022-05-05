@@ -4,8 +4,12 @@ import classNames from 'classnames/bind';
 
 const cl = classNames.bind(styles);
 
-export const Close: FC = () => {
+interface CloseTypes {
+  close: () => void;
+}
+
+export const Close: FC<CloseTypes> = ({close}) => {
   return (
-    <div className={cl('close')} ></div>
+    <div onClick={close} className={cl('close')} ></div>
   )
 }

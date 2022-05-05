@@ -8,7 +8,7 @@ const cl = classNames.bind(styles)
 export const Logo: FC = () => {
   return (
     <Link className={cl('logo')} to='/'>
-        <div className={cl('logo_text')}>Strava.by</div>
+        <div className={cl('logo_text')}>Chabor.by</div>
     </Link>
   );
 };
