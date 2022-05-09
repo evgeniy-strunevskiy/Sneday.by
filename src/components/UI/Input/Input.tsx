@@ -11,6 +11,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   register?: any;
   wrapperClass?: string;
   placeholder?: string;
+  setLoginState?: () => void;
 }
 
 export const Input: FC<InputProps> = ({
@@ -24,7 +25,7 @@ export const Input: FC<InputProps> = ({
   return (
     <>
       {label && <label className={cl('input_label')} htmlFor={name}>{label}:</label>}
-      <input className={cl('input_input')} {...register(name)} {...rest} />
+      <input  className={cl('input_input')} {...register(name)} {...rest} />
       {error && <span className={cl('input_error')}>{error}</span>}
     </>
   );

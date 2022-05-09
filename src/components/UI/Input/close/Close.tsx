@@ -1,15 +1,13 @@
 import React, { FC } from 'react'
 import styles from './Close.module.scss';
 import classNames from 'classnames/bind';
+import { Link } from 'react-router-dom';
 
 const cl = classNames.bind(styles);
 
-interface CloseTypes {
-  close: () => void;
-}
 
-export const Close: FC<CloseTypes> = ({close}) => {
+export const Close: FC = () => {
   return (
-    <div onClick={close} className={cl('close')} ></div>
+    <Link to='/' className={cl('close')} ></Link>
   )
 }

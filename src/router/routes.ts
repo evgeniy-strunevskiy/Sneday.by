@@ -9,7 +9,6 @@ import { Products } from '../pages/Products';
 import { About } from '../pages/About';
 
 export const privateRoutes = [
-  { path: "index", element: Map },
   { path: "favorites", element: Favorites },
   { path: "orders", element: Orders },
   { path: "products", element: Products },

@@ -1,18 +1,22 @@
 import { FC } from "react";
 import classNames from "classnames/bind";
 import styles from "./LoginForm.module.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Input } from "./UI/Input/Input";
 import { Button } from "./UI/button/Button";
+import { LoginInterface } from "../types/loginTypes";
+import { useAppDispatch } from "../hooks/redux";
+import { setLogin } from "../store/middleware/login";
 
 const cl = classNames.bind(styles);
 
-interface LoginInterface {
-  email: string;
-  password: string;
+
+
+interface LoginFormTypes {
+  fromPage: string;
 }
 
 const EmailSchema = yup.object().shape({
@@ -25,14 +29,20 @@ const EmailSchema = yup.object().shape({
     .required("Обязательно"),
 });
 
-export const LoginForm: FC = () => {
+export const LoginForm: FC<LoginFormTypes> = ({fromPage}) => {
+  const dispatch = useAppDispatch();
+  const navigate = useNavigate()
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm<LoginInterface>({ resolver: yupResolver(EmailSchema) });
 
-  const onSubmit = (data: LoginInterface) => console.log(data);
+
+  const onSubmit = (data: LoginInterface) => {
+    dispatch(setLogin(data))
+    navigate('/')
+  };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={cl("login-form")}>

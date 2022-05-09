@@ -5,6 +5,8 @@ import {ReactComponent as User} from '../assets/icons/user.svg'
 import {ReactComponent as Heart} from '../assets/icons/heart.svg'
 import { Price } from './UI/price/Price'
 import { Link } from 'react-router-dom'
+import { useAppDispatch, useAppSelector } from '../hooks/redux'
+import { removeLogin } from '../store/middleware/login'
 
 const cl = classNames.bind(styles);
 
@@ -14,7 +16,15 @@ interface MenuPropsTypes {
 }
 
 export const Menu: FC<MenuPropsTypes> = ({setFalseActive, isActive }) => {
-  console.log(isActive)
+  const dispatch = useAppDispatch()
+  const {login} = useAppSelector(state => state.login)
+
+  const handleLogin = () => {
+    setFalseActive();
+    dispatch(removeLogin());
+    
+  }
+
   return (
     <nav className={cl('menu', {active: isActive})}>
       <ul className={cl('menu_list')}>
@@ -33,9 +43,15 @@ export const Menu: FC<MenuPropsTypes> = ({setFalseActive, isActive }) => {
             <Heart className={cl('menu_icon')}/>
         </Link>
         </li>
-        <li className={cl('menu_item')} onClick={setFalseActive}>
-          <Link to='login' className={cl('menu_link')}>Войти</Link>
-        </li>
+        {
+          login
+          ? <li className={cl('menu_item')} onClick={handleLogin}>
+            <Link to='/' className={cl('menu_link')}>Выйти</Link>
+            </li>
+          : <li className={cl('menu_item')} onClick={setFalseActive}>
+            <Link to='login' className={cl('menu_link')}>Войти</Link>
+            </li>
+        }
       </ul>
     </nav>
   )

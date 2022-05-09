@@ -1,19 +1,18 @@
-import React, { FC } from 'react'
-// import classNames from 'classnames/bind'
-// import styles from './Router.module.scss'
+import { FC } from 'react'
 import { Route, Routes } from 'react-router';
+import { RequireAuth } from '../hoc/RequireAuth';
+import { useAppSelector } from '../hooks/redux';
 import { privateRoutes, publicRoutes } from '../router/routes';
 import { Wrapper } from './Wrapper';
 
-// const cl = classNames.bind(styles);
-
 export const Router: FC = () => {
-  const isAuth = false;
+
+  const {isLoading} = useAppSelector(state => state.login)
 
   const privatePages = privateRoutes.map((route) => (
     route.path === 'index'
-    ? <Route key={route.path} index element={<route.element />} />
-    : <Route key={route.path} path={route.path} element={<route.element />} />
+    ? <Route key={route.path} index element={<RequireAuth><route.element /></RequireAuth>} />
+    : <Route key={route.path} path={route.path} element={<RequireAuth><route.element /></RequireAuth>} />
   ));
   const publicPages = publicRoutes.map((route) => (
     route.path === 'index'
@@ -21,15 +20,14 @@ export const Router: FC = () => {
     : <Route key={route.path} path={route.path} element={<route.element />} /> 
   ));
 
-  return isAuth ? (
+  if(isLoading) {
+    return <h1>Идет загрузка</h1>
+  }
+
+  return (
     <Routes>
       <Route path='/' element={<Wrapper />}>
         {privatePages}
-      </Route>
-    </Routes>
-  ) : (
-    <Routes>
-      <Route path='/' element={<Wrapper />}>
         {publicPages}
       </Route>
     </Routes>

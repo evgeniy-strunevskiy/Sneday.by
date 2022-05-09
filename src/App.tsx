@@ -1,9 +1,22 @@
 import "normalize.css";
+import { useEffect } from "react";
 import './App.scss';
 import { Router } from "./components/Router";
+import { useAppDispatch } from "./hooks/redux";
+import { loginAdd, stopLoading } from "./store/slices/loginSlice";
 
 
 function App() {
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    if(localStorage.getItem('auth')) {
+      dispatch(loginAdd())
+    }
+    dispatch(stopLoading())
+  }, [])
+  
+
   return (
     <div className="App">
        <Router />
