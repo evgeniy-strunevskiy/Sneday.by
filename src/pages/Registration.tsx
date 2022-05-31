@@ -16,7 +16,6 @@ type RegistrationState = {
 export const Registration: FC = () => {
   const location = useLocation();
   const from = (location.state as RegistrationState)?.from.path;
-  console.log(from)
   const fromPage = from || '/';
 
   return (

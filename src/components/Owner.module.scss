@@ -1,0 +1,7 @@
+@use '../sass/media' as *;
+
+
+.owner_container {
+  @include container;
+  color: var(--color-font);
+}

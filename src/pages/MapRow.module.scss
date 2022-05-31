@@ -1,0 +1,109 @@
+.rows {
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content);
+  gap: 80px;
+  position: relative;
+  &:last-child {
+    .section {
+      // display: grid;
+      // grid-template-columns: minmax(50px, 80px) minmax(50px, 80px);
+      // grid-template-rows: min-content min-content min-content;
+      // gap: 15px;
+      // font-size: 16px;
+      // font-weight: normal;
+      // position: relative;
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+      &::after {
+        content: '';
+        display: block;
+        background-image: url('../../public/image/icons/arrow-bottom.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% ;
+        width: 30px;
+        height: 45px;
+        opacity: .2;
+        position: absolute;
+        top: 5%;
+        left: calc(100% + 25px);
+        }
+    }
+    &::before {
+      display: none;
+    }
+    &:hover {
+      &::before {
+        display: none;
+      }
+    }
+    &::after {
+      display: none;
+    }
+    &:hover {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &::before {
+    content: '';
+    display: block;
+    background-image: url('../../public/image/icons/arrow-right-enter.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% ;
+    width: 100px;
+    height: 30px;
+    opacity: .2;
+    position: absolute;
+    top: calc(100% + 25px);
+    left: 0;
+  }
+  &::after {
+    content: '';
+    display: block;
+    background-image: url('../../public/image/icons/arrow-left-enter.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% ;
+    width: 100px;
+    height: 30px;
+    opacity: .2;
+    position: absolute;
+    top: calc(100% + 25px);
+    right: 0;
+    }
+    //////////
+    .section {
+      display: grid;
+      grid-template-columns: minmax(50px, 70px) minmax(50px, 70px);
+      grid-template-rows: min-content min-content min-content;
+      gap: 15px;
+      font-size: 16px;
+      font-weight: normal;
+      position: relative;
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+      &::after {
+        content: '';
+        display: block;
+        background-image: url('../../public/image/icons/arrow-top.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% ;
+        width: 30px;
+        height: 45px;
+        opacity: .2;
+        position: absolute;
+        bottom: 5%;
+        left: calc(100% + 25px);
+        }
+    }
+}

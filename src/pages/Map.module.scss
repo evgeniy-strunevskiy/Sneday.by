@@ -1,0 +1,13 @@
+@use '../sass/media' as *;
+
+
+.map_container {
+  @include container;
+  color: var(--color-font);
+}
+
+.map_loading {
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content) ;
+  justify-content: center;
+}

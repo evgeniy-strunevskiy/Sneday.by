@@ -20,10 +20,11 @@
   --color-background-two: #90c527;
   --color-header: #34383a;
   --color-logo-one: #f5c86e;
-  --color-logo-two: #ff9155;
+  --color-logo-two: #ff7400;
   --color-drawer: #03070a;
   --color-font: white;
   --color-font-two: #03070a;
+  --color-gold: gold;
 }
 
  
@@ -138,6 +139,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #221f1f;
   line-height: 1.42;
+  overflow: hidden;
 }
 
 /* Добавление */

@@ -1,0 +1,28 @@
+.section {
+  display: grid;
+  grid-template-columns: minmax(50px, 80px) minmax(50px, 80px);
+  grid-template-rows: min-content min-content min-content;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: normal;
+  position: relative;
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+  &::after {
+    content: '';
+    display: block;
+    background-image: url('../../public/image/icons/arrow-top.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% ;
+    width: 30px;
+    height: 45px;
+    opacity: .2;
+    position: absolute;
+    bottom: 0;
+    left: calc(100% + 25px);
+    }
+}
