@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import classNames from 'classnames/bind'
 import styles from './Registration.module.scss'
 import { useLocation } from 'react-router'
-import { Close } from '../components/UI/Input/close/Close'
+import { Close } from '../components/UI/close/Close'
 import { RegistrationForm } from '../components/RegistrationForm'
 
 const cl = classNames.bind(styles)

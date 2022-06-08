@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { Input } from "./UI/Input/Input";
+import { InputForm } from "./UI/InputForm/InputForm";
 import { Button } from "./UI/button/Button";
 import { LoginInterface } from "../types/loginTypes";
 import { useAppDispatch } from "../hooks/redux";
@@ -47,7 +47,7 @@ export const LoginForm: FC<LoginFormTypes> = ({fromPage}) => {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={cl("login-form")}>
       <div className={cl("login-form_row")}>
-        <Input
+        <InputForm
           name={"email"}
           label={"Email"}
           register={register}
@@ -56,7 +56,7 @@ export const LoginForm: FC<LoginFormTypes> = ({fromPage}) => {
         />
       </div>
       <div className={cl("login-form_row")}>
-        <Input
+        <InputForm
           name={"password"}
           label={"Пароль"}
           register={register}

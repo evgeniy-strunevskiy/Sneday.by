@@ -7,7 +7,7 @@ import { Registration } from "../pages/Registration";
 import { Orders } from '../pages/Orders';
 import { Products } from '../pages/Products';
 import { About } from '../pages/About';
-import { Owner } from '../components/Owner';
+import { Owner } from '../pages/Owner';
 
 export const privateRoutes = [
   { path: "favorites", element: Favorites },
@@ -17,7 +17,7 @@ export const privateRoutes = [
 
 export const publicRoutes = [
   { path: "index", element: Map },
-  { path: "index/:id", element: Owner },
+  { path: ":id", element: Owner },
   { path: "login", element: Login },
   { path: "registration", element: Registration },
   { path: "about", element: About },

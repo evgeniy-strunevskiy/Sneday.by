@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import { FC } from 'react'
+import { Link } from 'react-router-dom';
 import { useAppSelector } from '../hooks/redux';
 import { PointTypes } from '../types/pointsTypes';
 import styles from './Point.module.scss';
@@ -20,10 +21,12 @@ export const Point: FC<PointComponentTypes> = ({point}) => {
     item.title === vegetable ? price = item.price : null
     );
   }
+
+
   
   return (
-    <div className={cl("point", {point_busy: isbusy}, {point_price: price})}>
-      {price ? `${price}т.` :  point.id} 
-    </div>
+    <Link to={`${point.id}`} className={cl("point", {point_busy: isbusy}, {point_price: price})}>
+      {price ? `${price} р.` :  point.id} 
+    </Link>
   )
 }

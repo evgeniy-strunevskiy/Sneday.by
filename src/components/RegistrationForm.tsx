@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { Input } from "./UI/Input/Input";
+import { InputForm } from "./UI/InputForm/InputForm";
 import { Button } from "./UI/button/Button";
 
 const cl = classNames.bind(styles);
@@ -43,7 +43,7 @@ export const RegistrationForm: FC<RegistrationFormTypes> = ({ fromPage }) => {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={cl("registration-form")}>
       <div className={cl("registration-form_row")}>
-        <Input
+        <InputForm
           name={"email"}
           label={"Email"}
           register={register}
@@ -52,7 +52,7 @@ export const RegistrationForm: FC<RegistrationFormTypes> = ({ fromPage }) => {
         />
       </div>
       <div className={cl("registration-form_row")}>
-        <Input
+        <InputForm
           name={"password"}
           label={"Пароль"}
           register={register}

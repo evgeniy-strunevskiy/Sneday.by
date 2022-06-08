@@ -45,10 +45,10 @@ export const Menu: FC<MenuPropsTypes> = ({setFalseActive, isActive }) => {
         </li>
         {
           login
-          ? <li className={cl('menu_item')} onClick={handleLogin}>
+          ? <li className={cl('menu_item', 'menu_item__login')} onClick={handleLogin}>
             <Link to='/' className={cl('menu_link')}>Выйти</Link>
             </li>
-          : <li className={cl('menu_item')} onClick={setFalseActive}>
+          : <li className={cl('menu_item', 'menu_item__login')} onClick={setFalseActive}>
             <Link to='login' className={cl('menu_link')}>Войти</Link>
             </li>
         }

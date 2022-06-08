@@ -38,7 +38,17 @@
 
 .menu_item {
   font-size: toRem(14);
-
+  &__login {
+    background-color: var(--color-logo-one);
+    padding: 5px 30px;
+    border-radius: 5px;
+    .menu_link {
+      color: var(--color-body);
+      &:hover {
+        color: var(--color-body);
+      }
+    }
+  }
 } 
 
 .menu_icon  {

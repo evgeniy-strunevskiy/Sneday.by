@@ -1,0 +1,57 @@
+
+.owner_input {
+  font-size: 12px;
+  width: 100%;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, .1);
+  color: var(--color-font);
+  transition: 0.2s ease-in-out;
+  &::placeholder {
+    color: var(--color-font);
+  }
+  &:hover {
+    background-color: rgba(255, 255, 255, .2);
+  }
+}
+
+.owner_content {
+  padding: 0 20%;
+}
+
+.owner_info {
+  background-color: rgba(255,255,255, .3);
+  color: var(--color-font-two);
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+}
+
+.owner_name
+
+.owner_title {
+  font-weight: bold;
+}
+
+.owner_license {
+  font-size: 10px;
+}
+
+.owner_logo {
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  img {
+    max-width: 100%;
+  }
+}
+
+.owner_cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}

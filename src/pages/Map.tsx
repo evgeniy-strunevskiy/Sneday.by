@@ -91,8 +91,21 @@ export const Map: FC = () => {
 
   return (
     <div className={cl("map")}>
-      {/* <img style={{width: 50, height: 50}} src='./image/vegetmarrow.png' alt='' /> */}
       <div className={cl("map_container")}>
+      <div className={cl("banner")}>
+        <div className={cl("banner_content")}>
+          <h1 className={cl("banner_title")}>Свежие овощи</h1>
+          <ul className={cl("banner_list")}>
+            <li className={cl("banner_item")}>Устал бегать по рядам, выбирай лучшую цену на карте</li>
+            <li className={cl("banner_item")}>Делай заказы онлайн</li>
+            <li className={cl("banner_item")}>Добавляй в избранное</li>
+            
+          </ul>
+        </div>
+        <div className={cl('banner_image')}>
+          <img  src='./image/vegetables.png' alt='' />
+        </div>
+      </div>
         {error && <h1>Ошибка загрузки данных</h1>}
         {isLoading ? <h1 className={cl('map_loading')}>Идет загрузка...</h1> :
         <MapSquare sections={sections} />

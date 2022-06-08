@@ -1,4 +1,5 @@
 export interface VegetablesTypes {
+  id: number;
   title: any;
   vegetable: string;
   name: string;

@@ -2,7 +2,7 @@ import { FC } from "react";
 import classNames from "classnames/bind";
 import styles from "./Login.module.scss";
 import { LoginForm } from "../components/LoginForm";
-import { Close } from "../components/UI/Input/close/Close";
+import { Close } from "../components/UI/close/Close";
 import { useLocation } from "react-router";
 
 const cl = classNames.bind(styles);
