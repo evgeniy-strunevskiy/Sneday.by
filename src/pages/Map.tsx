@@ -99,6 +99,7 @@ export const Map: FC = () => {
             <li className={cl("banner_item")}>Устал бегать по рядам, выбирай лучшую цену на карте</li>
             <li className={cl("banner_item")}>Делай заказы онлайн</li>
             <li className={cl("banner_item")}>Добавляй в избранное</li>
+            <li className={cl("banner_item")}>Кушай, никого не слушай!</li>
             
           </ul>
         </div>

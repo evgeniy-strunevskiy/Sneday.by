@@ -2,7 +2,7 @@
   "points": [
     {
       "id": 1,
-      "owner": "Денис Денисов",
+      "owner": "Елизавета Виндзор",
       "isBusy": true,
       "vegetables": [
         {
@@ -80,7 +80,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -116,6 +116,22 @@
           "name": "Хелена",
           "price": 11,
           "imgUrl": "./image/vegetmarrow.png"
+        },
+        {
+          "id": 15,
+          "vegetable": "broccoli",
+          "title": "Брокколи",
+          "name": "Анна",
+          "price": 11,
+          "imgUrl": "./image/broccoli.png"
+        },
+        {
+          "id": 16,
+          "vegetable": "cabbage",
+          "title": "Капуста",
+          "name": "Белая",
+          "price": 11,
+          "imgUrl": "./image/cabbage.png"
         }
       ]
     },
@@ -199,7 +215,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -324,7 +340,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -443,7 +459,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -562,7 +578,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -681,7 +697,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -800,7 +816,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -919,7 +935,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -1038,7 +1054,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -1157,7 +1173,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -1276,7 +1292,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -1401,7 +1417,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -1520,7 +1536,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -1639,7 +1655,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -1758,7 +1774,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -1883,7 +1899,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -2002,7 +2018,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -2121,7 +2137,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -2240,7 +2256,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -2365,7 +2381,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -2484,7 +2500,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -2603,7 +2619,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -2722,7 +2738,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -2847,7 +2863,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -2966,7 +2982,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -3085,7 +3101,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -3204,7 +3220,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -3323,7 +3339,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -3442,7 +3458,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
@@ -3561,7 +3577,7 @@
         {
           "id": 10,
           "vegetable": "peper",
-          "title": "перец",
+          "title": "Перец",
           "name": "Алеся",
           "price": 15,
           "imgUrl": "./image/peper.png"
