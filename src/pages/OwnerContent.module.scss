@@ -158,9 +158,3 @@
     max-width: 100%;
   }
 }
-
-.owner_cards {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(min-content, 350px));
-  gap: 30px;
-}

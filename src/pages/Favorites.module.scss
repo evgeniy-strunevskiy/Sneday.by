@@ -1,0 +1,7 @@
+@use '../sass/media' as *;
+
+
+.favorites_container {
+  @include container;
+  color: var(--color-font);
+}

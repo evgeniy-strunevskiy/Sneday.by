@@ -2,12 +2,12 @@ import React, { FC, useState } from "react";
 import styles from "./OwnerContent.module.scss";
 import classNames from "classnames/bind";
 import { useAppSelector } from "../hooks/redux";
-import { Card } from "../components/UI/card/Card";
 import { useItems } from "../hooks/useItems";
 import { ReactComponent as Telegram } from '../assets/icons/telegram.svg'
 import { ReactComponent as Twitter } from '../assets/icons/twitter.svg'
 import { ReactComponent as Viber } from '../assets/icons/viber.svg'
 import { ReactComponent as Instagram } from '../assets/icons/instagram.svg'
+import { Cards } from "../components/Cards";
 
 const cl = classNames.bind(styles);
 
@@ -34,7 +34,7 @@ export const OwnerContent: FC<OwnerContentProps> = () => {
     setFilter({ ...filter, search: e.target.value });
   };
 
-  return (
+  return ( 
     <div>
       {isLoading ? (
         <h1>Идет загрузка...</h1>
@@ -112,11 +112,7 @@ export const OwnerContent: FC<OwnerContentProps> = () => {
               />
             </div>
           </div>
-          <ul className={cl("owner_cards")}>
-            {sortedAndSearchedPosts.map((vegetable) => (
-              <Card key={vegetable.id} vegetable={vegetable} />
-            ))}
-          </ul>
+          <Cards vegetables={sortedAndSearchedPosts} />
         </div>
       )}
     </div>

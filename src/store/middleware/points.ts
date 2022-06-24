@@ -9,7 +9,8 @@ export const getPoints = () => async (dispatch: AppDispatch) => {
     const response = await PointsServer.getAll();
     dispatch(pointsFetchingSuccess(response))
   } catch (error) {
-    dispatch(pointsFetchingError('ошибка запроса торговых точек'))
+    console.log((error as Error).message)
+    dispatch(pointsFetchingError((error as Error).message))
   } finally {
     dispatch(pointsFetching(false));
   }

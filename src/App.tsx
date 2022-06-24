@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import './App.scss';
 import { Router } from "./components/Router";
 import { useAppDispatch } from "./hooks/redux";
+import { getFavorites } from "./store/middleware/favorites";
+import { getPoints } from "./store/middleware/points";
 import { loginAdd, stopLoading } from "./store/slices/loginSlice";
 
 
@@ -14,6 +16,8 @@ function App() {
       dispatch(loginAdd())
     }
     dispatch(stopLoading())
+    dispatch(getFavorites())
+    dispatch(getPoints());
   }, [])
   
 

@@ -3,6 +3,7 @@ export interface VegetablesTypes {
   title: any;
   vegetable: string;
   name: string;
+  isFavorite: boolean
   price: number;
   imgUrl: string;
 }

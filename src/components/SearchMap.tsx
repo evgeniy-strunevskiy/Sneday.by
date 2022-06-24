@@ -3,7 +3,7 @@ import classNames from "classnames/bind";
 import styles from "./SearchMap.module.scss";
 import { useAppDispatch, useAppSelector } from "../hooks/redux";
 import { getVegetables } from "../store/middleware/vegetables";
-import { getVegetableMap } from "../store/slices/searchMap";
+import { getVegetableMap } from "../store/slices/searchMapSlice";
 import { VegetableItemTypes } from "../types/vegetablesListTypes";
 import { ReactComponent as Close } from "../assets/icons/close.svg";
 import { ReactComponent as Search } from "../assets/icons/search.svg";

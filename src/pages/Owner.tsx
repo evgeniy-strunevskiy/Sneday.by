@@ -13,13 +13,14 @@ export const Owner: FC = () => {
   const dispatch = useAppDispatch();
   const { isLoading } = useAppSelector((state) => state.owner);
 
-  useEffect(() => {dispatch(getOwner(id));}, []);
-  
+  useEffect(() => {
+    dispatch(getOwner(id));
+  }, []);
+
   return (
     <div className={cl("owner")}>
       <div className={cl("owner_container")}>
-        {isLoading ? (<h1>Идет загрузка...</h1>) : (
-          <OwnerContent />)}
+        {isLoading ? <h1>Идет загрузка...</h1> : <OwnerContent />}
       </div>
     </div>
   );

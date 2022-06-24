@@ -3,27 +3,49 @@ import { ReactComponent as Heart } from "../../../assets/icons/heart.svg";
 import classNames from "classnames/bind";
 import styles from "./Card.module.scss";
 import { VegetablesTypes } from "../../../types/pointsTypes";
+import { useAppDispatch, useAppSelector } from "../../../hooks/redux";
+import { addFavorite } from "../../../store/middleware/addingFavorites";
+import { removeFavorite } from "../../../store/middleware/removingFavorites";
 
 const cl = classNames.bind(styles);
 
 interface CardProps {
   vegetable: VegetablesTypes;
 }
-
 export const Card: FC<CardProps> = ({ vegetable }) => {
+  const dispatch = useAppDispatch();
   const [state, setState] = useState<number>(100);
   const [order, setOrder] = useState<number>(0);
+  const { favorites } = useAppSelector((state) => state.favorites);
+  
+  const isFavorite = favorites.find(i => i.id === vegetable.id) ? true : false;
 
+  
   const handleRange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = Number(e.target.value);
     setState(value);
     setOrder(value / 1000);
   };
 
+  const handleFavorites = () => {
+    const favorite = {
+      id: vegetable.id,
+    };
+    if (favorites.find((favorite) => favorite.id === vegetable.id)) {
+      dispatch(removeFavorite(favorite.id));
+    } else {
+      dispatch(addFavorite(favorite));
+    }
+  };
+
   return (
     <li className={cl("card")}>
-      <div className={cl("card_favorite")}>
-        <Heart className={cl("card_favoriteIcon")} />
+      <div onClick={handleFavorites} className={cl("card_favorite")}>
+        <Heart
+          className={cl("card_favoriteIcon", {
+            card_favoriteIcon__active: isFavorite,
+          })}
+        />
       </div>
       <div className={cl("card_image")}>
         <img src={vegetable.imgUrl} alt="vegetable" />
@@ -49,9 +71,9 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
           </div>
         </div>
       </div>
-      <div className={cl('card_buy')}>
+      <div className={cl("card_buy")}>
         <div className={cl("card_price")}>
-          <div className={cl("card_price-text")}>Цена:{" "}</div>
+          <div className={cl("card_price-text")}>Цена: </div>
           <div className={cl("card_sum")}>{vegetable.price}&euro; кг.</div>
         </div>
         <div className={cl("card_add")}></div>
