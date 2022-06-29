@@ -1,0 +1,42 @@
+@use '../sass/media' as *;
+
+.cart {
+  height: 100%;
+}
+
+.cart_container {
+  @include container;
+  // height: 100vh;
+  color: var(--color-font);
+  display: grid;
+  grid-template-columns: 1fr;
+  // grid-template-rows: 1fr max-content;
+}
+
+
+.cart_total {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content max-content max-content;
+  align-items: baseline;
+  grid-gap: 10px;
+}
+
+.cart_total-text {
+  font-size: 20px;
+}
+
+.cart_total-dash {
+  height: 1px;
+  border-bottom: 1px dashed #dfdfdf;
+}
+
+.cart_total-btn {
+ background-color: var(--color-purple);
+ padding: 15px 20px;
+ border-radius: 15px;
+ color: var(--color-font);
+ transition: 0.2s ease-in-out;
+ &:hover {
+  background-color: rgba($color: #8a6b92, $alpha: .8);
+ }
+}

@@ -3,9 +3,10 @@ import { PointsServer } from "../../api/PointsServer";
 
 import { favoritesFetching } from "../slices/favoritesSlice";
 import { AppDispatch } from "../store";
+import { IFavoriteTypes } from '../../types/favoritesTypes';
 
 export const addFavorite =
-  (favorite: {id: number}) => async (dispatch: AppDispatch) => {
+  (favorite: IFavoriteTypes) => async (dispatch: AppDispatch) => {
     try {
       dispatch(favoritesFetching(true));
       console.log('addFavorite')

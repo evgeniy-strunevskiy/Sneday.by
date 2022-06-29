@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import { ReactComponent as Heart } from "../../../assets/icons/heart.svg";
 import classNames from "classnames/bind";
 import styles from "./Card.module.scss";
@@ -6,6 +6,8 @@ import { VegetablesTypes } from "../../../types/pointsTypes";
 import { useAppDispatch, useAppSelector } from "../../../hooks/redux";
 import { addFavorite } from "../../../store/middleware/addingFavorites";
 import { removeFavorite } from "../../../store/middleware/removingFavorites";
+import { addToCart } from "../../../store/middleware/addingToCart";
+import { removeFromCart } from "../../../store/middleware/removingFromCart";
 
 const cl = classNames.bind(styles);
 
@@ -14,17 +16,19 @@ interface CardProps {
 }
 export const Card: FC<CardProps> = ({ vegetable }) => {
   const dispatch = useAppDispatch();
-  const [state, setState] = useState<number>(100);
-  const [order, setOrder] = useState<number>(0);
+  const [step, setStep] = useState<number>(100);
+  const [weight, setWeight] = useState<number>(0);
+  const [isDisable, setIsDisable] = useState<boolean>(true);
   const { favorites } = useAppSelector((state) => state.favorites);
-  
-  const isFavorite = favorites.find(i => i.id === vegetable.id) ? true : false;
+  const { cart } = useAppSelector((state) => state.cart);
+  const [isItemCart, setIsItemCart] = useState<boolean>(false);
+  const [isFavorite, setIsFavorite] = useState<boolean>(false);
 
-  
   const handleRange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setIsDisable(false);
     const value = Number(e.target.value);
-    setState(value);
-    setOrder(value / 1000);
+    setStep((state) => (state = value));
+    setWeight((state) => (state = value / 1000));
   };
 
   const handleFavorites = () => {
@@ -38,15 +42,57 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
     }
   };
 
+  const onAddToCart = async () => {
+    console.log("onAddToCart");
+    const price = weight * vegetable.price
+    console.log(price.toFixed(1))
+    const cartItem = {
+      id: vegetable.id,
+      weight: weight,
+      price: Number(price.toFixed(1)),
+      vegetable: vegetable.vegetable,
+      imgUrl: vegetable.imgUrl,
+      title: vegetable.title,
+      name: vegetable.name,
+    };
+    if (cart.find((cartItem) => cartItem.id === vegetable.id)) {
+      console.log("removeCartItem");
+      dispatch(removeFromCart(cartItem.id));
+      setStep(0);
+      setWeight(0);
+      setIsItemCart(false);
+      setIsDisable(true);
+    } else {
+      dispatch(addToCart(cartItem));
+    }
+  };
+
+  useEffect(() => {
+    cart.find((i) => i.id === vegetable.id)
+      ? setIsItemCart(true)
+      : setIsItemCart(false);
+    favorites.find((i) => i.id === vegetable.id)
+      ? setIsFavorite(true)
+      : setIsFavorite(false);
+
+    cart.map((cartItem) => {
+      if (cartItem.id === vegetable.id) {
+        setWeight(cartItem.weight);
+        setStep(cartItem.weight * 1000);
+      }
+      return null;
+    });
+  }, [cart, favorites]);
+
   return (
     <li className={cl("card")}>
-      <div onClick={handleFavorites} className={cl("card_favorite")}>
+      <button onClick={handleFavorites} className={cl("card_favorite")}>
         <Heart
           className={cl("card_favoriteIcon", {
             card_favoriteIcon__active: isFavorite,
           })}
         />
-      </div>
+      </button>
       <div className={cl("card_image")}>
         <img src={vegetable.imgUrl} alt="vegetable" />
       </div>
@@ -61,12 +107,13 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
             type="range"
             min="100"
             max="5000"
-            value={state}
+            value={step}
             onChange={handleRange}
             step="100"
+            disabled={isItemCart}
           />
           <div className={cl("value")}>
-            <div className={cl("value_order")}>{order}</div>
+            <div className={cl("value_order")}>{weight}</div>
             <div className={cl("value_unit")}>кг.</div>
           </div>
         </div>
@@ -76,7 +123,11 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
           <div className={cl("card_price-text")}>Цена: </div>
           <div className={cl("card_sum")}>{vegetable.price}&euro; кг.</div>
         </div>
-        <div className={cl("card_add")}></div>
+        <button
+          className={cl("card_add", { card_add__true: isItemCart })}
+          disabled={isItemCart === true ? false : isDisable}
+          onClick={onAddToCart}
+        />
       </div>
     </li>
   );

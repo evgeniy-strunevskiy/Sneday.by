@@ -1,4 +1,4 @@
-import { FavoritesTypes } from './../../types/favoritesTypes';
+import { FavoritesTypes, IFavoriteTypes } from './../../types/favoritesTypes';
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const initialState: FavoritesTypes = {
@@ -14,7 +14,7 @@ const favoritesSlice = createSlice({
     favoritesFetching(state, action: PayloadAction<boolean>) {
       state.isLoading = action.payload;
     },
-    favoritesFetchingSuccess(state, action: PayloadAction<{id: number}[]>) {
+    favoritesFetchingSuccess(state, action: PayloadAction<IFavoriteTypes[]>) {
       state.isLoading = false;
       state.favorites = action.payload;
     },

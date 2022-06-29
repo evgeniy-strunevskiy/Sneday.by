@@ -1,5 +1,9 @@
+export interface IFavoriteTypes {
+  id: number;
+}
+
 export interface FavoritesTypes {
-  favorites: {id: number}[];
+  favorites: IFavoriteTypes[];
   isLoading: boolean;
   error: null | string;
 }

@@ -5,6 +5,7 @@ import vegetablesReducer from './slices/vegetablesSlice'
 import searchMapReducer from './slices/searchMapSlice'
 import ownerReducer from './slices/ownerSlice'
 import favoritesReducer from './slices/favoritesSlice'
+import cartReducer from './slices/cartSlice'
 
 const rootReducer = combineReducers({
  login: loginReducer,
@@ -13,6 +14,7 @@ const rootReducer = combineReducers({
  searchMap: searchMapReducer,
  owner: ownerReducer,
  favorites: favoritesReducer,
+ cart: cartReducer,
 });
 
 export const setupStore = () => {

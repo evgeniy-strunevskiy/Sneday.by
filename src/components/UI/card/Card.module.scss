@@ -53,8 +53,6 @@
   &:active {
     outline: none;
     background-color: var(--color-logo-two);
-    background-color: var(--color-logo-two);
-
   }
   &::before, &::after {
     content: '';
@@ -71,6 +69,14 @@
   &::after {
     width: 1px;
     height: 10px;
+  }
+
+  &__true {
+    background: var(--color-purple);
+    outline: none;
+    &::before, &::after {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
   }
 }
 

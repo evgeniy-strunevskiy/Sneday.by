@@ -8,7 +8,6 @@ export const removeFavorite =
   (favorite: number) => async (dispatch: AppDispatch) => {
     try {
       dispatch(favoritesFetching(true));
-      console.log('removeFavorite')
       await PointsServer.removeFavorite(favorite);
       dispatch(getFavorites())
       dispatch(favoritesFetching(false));

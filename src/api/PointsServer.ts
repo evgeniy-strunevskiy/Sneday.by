@@ -1,6 +1,8 @@
+import { ICartItemTypes } from './../types/cartTypes';
 import { VegetableItemTypes } from './../types/vegetablesListTypes';
 import { PointTypes } from './../types/pointsTypes';
 import axios from "axios";
+import { IFavoriteTypes } from '../types/favoritesTypes';
 
 export class PointsServer {
   static async getAll() {
@@ -15,7 +17,7 @@ export class PointsServer {
     const response = await axios.get<PointTypes>(`http://localhost:3001/points/${id}`);
     return response.data;
   }
-  static async addFavorite(favorite: {id: number}) {
+  static async addFavorite(favorite: IFavoriteTypes) {
     const response = await axios.post<number>(`http://localhost:3001/favorites`, favorite);
     return response.data;
   }
@@ -24,7 +26,19 @@ export class PointsServer {
     return response.data;
   }
   static async getFavorites() {
-    const response = await axios.get<[]>(`http://localhost:3001/favorites`);
+    const response = await axios.get<IFavoriteTypes[]>(`http://localhost:3001/favorites`);
+    return response.data;
+  }
+  static async getCart() {
+    const response = await axios.get<ICartItemTypes[]>(`http://localhost:3001/cart`);
+    return response.data;
+  }
+  static async addToCart(cartItem: ICartItemTypes) {
+    const response = await axios.post<ICartItemTypes>(`http://localhost:3001/cart`, cartItem);
+    return response.data;
+  }
+  static async removeFromCart(cartItem: number) {
+    const response = await axios.delete<number>(`http://localhost:3001/cart/${cartItem}`);
     return response.data;
   }
 }

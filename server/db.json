@@ -10,7 +10,7 @@
           "vegetable": "potate",
           "title": "Картофель",
           "name": "Палац",
-          "price": 10,
+          "price": 12.4,
           "imgUrl": "./image/potato.png"
         },
         {
@@ -3689,18 +3689,7 @@
       "name": "Кабачок"
     }
   ],
-  "favorites": [
-    {
-      "id": 1
-    },
-    {
-      "id": 2
-    },
-    {
-      "id": 4
-    },
-    {
-      "id": 3
-    }
-  ]
+  "favorites": [],
+  "cart": [],
+  "orders": []
 }

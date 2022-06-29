@@ -8,10 +8,12 @@ import { Orders } from '../pages/Orders';
 import { Products } from '../pages/Products';
 import { About } from '../pages/About';
 import { Owner } from '../pages/Owner';
+import { Cart } from '../pages/Cart';
 
 export const privateRoutes = [
   { path: "favorites", element: Favorites },
   { path: "orders", element: Orders },
+  { path: "cart", element: Cart },
   { path: "products", element: Products },
 ];
 

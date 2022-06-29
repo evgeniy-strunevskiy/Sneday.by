@@ -29,7 +29,7 @@ export const Menu: FC<MenuPropsTypes> = ({setFalseActive, isActive }) => {
     <nav className={cl('menu', {active: isActive})}>
       <ul className={cl('menu_list')}>
         <li className={cl('menu_item')} onClick={setFalseActive} >
-        <Link to='orders' className={cl('menu_link')}>
+        <Link to='cart' className={cl('menu_link')}>
           <Price />
         </Link>
         </li>
