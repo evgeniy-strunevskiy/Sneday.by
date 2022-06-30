@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router';
 import { RequireAuth } from '../hoc/RequireAuth';
 import { useAppSelector } from '../hooks/redux';
 import { privateRoutes, publicRoutes } from '../router/routes';
+import { Loader } from './UI/loader/Loader';
 import { Wrapper } from './Wrapper';
 
 export const Router: FC = () => {
@@ -21,7 +22,7 @@ export const Router: FC = () => {
   ));
 
   if(isLoading) {
-    return <h1>Идет загрузка</h1>
+    return <Loader />
   }
 
   return (

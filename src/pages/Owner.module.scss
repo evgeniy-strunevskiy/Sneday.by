@@ -4,6 +4,9 @@
 .owner_container {
   @include container;
   color: var(--color-font);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 

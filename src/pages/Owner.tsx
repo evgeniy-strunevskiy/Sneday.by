@@ -5,6 +5,7 @@ import { useParams } from "react-router";
 import { useAppDispatch, useAppSelector } from "../hooks/redux";
 import { getOwner } from "../store/middleware/owner";
 import { OwnerContent } from "./OwnerContent";
+import { Loader } from "../components/UI/loader/Loader";
 
 const cl = classNames.bind(styles);
 
@@ -20,7 +21,7 @@ export const Owner: FC = () => {
   return (
     <div className={cl("owner")}>
       <div className={cl("owner_container")}>
-        {isLoading ? <h1>Идет загрузка...</h1> : <OwnerContent />}
+        {isLoading ? <Loader /> : <OwnerContent />}
       </div>
     </div>
   );
