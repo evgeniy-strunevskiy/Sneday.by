@@ -38,7 +38,7 @@
           "imgUrl": "./image/corn.png"
         },
         {
-          "id": 5,
+          "id": 500,
           "vegetable": "cucumber",
           "title": "Огурец",
           "name": "Журавленок",
@@ -3313,7 +3313,7 @@
           "imgUrl": "./image/eggplant.png"
         },
         {
-          "id": 421,
+          "id": 42111,
           "vegetable": "garlic",
           "title": "Чеснок",
           "name": "Харнась",
@@ -3321,7 +3321,7 @@
           "imgUrl": "./image/garlic.png"
         },
         {
-          "id": 420,
+          "id": 4201,
           "vegetable": "horseradish",
           "title": "Имбирь",
           "name": "Шакспир",
@@ -3329,7 +3329,7 @@
           "imgUrl": "./image/horseradish.png"
         },
         {
-          "id": 421,
+          "id": 4211,
           "vegetable": "onion",
           "title": "Лук",
           "name": "Ветразь",
@@ -3337,7 +3337,7 @@
           "imgUrl": "./image/onion.png"
         },
         {
-          "id": 422,
+          "id": 4221,
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
@@ -3689,7 +3689,27 @@
       "name": "Кабачок"
     }
   ],
-  "favorites": [],
-  "cart": [],
+  "favorites": [
+    {
+      "id": 6
+    },
+    {
+      "id": 15
+    },
+    {
+      "id": 8
+    }
+  ],
+  "cart": [
+    {
+      "id": 6,
+      "weight": 3.2,
+      "price": 38.4,
+      "vegetable": "eggplant",
+      "imgUrl": "./image/eggplant.png",
+      "title": "Баклажан",
+      "name": "Черномор"
+    }
+  ],
   "orders": []
 }

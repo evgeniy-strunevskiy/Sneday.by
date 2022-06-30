@@ -8,31 +8,26 @@ import { ReactComponent as Twitter } from '../assets/icons/twitter.svg'
 import { ReactComponent as Viber } from '../assets/icons/viber.svg'
 import { ReactComponent as Instagram } from '../assets/icons/instagram.svg'
 import { Cards } from "../components/Cards";
+import { Filters } from "../components/Filters";
+import { IFiltersTypes } from "../types/filtersTypes";
 
 const cl = classNames.bind(styles);
-
-interface Filters {
-  sort: string;
-  search: string;
-}
 
 interface OwnerContentProps {}
 
 export const OwnerContent: FC<OwnerContentProps> = () => {
-  const { owner, isLoading } = useAppSelector((state) => state.owner);
-  const [filter, setFilter] = useState<Filters>({
+  const { owner, isLoading } = useAppSelector((state) => state.owner)
+
+  const [filter, setFilter] = useState<IFiltersTypes>({
     sort: "",
     search: "",
   });
+  
   const sortedAndSearchedPosts = useItems(
     owner.vegetables,
     filter.search,
     filter.sort
   );
-
-  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFilter({ ...filter, search: e.target.value });
-  };
 
   return ( 
     <div>
@@ -81,37 +76,7 @@ export const OwnerContent: FC<OwnerContentProps> = () => {
               <div className={cl("owner_license")}>лицензия: не нужна</div>
             </div>
           </div>
-          <div className={cl("owner_filters")}>
-            <div className={cl("owner_sort")}>
-              <select
-                className={cl("owner_select")}
-                value={filter.sort}
-                onChange={(e) => setFilter({ ...filter, sort: e.target.value })}
-              >
-                <option value="" disabled>
-                  {"Cортировка"}
-                </option>
-                {[
-                  { name: "По названию", value: "title" },
-                  { name: "По цене ↑", value: "maxPrice" },
-                  { name: "По цене ↓", value: "minPrice" },
-                ].map((option) => (
-                  <option key={option.value} value={option.value}>
-                    {option.name}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div className={cl("owner_search")}>
-              <input
-                type="text"
-                className={cl("owner_input")}
-                placeholder={"Поиск..."}
-                value={filter.search}
-                onChange={handleSearch}
-              />
-            </div>
-          </div>
+          <Filters filter={filter} setFilter={setFilter}/>
           <Cards vegetables={sortedAndSearchedPosts} />
         </div>
       )}
