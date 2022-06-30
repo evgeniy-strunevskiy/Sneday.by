@@ -9,8 +9,8 @@ import { OwnerContent } from "./OwnerContent";
 const cl = classNames.bind(styles);
 
 export const Owner: FC = () => {
-  const { id } = useParams();
   const dispatch = useAppDispatch();
+  const { id } = useParams();
   const { isLoading } = useAppSelector((state) => state.owner);
 
   useEffect(() => {

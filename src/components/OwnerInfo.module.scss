@@ -1,0 +1,74 @@
+.owner-info {
+  border-bottom: 1px solid #a2cc4e;
+  color: var(--color-font-two);
+  padding-bottom: 4%;
+  margin-bottom: 4%;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 45px;
+  align-items: flex-start;
+}
+
+.onwer-info_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-right: 45px;
+  border-right: 1px solid #a2cc4e;
+}
+
+.owner-info_logo {
+  border: 5px solid var(--color-font);
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  img {
+    max-width: 100%;
+  }
+}
+
+.owner-info_name {
+  color: var(--color-font);
+}
+
+.owner-info_owner {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 1.5%;
+}
+
+.owner-info_title {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-bottom: 1%;
+}
+
+.owner-info_title-text {
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.owner-info_id {
+  width: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.owner-info_license {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+////////////
+
+.social_list {
+  display: flex;
+  gap: 5px;
+}
+
