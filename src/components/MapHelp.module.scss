@@ -1,0 +1,28 @@
+.map-help_explanations {
+  color: black;
+  display: grid;
+  grid-template-columns: max-content max-content max-content ;
+  gap: 10px;
+}
+.map-help_explanation {
+  color: var(--color-font);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.map-help_circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  margin-right: 5px;
+  &__gold {
+    background-color: var(--color-gold);
+  }
+  &__white {
+    background-color: var(--color-font);
+  }
+  &__gray {
+    background-color: var(--color-body);
+  }
+}

@@ -4,6 +4,7 @@ import styles from "./MapSquare.module.scss";
 import { MapRow } from "./MapRow";
 import { SectionsTypes } from "../types/sectionsTypes";
 import { SearchMap } from "../components/SearchMap";
+import { MapHelp } from "./MapHelp";
 
 const cl = classNames.bind(styles);
 
@@ -24,22 +25,7 @@ export const MapSquare: FC<MapSquareTypes> = ({ sections }) => {
           <MapRow key={key} rows={rows} />
         ))}
       </div>
-      <div className={cl('square_footer')}>
-        <ul className={cl('square_explanations')}>
-          <li className={cl('square_explanation')}>
-            <div className={cl('square_circle', 'square_circle__gold')}/>
-            <div className={cl('square_explanationText')}>Товар есть</div>
-          </li>
-          <li className={cl('square_explanation')}>
-            <div className={cl('square_circle', 'square_circle__white')}/>
-            <div className={cl('square_explanationText')}>Товар отсутствует/не выбран</div>
-          </li>
-          <li className={cl('square_explanation')}>
-            <div className={cl('square_circle', 'square_circle__gray')}/>
-            <div className={cl('square_explanationText')}>Нет продавца</div>
-          </li>
-        </ul>
-      </div>
+      <MapHelp />
     </div>
   );
 };

@@ -1,9 +1,14 @@
 .square {
   display: grid;
   grid-template-columns: minmax(min-content, max-content) ;
-  // grid-template-rows: max-content max-content min-content;
   justify-content: center;
   gap: 20px;
+}
+
+.square_head {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
 }
 
 .square_title {
@@ -19,40 +24,4 @@
   grid-template-rows: max-content;
   justify-content: center;
   gap: 80px;
-}
-
-.square_head {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
-}
-
-.square_explanations {
-  color: black;
-  display: grid;
-  grid-template-columns: max-content max-content max-content ;
-  gap: 10px;
-}
-.square_explanation {
-  color: var(--color-font);
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-}
-
-.square_circle {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  margin-right: 5px;
-  // background-color: var(--color-font);
-  &__gold {
-    background-color: var(--color-gold);
-  }
-  &__white {
-    background-color: var(--color-font);
-  }
-  &__gray {
-    background-color: var(--color-body);
-  }
 }
