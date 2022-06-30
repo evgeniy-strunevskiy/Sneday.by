@@ -3691,25 +3691,12 @@
   ],
   "favorites": [
     {
-      "id": 6
+      "id": 1
     },
     {
-      "id": 15
-    },
-    {
-      "id": 8
+      "id": 2
     }
   ],
-  "cart": [
-    {
-      "id": 6,
-      "weight": 3.2,
-      "price": 38.4,
-      "vegetable": "eggplant",
-      "imgUrl": "./image/eggplant.png",
-      "title": "Баклажан",
-      "name": "Черномор"
-    }
-  ],
+  "cart": [],
   "orders": []
 }
