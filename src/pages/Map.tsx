@@ -6,6 +6,7 @@ import { SectionsTypes } from "../types/sectionsTypes";
 import { PointTypes } from "../types/pointsTypes";
 import { MapSquare } from "./MapSquare";
 import { Loader } from "../components/UI/loader/Loader";
+import { Error } from "../components/UI/error/Error";
 
 const cl = classNames.bind(styles);
 
@@ -102,7 +103,7 @@ export const Map: FC = () => {
             <img src="./image/vegetables.png" alt="" />
           </div>
         </div>
-        {error && <h1>Ошибка загрузки данных</h1>}
+        {error && <Error error={error} />}
         {isLoading ? <Loader /> : <MapSquare sections={sections} />}
       </div>
     </div>
