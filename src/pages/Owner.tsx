@@ -4,8 +4,8 @@ import styles from "./Owner.module.scss";
 import { useParams } from "react-router";
 import { useAppDispatch, useAppSelector } from "../hooks/redux";
 import { getOwner } from "../store/middleware/owner";
-import { OwnerContent } from "./OwnerContent";
 import { Loader } from "../components/UI/loader/Loader";
+import { OwnerContent } from "../components/OwnerContent";
 
 const cl = classNames.bind(styles);
 

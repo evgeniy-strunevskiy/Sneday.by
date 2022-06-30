@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import classNames from "classnames/bind";
 import styles from "./MapRow.module.scss";
-import { MapSection } from "./MapSection";
 import { rowsTypes } from "../types/sectionsTypes";
+import { MapSection } from "./MapSection"
 
 const cl = classNames.bind(styles);
 

@@ -5,7 +5,6 @@ import { Map } from "../pages/Map";
 import { NoteFound } from "../pages/NoteFound";
 import { Registration } from "../pages/Registration";
 import { Orders } from '../pages/Orders';
-import { Products } from '../pages/Products';
 import { About } from '../pages/About';
 import { Owner } from '../pages/Owner';
 import { Cart } from '../pages/Cart';
@@ -14,7 +13,6 @@ export const privateRoutes = [
   { path: "favorites", element: Favorites },
   { path: "orders", element: Orders },
   { path: "cart", element: Cart },
-  { path: "products", element: Products },
 ];
 
 export const publicRoutes = [
