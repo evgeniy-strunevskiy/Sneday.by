@@ -5,10 +5,9 @@ import { useAppDispatch, useAppSelector } from "../hooks/redux";
 import { getVegetables } from "../store/middleware/vegetables";
 import { getVegetableMap } from "../store/slices/searchMapSlice";
 import { VegetableItemTypes } from "../types/vegetablesListTypes";
-import { ReactComponent as Close } from "../assets/icons/close.svg";
-import { ReactComponent as Search } from "../assets/icons/search.svg";
 import { Input } from "./UI/input/Input";
 import { SearchList } from "./SearchList";
+import { SearchMapIcon } from "./SearchMapIcon";
 
 const cl = classNames.bind(styles);
 
@@ -37,7 +36,7 @@ export const SearchMap: FC = () => {
     setsortedVegetables([]);
   }
 
-  const clearSearchMap = () => {
+  function clearSearchMap() {
     setSearchMap("");
     dispatch(getVegetableMap(null));
     setsortedVegetables([]);
@@ -64,15 +63,7 @@ export const SearchMap: FC = () => {
         onChange={handleSearch}
         onBlur={handleBlur}
       />
-      {searchMap ? (
-        <button className={cl("search_btn")} onClick={clearSearchMap}>
-          <Close className={cl("search_closeIcon")} />
-        </button>
-      ) : (
-        <button className={cl("search_btn")} onClick={clearSearchMap}>
-          <Search className={cl("search_searchIcon")} />
-        </button>
-      )}
+      <SearchMapIcon searchMap={searchMap} clearSearchMap={clearSearchMap}  />
       {sortedVegetables.length ? (
         <SearchList
           sortedVegetables={sortedVegetables}
