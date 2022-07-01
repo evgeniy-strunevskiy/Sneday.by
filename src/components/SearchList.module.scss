@@ -1,0 +1,18 @@
+.search_list {
+  z-index: 10;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  background-color: rgba(39,47,51, 0.2);
+  
+}
+
+.search_item {
+  font-size: 10px;
+  cursor: pointer;
+  padding: 5px;
+  transition:  0.2s ease-in-out;
+  &:hover {
+    background-color: rgba(39,47,51, .3);
+  }
+}

@@ -8,6 +8,7 @@ import { VegetableItemTypes } from "../types/vegetablesListTypes";
 import { ReactComponent as Close } from "../assets/icons/close.svg";
 import { ReactComponent as Search } from "../assets/icons/search.svg";
 import { Input } from "./UI/input/Input";
+import { SearchList } from "./SearchList";
 
 const cl = classNames.bind(styles);
 
@@ -30,11 +31,11 @@ export const SearchMap: FC = () => {
     setsortedVegetables(matches);
   };
 
-  const sendVegetable = (vegetable: VegetableItemTypes) => {
+  function sendVegetable(vegetable: VegetableItemTypes) {
     dispatch(getVegetableMap(vegetable.name));
     setSearchMap(vegetable.name);
     setsortedVegetables([]);
-  };
+  }
 
   const clearSearchMap = () => {
     setSearchMap("");
@@ -73,17 +74,10 @@ export const SearchMap: FC = () => {
         </button>
       )}
       {sortedVegetables.length ? (
-        <ul className={cl("search_list")}>
-          {sortedVegetables.map((vegetable) => (
-            <li
-              key={vegetable.id}
-              className={cl("search_item")}
-              onClick={() => sendVegetable(vegetable)}
-            >
-              {vegetable.name}
-            </li>
-          ))}
-        </ul>
+        <SearchList
+          sortedVegetables={sortedVegetables}
+          sendVegetable={sendVegetable}
+        />
       ) : null}
     </div>
   );
