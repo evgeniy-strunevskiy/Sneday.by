@@ -7,6 +7,7 @@ import { getVegetableMap } from "../store/slices/searchMapSlice";
 import { VegetableItemTypes } from "../types/vegetablesListTypes";
 import { ReactComponent as Close } from "../assets/icons/close.svg";
 import { ReactComponent as Search } from "../assets/icons/search.svg";
+import { Input } from "./UI/input/Input";
 
 const cl = classNames.bind(styles);
 
@@ -54,36 +55,36 @@ export const SearchMap: FC = () => {
 
   return (
     <div className={cl("search")}>
-        <input
-          className={cl("search_input")}
-          type="text"
-          placeholder="Поиск овощей..."
-          value={searchMap}
-          onChange={handleSearch}
-          onBlur={handleBlur}
-        />
-        {searchMap ? (
-          <button className={cl("search_btn")} onClick={clearSearchMap}>
-            <Close className={cl("search_closeIcon")} />
-          </button>
-        ): (
-          <button className={cl("search_btn")} onClick={clearSearchMap}>
-            <Search className={cl("search_searchIcon")} />
-          </button>
-        )}
+      <Input
+        className={"search_input"}
+        type="text"
+        placeholder="Поиск овощей..."
+        value={searchMap}
+        onChange={handleSearch}
+        onBlur={handleBlur}
+      />
+      {searchMap ? (
+        <button className={cl("search_btn")} onClick={clearSearchMap}>
+          <Close className={cl("search_closeIcon")} />
+        </button>
+      ) : (
+        <button className={cl("search_btn")} onClick={clearSearchMap}>
+          <Search className={cl("search_searchIcon")} />
+        </button>
+      )}
       {sortedVegetables.length ? (
-          <ul className={cl("search_list")}>
-            {sortedVegetables.map((vegetable) => (
-              <li
-                key={vegetable.id}
-                className={cl("search_item")}
-                onClick={() => sendVegetable(vegetable)}
-              >
-                {vegetable.name}
-              </li>
-            ))}
-          </ul>
-      ): null}
+        <ul className={cl("search_list")}>
+          {sortedVegetables.map((vegetable) => (
+            <li
+              key={vegetable.id}
+              className={cl("search_item")}
+              onClick={() => sendVegetable(vegetable)}
+            >
+              {vegetable.name}
+            </li>
+          ))}
+        </ul>
+      ) : null}
     </div>
   );
 };

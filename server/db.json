@@ -3689,14 +3689,7 @@
       "name": "Кабачок"
     }
   ],
-  "favorites": [
-    {
-      "id": 1
-    },
-    {
-      "id": 2
-    }
-  ],
+  "favorites": [],
   "cart": [],
   "orders": []
 }

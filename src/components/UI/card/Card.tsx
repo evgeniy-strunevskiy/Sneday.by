@@ -8,6 +8,7 @@ import { addFavorite } from "../../../store/middleware/addingFavorites";
 import { removeFavorite } from "../../../store/middleware/removingFavorites";
 import { addToCart } from "../../../store/middleware/addingToCart";
 import { removeFromCart } from "../../../store/middleware/removingFromCart";
+import { Input } from "../input/Input";
 
 const cl = classNames.bind(styles);
 
@@ -103,7 +104,7 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
 
       <div className={cl("range")}>
         <div className={cl("field")}>
-          <input
+          <Input
             type="range"
             min="100"
             max="5000"

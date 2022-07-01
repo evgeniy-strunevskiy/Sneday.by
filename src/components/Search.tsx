@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import styles from "./Search.module.scss";
 import classNames from "classnames/bind";
 import { IFiltersTypes } from "../types/filtersTypes";
+import { Input } from "./UI/input/Input";
 
 const cl = classNames.bind(styles);
 
@@ -16,7 +17,7 @@ export const Search: FC<SearchPropsTypes> = ({ filter, setFilter }) => {
   };
 
   return (
-    <input
+    <Input
       type="text"
       className={cl("search_input")}
       placeholder={"Поиск..."}
