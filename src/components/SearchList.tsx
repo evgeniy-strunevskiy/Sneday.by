@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import styles from "./SearchList.module.scss";
 import classnames from "classnames/bind";
 import { VegetableItemTypes } from "../types/vegetablesListTypes";
+import { SearchItem } from "./SearchItem";
 
 const cl = classnames.bind(styles);
 
@@ -17,13 +18,7 @@ export const SearchList: FC<SearchListPropTypes> = ({
   return (
     <ul className={cl("search_list")}>
       {sortedVegetables.map((vegetable) => (
-        <li
-          key={vegetable.id}
-          className={cl("search_item")}
-          onClick={() => sendVegetable(vegetable)}
-        >
-          {vegetable.name}
-        </li>
+        <SearchItem key={vegetable.id} vegetable={vegetable} sendVegetable={sendVegetable} />
       ))}
     </ul>
   );
