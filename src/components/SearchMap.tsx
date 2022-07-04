@@ -15,9 +15,7 @@ export const SearchMap: FC = () => {
   const dispatch = useAppDispatch();
   const { vegetables } = useAppSelector((state) => state.vegetables);
   const [searchMap, setSearchMap] = useState<string>("");
-  const [sortedVegetables, setsortedVegetables] = useState<
-    VegetableItemTypes[]
-  >([]);
+  const [sortedVegetables, setsortedVegetables] = useState<VegetableItemTypes[]>([]);
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     let matches: VegetableItemTypes[] = [];
@@ -40,7 +38,7 @@ export const SearchMap: FC = () => {
     setSearchMap("");
     dispatch(getVegetableMap(null));
     setsortedVegetables([]);
-  };
+  }
 
   const handleBlur = () => {
     setTimeout(() => {
@@ -63,7 +61,7 @@ export const SearchMap: FC = () => {
         onChange={handleSearch}
         onBlur={handleBlur}
       />
-      <SearchMapIcon searchMap={searchMap} clearSearchMap={clearSearchMap}  />
+      <SearchMapIcon searchMap={searchMap} clearSearchMap={clearSearchMap} />
       {sortedVegetables.length ? (
         <SearchList
           sortedVegetables={sortedVegetables}
