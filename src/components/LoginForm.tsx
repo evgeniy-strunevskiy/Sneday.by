@@ -66,7 +66,7 @@ export const LoginForm: FC<LoginFormTypes> = ({ fromPage }) => {
         <Button>Войти</Button>
       </div>
       <div className={cl("login-form_row", "login-form_row__center")}>
-        <NewUser />
+        <NewUser text={'Новый пользователь?'} account={'Регистрация'} link={'/registration'} />
       </div>
     </form>
   );

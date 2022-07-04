@@ -7,6 +7,7 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { InputForm } from "./UI/InputForm/InputForm";
 import { Button } from "./UI/button/Button";
+import { NewUser } from "./NewUser";
 
 const cl = classNames.bind(styles);
 
@@ -66,12 +67,7 @@ export const RegistrationForm: FC<RegistrationFormTypes> = ({ fromPage }) => {
       <div
         className={cl("registration-form_row", "registration-form_row__center")}
       >
-        <div className={cl("registration-form_newUser")}>
-          <span>Есть аккаунт? </span>
-          <Link className={cl("registration-form_login-btn")} to="/login">
-            Войти
-          </Link>
-        </div>
+        <NewUser text={'Есть аккаунт?'} account={'Войти'} link={'/login'} />
       </div>
     </form>
   );
