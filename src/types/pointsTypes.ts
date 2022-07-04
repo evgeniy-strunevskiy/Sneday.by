@@ -12,6 +12,7 @@ export interface PointTypes {
   id: number;
   name: string;
   owner: string;
+  logoUrl: string;
   isBusy: boolean;
   vegetables: VegetablesTypes[]
 }

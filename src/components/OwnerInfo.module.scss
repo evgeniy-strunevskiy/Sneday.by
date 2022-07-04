@@ -19,18 +19,6 @@
   border-right: 1px solid #a2cc4e;
 }
 
-.owner-info_logo {
-  border: 5px solid var(--color-font);
-  border-radius: 20px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-  img {
-    max-width: 100%;
-  }
-}
-
 .owner-info_name {
   color: var(--color-font);
 }

@@ -3,6 +3,7 @@ import styles from "./OwnerInfo.module.scss";
 import classNames from "classnames/bind";
 import { PointTypes } from "../types/pointsTypes";
 import { Socials } from "./UI/socials/Socials";
+import { OwnerLogo } from "./UI/ownerLogo/OwnerLogo";
 
 const cl = classNames.bind(styles);
 
@@ -14,9 +15,7 @@ export const OwnerInfo: FC<OwnerInfoPropTypes> = ({ owner }) => {
   return (
     <div className={cl("owner-info")}>
       <div className={cl("owner-info_main")}>
-        <div className={cl("owner-info_logo")}>
-          <img src="./image/owner-1.jpg" alt="" />
-        </div>
+        <OwnerLogo url={owner.logoUrl} />
         <Socials />
       </div>
       <div className={cl("owner-info_name")}>
