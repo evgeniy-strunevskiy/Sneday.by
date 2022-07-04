@@ -1,7 +1,7 @@
 import { FC } from "react";
 import classNames from "classnames/bind";
 import styles from "./LoginForm.module.scss";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -10,10 +10,9 @@ import { Button } from "./UI/button/Button";
 import { LoginInterface } from "../types/loginTypes";
 import { useAppDispatch } from "../hooks/redux";
 import { setLogin } from "../store/middleware/login";
+import { NewUser } from "./NewUser";
 
 const cl = classNames.bind(styles);
-
-
 
 interface LoginFormTypes {
   fromPage: string;
@@ -29,19 +28,18 @@ const EmailSchema = yup.object().shape({
     .required("Обязательно"),
 });
 
-export const LoginForm: FC<LoginFormTypes> = ({fromPage}) => {
+export const LoginForm: FC<LoginFormTypes> = ({ fromPage }) => {
   const dispatch = useAppDispatch();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm<LoginInterface>({ resolver: yupResolver(EmailSchema) });
 
-
   const onSubmit = (data: LoginInterface) => {
-    dispatch(setLogin(data))
-    navigate('/')
+    dispatch(setLogin(data));
+    navigate("/");
   };
 
   return (
@@ -51,7 +49,7 @@ export const LoginForm: FC<LoginFormTypes> = ({fromPage}) => {
           name={"email"}
           label={"Email"}
           register={register}
-          placeholder={'Введите email...'}
+          placeholder={"Введите email..."}
           error={errors.email?.message}
         />
       </div>
@@ -60,23 +58,15 @@ export const LoginForm: FC<LoginFormTypes> = ({fromPage}) => {
           name={"password"}
           label={"Пароль"}
           register={register}
-          placeholder={'Введите пароль...'}
+          placeholder={"Введите пароль..."}
           error={errors.password?.message}
         />
       </div>
       <div className={cl("login-form_row")}>
-      <Button>Войти</Button>
+        <Button>Войти</Button>
       </div>
-      <div className={cl("login-form_row", "login-form_row__center" )}>
-        <div className={cl("login-form_newUser")}>
-          <span>Новый пользователь? </span>
-          <Link
-            className={cl("login-form_registration-btn")}
-            to="/registration"
-          >
-            Регистрация
-          </Link>
-        </div>
+      <div className={cl("login-form_row", "login-form_row__center")}>
+        <NewUser />
       </div>
     </form>
   );
