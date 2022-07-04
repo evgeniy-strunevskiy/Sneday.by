@@ -9,6 +9,7 @@ import { removeFavorite } from "../../../store/middleware/removingFavorites";
 import { addToCart } from "../../../store/middleware/addingToCart";
 import { removeFromCart } from "../../../store/middleware/removingFromCart";
 import { Input } from "../input/Input";
+import { Range } from "../../Range";
 
 const cl = classNames.bind(styles);
 
@@ -25,12 +26,12 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
   const [isItemCart, setIsItemCart] = useState<boolean>(false);
   const [isFavorite, setIsFavorite] = useState<boolean>(false);
 
-  const handleRange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  function handleRange(e: React.ChangeEvent<HTMLInputElement>) {
     setIsDisable(false);
     const value = Number(e.target.value);
     setStep((state) => (state = value));
     setWeight((state) => (state = value / 1000));
-  };
+  }
 
   const handleFavorites = () => {
     const favorite = {
@@ -44,9 +45,8 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
   };
 
   const onAddToCart = async () => {
-    console.log("onAddToCart");
-    const price = weight * vegetable.price
-    console.log(price.toFixed(1))
+    const price = weight * vegetable.price;
+    console.log(price.toFixed(1));
     const cartItem = {
       id: vegetable.id,
       weight: weight,
@@ -101,24 +101,12 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
         {vegetable.title}{" "}
         <span className={cl("card_name")}>"{vegetable.name}"</span>
       </h3>
-
-      <div className={cl("range")}>
-        <div className={cl("field")}>
-          <Input
-            type="range"
-            min="100"
-            max="5000"
-            value={step}
-            onChange={handleRange}
-            step="100"
-            disabled={isItemCart}
-          />
-          <div className={cl("value")}>
-            <div className={cl("value_order")}>{weight}</div>
-            <div className={cl("value_unit")}>кг.</div>
-          </div>
-        </div>
-      </div>
+      <Range
+        step={step}
+        weight={weight}
+        handleRange={handleRange}
+        isItemCart={isItemCart}
+      />
       <div className={cl("card_buy")}>
         <div className={cl("card_price")}>
           <div className={cl("card_price-text")}>Цена: </div>
