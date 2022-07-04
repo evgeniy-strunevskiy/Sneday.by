@@ -1,0 +1,33 @@
+.owner-info-content {
+  color: var(--color-font);
+}
+
+.owner-info-content_name {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 1.5%;
+}
+
+.owner-info-content_title {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-bottom: 1%;
+}
+
+.owner-info-content_title-text {
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.owner-info-content_id {
+  width: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.owner-info-content_license {
+  font-size: 20px;
+  font-weight: 300;
+}
