@@ -6,11 +6,11 @@ import { VegetablesTypes } from "../types/pointsTypes";
 
 const cl = classNames.bind(styles);
 
-interface CardsProps {
+interface CardsPropsTypes {
   vegetables: VegetablesTypes[];
 }
 
-export const Cards: FC<CardsProps> = ({ vegetables }) => {
+export const Cards: FC<CardsPropsTypes> = ({ vegetables }) => {
 
   return (
     <ul className={cl("cards")}>

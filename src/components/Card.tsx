@@ -11,7 +11,6 @@ import { removeFromCart } from "../store/middleware/removingFromCart";
 import { Range } from "./Range";
 import { CardBuy } from "./CardBuy";
 import { CardFavorite } from "./CardFavorite";
-import { ICardStateTypes } from "../types/cardStateTypes";
 import { CardVegetable } from "./CardVegetable";
 
 const cl = classNames.bind(styles);
@@ -24,20 +23,13 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
   const [step, setStep] = useState<number>(100);
   const [weight, setWeight] = useState<number>(0);
   const [isDisable, setIsDisable] = useState<boolean>(true);
-  const { favorites } = useAppSelector((state) => state.favorites);
-  const { cart } = useAppSelector((state) => state.cart);
   const [isItemCart, setIsItemCart] = useState<boolean>(false);
   const [isFavorite, setIsFavorite] = useState<boolean>(false);
-  const [cardState, setCardState] = useState<ICardStateTypes>({
-    step: 100,
-    weight: 0,
-    isDisable: true,
-    isItemCart: false,
-    isFavorite: false, 
-  })
+  const { favorites } = useAppSelector((state) => state.favorites);
+  const { cart } = useAppSelector((state) => state.cart);
 
   function handleRange(e: React.ChangeEvent<HTMLInputElement>) {
-    setIsDisable(false); 
+    setIsDisable(false);
     const value = Number(e.target.value);
     setStep((state) => (state = value));
     setWeight((state) => (state = value / 1000));
@@ -52,7 +44,7 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
     } else {
       dispatch(addFavorite(favorite));
     }
-  };
+  }
 
   async function onAddToCart() {
     const price = weight * vegetable.price;
