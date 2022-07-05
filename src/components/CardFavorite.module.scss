@@ -1,0 +1,23 @@
+.card_favorite {
+  width: 25px;
+  height: 25px;
+}
+
+.card_favoriteIcon {
+  fill: transparent;
+  stroke-width: 30;
+  stroke: rgba(255, 255, 255, .5);
+  &:hover {
+    fill: var(--color-logo-one);
+    stroke: transparent;
+  }
+  &:active {
+    fill: var(--color-gold);
+    stroke: transparent;
+  }
+  
+  &__active {
+    fill: var(--color-gold);
+    stroke: transparent;
+  }
+}

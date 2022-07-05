@@ -1,0 +1,33 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 14%;
+  font-size: 14px;
+  outline: 1px solid #a2cc4e;
+  border-radius: 52px;
+  color: var(--color-font-two);
+  transition: 0.2s ease-in-out;
+  &:hover {
+    box-shadow: 0px 5px 20px rgb(0 0 0 / 60%);
+    transform: translateY(-5px);
+    // outline: none;
+  }
+}
+
+.card_image {
+  // width: 70px;
+  // height: 70px;
+  padding: 0 10%;
+  margin-bottom: 12%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  img {
+    max-width: 100%;
+  }
+}
+
+.card_vegetable {
+  font-size: 16px;
+  margin-bottom: 6%;
+}

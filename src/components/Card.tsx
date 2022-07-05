@@ -1,15 +1,17 @@
 import React, { FC, useEffect, useState } from "react";
-import { ReactComponent as Heart } from "../../../assets/icons/heart.svg";
+import { ReactComponent as Heart } from "../assets/icons/heart.svg";
 import classNames from "classnames/bind";
 import styles from "./Card.module.scss";
-import { VegetablesTypes } from "../../../types/pointsTypes";
-import { useAppDispatch, useAppSelector } from "../../../hooks/redux";
-import { addFavorite } from "../../../store/middleware/addingFavorites";
-import { removeFavorite } from "../../../store/middleware/removingFavorites";
-import { addToCart } from "../../../store/middleware/addingToCart";
-import { removeFromCart } from "../../../store/middleware/removingFromCart";
-import { Input } from "../input/Input";
-import { Range } from "../../Range";
+import { VegetablesTypes } from "../types/pointsTypes";
+import { useAppDispatch, useAppSelector } from "../hooks/redux";
+import { addFavorite } from "../store/middleware/addingFavorites";
+import { removeFavorite } from "../store/middleware/removingFavorites";
+import { addToCart } from "../store/middleware/addingToCart";
+import { removeFromCart } from "../store/middleware/removingFromCart";
+import { Range } from "./Range";
+import { CardBuy } from "./CardBuy";
+import { CardFavorite } from "./CardFavorite";
+import { ICardStateTypes } from "../types/cardStateTypes";
 
 const cl = classNames.bind(styles);
 
@@ -25,15 +27,22 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
   const { cart } = useAppSelector((state) => state.cart);
   const [isItemCart, setIsItemCart] = useState<boolean>(false);
   const [isFavorite, setIsFavorite] = useState<boolean>(false);
+  const [cardState, setCardState] = useState<ICardStateTypes>({
+    step: 100,
+    weight: 0,
+    isDisable: true,
+    isItemCart: false,
+    isFavorite: false, 
+  })
 
   function handleRange(e: React.ChangeEvent<HTMLInputElement>) {
-    setIsDisable(false);
+    setIsDisable(false); 
     const value = Number(e.target.value);
     setStep((state) => (state = value));
     setWeight((state) => (state = value / 1000));
   }
 
-  const handleFavorites = () => {
+  function handleFavorites() {
     const favorite = {
       id: vegetable.id,
     };
@@ -44,7 +53,7 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
     }
   };
 
-  const onAddToCart = async () => {
+  async function onAddToCart() {
     const price = weight * vegetable.price;
     console.log(price.toFixed(1));
     const cartItem = {
@@ -66,7 +75,7 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
     } else {
       dispatch(addToCart(cartItem));
     }
-  };
+  }
 
   useEffect(() => {
     cart.find((i) => i.id === vegetable.id)
@@ -87,13 +96,7 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
 
   return (
     <li className={cl("card")}>
-      <button onClick={handleFavorites} className={cl("card_favorite")}>
-        <Heart
-          className={cl("card_favoriteIcon", {
-            card_favoriteIcon__active: isFavorite,
-          })}
-        />
-      </button>
+      <CardFavorite isFavorite={isFavorite} handleFavorites={handleFavorites} />
       <div className={cl("card_image")}>
         <img src={vegetable.imgUrl} alt="vegetable" />
       </div>
@@ -107,17 +110,12 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
         handleRange={handleRange}
         isItemCart={isItemCart}
       />
-      <div className={cl("card_buy")}>
-        <div className={cl("card_price")}>
-          <div className={cl("card_price-text")}>Цена: </div>
-          <div className={cl("card_sum")}>{vegetable.price}&euro; кг.</div>
-        </div>
-        <button
-          className={cl("card_add", { card_add__true: isItemCart })}
-          disabled={isItemCart === true ? false : isDisable}
-          onClick={onAddToCart}
-        />
-      </div>
+      <CardBuy
+        price={vegetable.price}
+        isItemCart={isItemCart}
+        isDisable={isDisable}
+        onAddToCart={onAddToCart}
+      />
     </li>
   );
 };
