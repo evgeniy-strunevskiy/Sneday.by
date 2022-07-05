@@ -12,6 +12,7 @@ import { Range } from "./Range";
 import { CardBuy } from "./CardBuy";
 import { CardFavorite } from "./CardFavorite";
 import { ICardStateTypes } from "../types/cardStateTypes";
+import { CardVegetable } from "./CardVegetable";
 
 const cl = classNames.bind(styles);
 
@@ -100,10 +101,7 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
       <div className={cl("card_image")}>
         <img src={vegetable.imgUrl} alt="vegetable" />
       </div>
-      <h3 className={cl("card_vegetable")}>
-        {vegetable.title}{" "}
-        <span className={cl("card_name")}>"{vegetable.name}"</span>
-      </h3>
+      <CardVegetable title={vegetable.title} name={vegetable.name} />
       <Range
         step={step}
         weight={weight}
