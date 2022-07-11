@@ -1,6 +1,9 @@
+@use '../sass/media.scss' as *;
+
 .square {
   display: grid;
   grid-template-columns: minmax(min-content, max-content) ;
+  grid-template-rows: repeat(3, min-content);
   justify-content: center;
   gap: 20px;
 }
@@ -9,11 +12,20 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
+  @include phones {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .square_title {
   font-size: 24px;
   margin: 0;
+  @include tablets {
+    font-size: 18px;
+  }
+  @include phones {
+    font-size: 14px;
+  }
 }
 
 .square_container {
@@ -24,4 +36,7 @@
   grid-template-rows: max-content;
   justify-content: center;
   gap: 80px;
+  @include tablets {
+    gap: 40px;
+  }
 }

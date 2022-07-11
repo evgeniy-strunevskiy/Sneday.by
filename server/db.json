@@ -259,7 +259,7 @@
     {
       "id": 3,
       "owner": "",
-      "logoUrl": "./image/owner-1.jpg",
+      "logoUrl": "",
       "isBusy": false,
       "vegetables": []
     },
@@ -625,123 +625,10 @@
     },
     {
       "id": 7,
-      "owner": "Казимир Смачненя",
-      "logoUrl": "./image/owner-1.jpg",
+      "owner": "",
+      "logoUrl": "",
       "isBusy": false,
-      "vegetables": [
-        {
-          "id": 71,
-          "vegetable": "potate",
-          "title": "Картофель",
-          "name": "Палац",
-          "price": 10,
-          "imgUrl": "./image/potato.png"
-        },
-        {
-          "id": 73,
-          "vegetable": "beet",
-          "title": "Свекла",
-          "name": "Атаман",
-          "price": 8,
-          "imgUrl": "./image/beet.png"
-        },
-        {
-          "id": 74,
-          "vegetable": "carrot",
-          "title": "Морковь",
-          "name": "Паулинка",
-          "price": 9,
-          "imgUrl": "./image/carrot.png"
-        },
-        {
-          "id": 75,
-          "vegetable": "corn",
-          "title": "Кукуруза",
-          "name": "Ранняя",
-          "price": 12,
-          "imgUrl": "./image/corn.png"
-        },
-        {
-          "id": 76,
-          "vegetable": "cucumber",
-          "title": "Огурец",
-          "name": "Журавленок",
-          "price": 13,
-          "imgUrl": "./image/cucumber.png"
-        },
-        {
-          "id": 77,
-          "vegetable": "eggplant",
-          "title": "Баклажан",
-          "name": "Черномор",
-          "price": 12,
-          "imgUrl": "./image/eggplant.png"
-        },
-        {
-          "id": 78,
-          "vegetable": "garlic",
-          "title": "Чеснок",
-          "name": "Харнась",
-          "price": 10,
-          "imgUrl": "./image/garlic.png"
-        },
-        {
-          "id": 79,
-          "vegetable": "horseradish",
-          "title": "Имбирь",
-          "name": "Шакспир",
-          "price": 11,
-          "imgUrl": "./image/horseradish.png"
-        },
-        {
-          "id": 80,
-          "vegetable": "onion",
-          "title": "Лук",
-          "name": "Ветразь",
-          "price": 12,
-          "imgUrl": "./image/onion.png"
-        },
-        {
-          "id": 81,
-          "vegetable": "peper",
-          "title": "Перец",
-          "name": "Алеся",
-          "price": 15,
-          "imgUrl": "./image/peper.png"
-        },
-        {
-          "id": 82,
-          "vegetable": "pumpkin",
-          "title": "Тыква",
-          "name": "Плюшка",
-          "price": 15,
-          "imgUrl": "./image/pumpkin.png"
-        },
-        {
-          "id": 83,
-          "vegetable": "radish",
-          "title": "Редис",
-          "name": "Ватра",
-          "price": 9,
-          "imgUrl": "./image/radish.png"
-        },
-        {
-          "id": 84,
-          "vegetable": "tomato",
-          "title": "Помидор",
-          "name": "Раница",
-          "price": 9,
-          "imgUrl": "./image/tomato.png"
-        },
-        {
-          "id": 85,
-          "vegetable": "vegetmarrow",
-          "title": "Кабачок",
-          "name": "Хелена",
-          "price": 11,
-          "imgUrl": "./image/vegetmarrow.png"
-        }
-      ]
+      "vegetables": []
     },
     {
       "id": 8,
@@ -3725,7 +3612,20 @@
       "name": "Кабачок"
     }
   ],
-  "favorites": [],
+  "favorites": [
+    {
+      "id": 1
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 8
+    }
+  ],
   "cart": [],
   "orders": []
 }

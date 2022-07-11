@@ -89,8 +89,31 @@ export const Map: FC = () => {
     <div className={cl("map")}>
       <div className={cl("map_container")}>
         <Banner />
-        {error && <Error error={error} />}
-        {isLoading ? <Loader /> : <MapSquare sections={sections} />}
+        <div className={cl("map_content")}>
+          {error && <Error error={error} />}
+          {isLoading ? <Loader /> : <MapSquare sections={sections} />}
+          <div className={cl("sidebar")}>
+            <div className={cl("stock")}>
+              <h1 className={cl("stock_title")}>Акция</h1>
+              <p className={cl("stock_text")}>
+                Приведи друга на рынок и получи скидку{" "}
+              </p>
+              <div className={cl("stock_percent")}>10%</div>
+            </div>
+            <div className={cl("marketer")}>
+              <h3 className={cl("marketer_best")}>Лучший продавец</h3>
+              <div className={cl("marketer_image")}>
+                <img src={"./image/marketer.png"} alt="marketer" />
+              </div>
+              <div className={cl("marketer_content")}>
+                <h3 className={cl("marketer_name")}>Ян Галеня</h3>
+                <div className={cl("marketer_text")}>
+                  "Самые вкусные овощи в городе ждут покутелей"
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

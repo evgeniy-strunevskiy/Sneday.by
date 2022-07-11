@@ -4,15 +4,47 @@
 .logo {
   grid-area: logo;
   color: var(--color-font);
+  display: flex;
+  align-items: center;
+  &:hover {
+    .logo_icon {
+      fill: var(--color-gold)
+    }
+    .logo_text {
+      color: var(--color-gold);
+    }
+  }
+  &:active {
+    .logo_icon {
+      fill: var(--color-gold-dark)
+    }
+    .logo_text {
+      color: var(--color-gold-dark);
+    }
+  }
   @include tablets {
     z-index: 100;
   }
 }
 
+.logo_icon  {
+  grid-area: menu; 
+  width: toRem(45);
+  height: toRem(45);
+  margin-right: 10px;
+  fill: var(--color-font);
+  // stroke: var(--color-font);
+  &__user {
+    fill: transparent;
+    &:hover {
+      fill: transparent;
+    }
+  }
+}
+
 .logo_text {
-  // font-family: 'Marck Script', cursive;      
+  font-family: 'Marck Script';
+  font-family: 'Pacifico';
   flex: 0 0 auto;
   font-size: toRem(26);
-  // font-size: calc(18px + 16 * (100vw / 1200));
-  // font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1200px));
 }

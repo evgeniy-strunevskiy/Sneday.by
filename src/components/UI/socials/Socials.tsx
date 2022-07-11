@@ -11,19 +11,23 @@ const cl = classNames.bind(styles);
 const networks = [
   { 
     Telegram: (Telegram as React.ElementType),
-    url: "http://localhost:3000/" 
+    url: "http://localhost:3000/" ,
+    id: 1
     },
   {
     Telegram: (Twitter as React.ElementType),
-    url: "http://localhost:3000/"
+    url: "http://localhost:3000/",
+    id: 2
    },
   {
     Telegram: (Viber as React.ElementType),
-    url: "http://localhost:3000/"
+    url: "http://localhost:3000/",
+    id: 3
   },
   {
     Telegram: (Instagram as React.ElementType),
-    url: "http://localhost:3000/"
+    url: "http://localhost:3000/",
+    id: 4
   },
 ];
 
@@ -34,7 +38,7 @@ export const Socials: FC<SocialPropsTypes> = () => {
     <div className={cl("socials")}>
       <ul className={cl("socials_list")}>
         {networks.map((network) => (
-          <li>
+          <li key={network.id}>
             <a href={network.url} className={cl("socials_link")}>
               <network.Telegram />
             </a>

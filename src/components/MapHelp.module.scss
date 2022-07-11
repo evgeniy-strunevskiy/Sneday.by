@@ -1,7 +1,12 @@
+@use '../sass/media.scss' as *;
+
 .map-help_explanations {
   color: black;
   display: grid;
-  grid-template-columns: max-content max-content max-content ;
+  grid-template-columns: repeat(3, max-content) ;
+  @include phones {
+    grid-template-columns: max-content ;
+  }
   gap: 10px;
 }
 .map-help_explanation {

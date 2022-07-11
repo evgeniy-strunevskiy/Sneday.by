@@ -1,5 +1,6 @@
 .point {
-  font-size: 12px;
+  // outline: 1px solid var(--color-body);
+  font-size: 13px;
   color: var(--color-font-two);
   background-color: var(--color-font);
   width: 100%;
@@ -20,7 +21,6 @@
   &_busy {
     background: var(--color-body);
     color: var(--color-font);
-    cursor: not-allowed;
     &:hover {
       box-shadow: none;
       transform: translateY(0);
@@ -29,6 +29,11 @@
   &_price {
     font-size: 12px;
     background-color: var(--color-gold);
+    // color: var(--color-font);
     transition:  0.2s ease-in-out, transform 0.2s ease-in-out;
   }
+}
+
+.point_link {
+  pointer-events: none;
 }

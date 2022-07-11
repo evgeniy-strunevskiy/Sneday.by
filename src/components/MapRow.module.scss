@@ -1,36 +1,50 @@
+@use "../sass/media.scss" as *;
+
 .rows {
   display: grid;
-  grid-template-columns: minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content);
+  grid-template-columns:
+    minmax(min-content, max-content)
+    minmax(min-content, max-content)
+    minmax(min-content, max-content);
   gap: 80px;
   position: relative;
+  @include tablets {
+    gap: 60px;
+  }
+  @include phones {
+    gap: 30px;
+  }
   &:last-child {
     .section {
-      // display: grid;
-      // grid-template-columns: minmax(50px, 80px) minmax(50px, 80px);
-      // grid-template-rows: min-content min-content min-content;
-      // gap: 15px;
-      // font-size: 16px;
-      // font-weight: normal;
-      // position: relative;
       &:last-child {
         &::after {
           display: none;
         }
       }
       &::after {
-        content: '';
+        content: "";
         display: block;
-        background-image: url('../../public/image/icons/arrow-bottom.png');
+        background-image: url("../../public/image/icons/arrow-bottom.png");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100% ;
+        background-size: 100%;
         width: 30px;
         height: 45px;
-        opacity: .2;
+        opacity: 0.2;
         position: absolute;
         top: 5%;
         left: calc(100% + 25px);
+        @include tablets {
+          width: 20px;
+          height: 30px;
+          left: calc(100% + 20px);
         }
+        @include phones {
+          width: 10px;
+          height: 15px;
+          left: calc(100% + 10px);
+        }
+      }
     }
     &::before {
       display: none;
@@ -50,60 +64,98 @@
     }
   }
   &::before {
-    content: '';
+    content: "";
     display: block;
-    background-image: url('../../public/image/icons/arrow-right-enter.png');
+    background-image: url("../../public/image/icons/arrow-right-enter.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% ;
+    background-size: 100%;
     width: 100px;
     height: 30px;
-    opacity: .2;
+    opacity: 0.2;
     position: absolute;
     top: calc(100% + 25px);
+    @include tablets {
+      width: 70px;
+      height: 20px;
+      top: calc(100% + 10px);
+    }
+    @include phones {
+      width: 50px;
+      height: 15px;
+      top: calc(100% + 13px);
+    }
     left: 0;
   }
   &::after {
-    content: '';
+    content: "";
     display: block;
-    background-image: url('../../public/image/icons/arrow-left-enter.png');
+    background-image: url("../../public/image/icons/arrow-left-enter.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% ;
+    background-size: 100%;
     width: 100px;
     height: 30px;
-    opacity: .2;
+    opacity: 0.2;
     position: absolute;
     top: calc(100% + 25px);
+    @include tablets {
+      width: 70px;
+      height: 20px;
+      top: calc(100% + 10px);
+    }
+    @include phones {
+      width: 50px;
+      height: 15px;
+      top: calc(100% + 13px);
+    }
     right: 0;
-    }
-    //////////
-    .section {
-      display: grid;
-      grid-template-columns: minmax(50px, 70px) minmax(50px, 70px);
-      grid-template-rows: min-content min-content min-content;
+  }
+  //////////
+  .section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(20px, 108px));
+    grid-template-rows: min-content min-content min-content;
+    gap: 15px;
+    @include tablets {
+      // grid-template-columns: repeat(2, minmax(50px, 70px));
       gap: 15px;
-      font-size: 16px;
-      font-weight: normal;
-      position: relative;
-      &:last-child {
-        &::after {
-          display: none;
-        }
-      }
-      &::after {
-        content: '';
-        display: block;
-        background-image: url('../../public/image/icons/arrow-top.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100% ;
-        width: 30px;
-        height: 45px;
-        opacity: .2;
-        position: absolute;
-        bottom: 5%;
-        left: calc(100% + 25px);
-        }
     }
+    @include phones {
+      // grid-template-columns: repeat(2, minmax(20px, 40px));
+      gap: 10px;
+    }
+    font-size: 16px;
+    font-weight: normal;
+    position: relative;
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      background-image: url("../../public/image/icons/arrow-top.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      width: 30px;
+      height: 45px;
+      opacity: 0.2;
+      position: absolute;
+      bottom: 5%;
+      left: calc(100% + 25px);
+      @include tablets {
+        width: 20px;
+        height: 30px;
+        left: calc(100% + 20px);
+      }
+      @include phones {
+        width: 10px;
+        height: 15px;
+        left: calc(100% + 10px);
+      }
+    }
+  }
 }

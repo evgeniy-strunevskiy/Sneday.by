@@ -1,7 +1,7 @@
-@mixin container {
-  max-width: 1200px;
-	margin: 0 auto;
-  padding: 0 2%;
+@mixin laptop {
+	@media screen and (max-width: 992px) {
+		@content;
+	}
 }
 
 @mixin tablets {
@@ -13,5 +13,17 @@
 @mixin phones {
 	@media screen and (max-width: 480px) {
 		@content;
+	}
+}
+
+@mixin container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2%;
+	@include tablets {
+		max-width: 768px;	
+	}
+	@include phones {
+		max-width: 480px;	
 	}
 }

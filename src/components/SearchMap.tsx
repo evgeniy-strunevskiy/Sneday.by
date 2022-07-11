@@ -49,6 +49,7 @@ export const SearchMap: FC = () => {
 
   useEffect(() => {
     dispatch(getVegetables());
+    dispatch(getVegetableMap(null))
   }, []);
 
   return (
