@@ -15,7 +15,7 @@ interface OwnerInfoPropTypes {
 export const OwnerInfo: FC<OwnerInfoPropTypes> = ({ owner }) => {
   return (
     <div className={cl("owner-info")}>
-      <div className={cl("owner-info_main")}>
+      <div className={cl("onwer-info_main")}>
         <OwnerLogo url={owner.logoUrl} />
         <Socials />
       </div>

@@ -13,13 +13,13 @@ export const OwnerInfoContent: FC<OwnerInfoContentPropsTypes> = ({ owner }) => {
   return (
     <div className={cl("owner-info-content")}>
       <h1 className={cl("owner-info-content_name")}>{owner.owner}</h1>
-      <div className={cl("owner-info-content_title")}>
-        <div className={cl("owner-info-content_title-text")}>
-          владелец торговой точки номер:
+      <div className={cl("owner-info-text")}>
+        <div className={cl("owner-info-text_title")}>
+          владелец торговой точки номер: {owner.id}
         </div>
-        <div className={cl("owner-info-content_id")}>{owner.id}</div>
+        <div className={cl("owner-info-text_license")}>лицензия: не нужна</div>
+        <div className={cl("owner-info-text_tel")}>номер телефона: {owner.tel}</div>
       </div>
-      <div className={cl("owner-info-content_license")}>лицензия: не нужна</div>
     </div>
   );
 };

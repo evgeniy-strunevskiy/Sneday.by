@@ -1,11 +1,18 @@
 .owner-logo {
   border: 5px solid var(--color-font);
   border-radius: 20px;
-  width: 200px;
-  height: 200px;
   border-radius: 50%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   img {
     max-width: 100%;
+    
+    transition: .5s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }

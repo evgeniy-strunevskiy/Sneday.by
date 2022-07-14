@@ -1,5 +1,4 @@
 import React, { FC, useEffect, useState } from "react";
-import { ReactComponent as Heart } from "../assets/icons/heart.svg";
 import classNames from "classnames/bind";
 import styles from "./Card.module.scss";
 import { VegetablesTypes } from "../types/pointsTypes";
@@ -51,7 +50,7 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
     console.log(price.toFixed(1));
     const cartItem = {
       id: vegetable.id,
-      weight: weight,
+      weight: Number(weight.toFixed(1)),
       price: Number(price.toFixed(1)),
       vegetable: vegetable.vegetable,
       imgUrl: vegetable.imgUrl,
@@ -85,7 +84,7 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
       }
       return null;
     });
-  }, [cart, favorites]);
+  }, [cart, favorites, vegetable.id]);
 
   return (
     <li className={cl("card")}>
@@ -102,6 +101,7 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
       />
       <CardBuy
         price={vegetable.price}
+        weight={weight}
         isItemCart={isItemCart}
         isDisable={isDisable}
         onAddToCart={onAddToCart}

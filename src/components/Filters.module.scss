@@ -1,9 +1,15 @@
+@use '../sass/media.scss' as *;
+
 .filters {
   display: grid;
   grid-template-columns: 2fr 1fr;
   justify-content: center;
   align-items: center;
   margin-bottom: 4%;
+
+  @include phones {
+    margin-bottom: 10%;
+  }
 }
 
 .filters_sort {

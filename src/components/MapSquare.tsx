@@ -20,12 +20,12 @@ export const MapSquare: FC<MapSquareTypes> = ({ sections }) => {
         <h1 className={cl("square_title")}>Карта рынка</h1>
         <SearchMap />
       </div>
+        <MapHelp />
       <div className={cl("square_container")}>
         {Object.entries(sections).map(([key, rows]) => (
           <MapRow key={key} rows={rows} />
         ))}
       </div>
-      <MapHelp />
     </div>
   );
 };

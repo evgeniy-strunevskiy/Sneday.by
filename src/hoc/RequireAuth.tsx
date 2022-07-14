@@ -11,6 +11,6 @@ export const RequireAuth: FC = ({children}) => {
   }
 
   return (
-    <div>{children}</div>
+    <>{children}</>
   )
 }

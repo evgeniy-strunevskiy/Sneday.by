@@ -2,6 +2,7 @@
   "points": [
     {
       "id": 1,
+      "tel": "+375294501274",
       "owner": "Елизавета Виндзор",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -138,6 +139,7 @@
     },
     {
       "id": 2,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -258,6 +260,7 @@
     },
     {
       "id": 3,
+      "tel": "+375294501274",
       "owner": "",
       "logoUrl": "",
       "isBusy": false,
@@ -265,6 +268,7 @@
     },
     {
       "id": 4,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -385,6 +389,7 @@
     },
     {
       "id": 5,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -505,6 +510,7 @@
     },
     {
       "id": 6,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -625,6 +631,7 @@
     },
     {
       "id": 7,
+      "tel": "+375294501274",
       "owner": "",
       "logoUrl": "",
       "isBusy": false,
@@ -632,6 +639,7 @@
     },
     {
       "id": 8,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -752,6 +760,7 @@
     },
     {
       "id": 9,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -872,6 +881,7 @@
     },
     {
       "id": 10,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -992,6 +1002,7 @@
     },
     {
       "id": 11,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -1112,6 +1123,7 @@
     },
     {
       "id": 12,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -1232,6 +1244,7 @@
     },
     {
       "id": 13,
+      "tel": "+375294501274",
       "owner": "",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": false,
@@ -1239,6 +1252,7 @@
     },
     {
       "id": 14,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -1359,6 +1373,7 @@
     },
     {
       "id": 15,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -1479,6 +1494,7 @@
     },
     {
       "id": 16,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -1599,6 +1615,7 @@
     },
     {
       "id": 17,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -1719,6 +1736,7 @@
     },
     {
       "id": 18,
+      "tel": "+375294501274",
       "owner": "",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": false,
@@ -1726,6 +1744,7 @@
     },
     {
       "id": 19,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -1846,6 +1865,7 @@
     },
     {
       "id": 20,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -1966,6 +1986,7 @@
     },
     {
       "id": 21,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -2086,6 +2107,7 @@
     },
     {
       "id": 22,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -2206,6 +2228,7 @@
     },
     {
       "id": 23,
+      "tel": "+375294501274",
       "owner": "",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": false,
@@ -2213,6 +2236,7 @@
     },
     {
       "id": 24,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -2333,6 +2357,7 @@
     },
     {
       "id": 25,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -2453,6 +2478,7 @@
     },
     {
       "id": 26,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -2573,6 +2599,7 @@
     },
     {
       "id": 27,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -2693,6 +2720,7 @@
     },
     {
       "id": 28,
+      "tel": "+375294501274",
       "owner": "",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": false,
@@ -2700,6 +2728,7 @@
     },
     {
       "id": 29,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -2820,6 +2849,7 @@
     },
     {
       "id": 30,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -2940,6 +2970,7 @@
     },
     {
       "id": 31,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -3060,6 +3091,7 @@
     },
     {
       "id": 32,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -3180,6 +3212,7 @@
     },
     {
       "id": 33,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -3300,6 +3333,7 @@
     },
     {
       "id": 34,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -3420,6 +3454,7 @@
     },
     {
       "id": 35,
+      "tel": "+375294501274",
       "owner": "Казимир Смачненя",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
@@ -3540,6 +3575,7 @@
     },
     {
       "id": 36,
+      "tel": "+375294501274",
       "owner": "",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": false,
@@ -3612,20 +3648,7 @@
       "name": "Кабачок"
     }
   ],
-  "favorites": [
-    {
-      "id": 1
-    },
-    {
-      "id": 3
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 8
-    }
-  ],
+  "favorites": [],
   "cart": [],
   "orders": []
 }

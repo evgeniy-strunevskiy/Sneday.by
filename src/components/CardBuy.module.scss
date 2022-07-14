@@ -15,42 +15,45 @@
 }
 
 .cardbuy_add {
-  width: 25px;
-  height: 25px;
-  outline: 1px solid rgba(255,255,255, .5);
-  border-radius: 5px;
+  color: var(--color-font-two);
   position: relative;
+  .cross {
+    fill: #f5c86e;
+    width: 25px;
+    height: 25px;
+    transition: .2s ease-in-out;
+  }
   &:hover {
-    outline: none;
-    background-color: var(--color-logo-one);
-
   }
-  &:active {
-    outline: none;
-    background-color: var(--color-logo-two);
-  }
-  &::before, &::after {
-    content: '';
-    border-radius: 1px;
-    background-color: var(--color-font);
-    width: 10px;
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &::after {
-    width: 1px;
-    height: 10px;
-  }
-
+  
+  &:active {}
+  
+  
   &__true {
-    background: var(--color-purple);
-    outline: none;
-    &::before, &::after {
-      transform: translate(-50%, -50%) rotate(45deg);
+    .cross {
+      fill: var(--color-purple);
+      transform: rotate(45deg);
     }
   }
+  &__weight {
+    position: relative;
+      &::before {
+        content: 'Выберите вес';
+        background: rgba($color: white, $alpha: 1);
+        font-size: 12px;
+        white-space: nowrap;
+        padding: 7px 10px;
+        border-radius: 20px 0px 20px 20px;
+        position: absolute;
+        top: 117%;
+        right: 39%;
+        visibility: hidden;
+        transition: .2s ease-in-out;
+      }
+      &:hover {
+        &::before {
+          visibility: visible;
+        }
+      }
+    }
 }

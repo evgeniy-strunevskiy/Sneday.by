@@ -1,5 +1,21 @@
+@use '../sass/media.scss' as *;
+
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, minmax(min-content, 350px));
+  // grid-template-columns: repeat(4, minmax(min-content, 355px));
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  @include laptop {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  @include tablets {
+    padding: 0 10%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+  }
+  @include phones {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 10%;
+  }
 }

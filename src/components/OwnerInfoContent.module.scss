@@ -1,33 +1,37 @@
+@use '../sass/media.scss' as *;
+
 .owner-info-content {
   color: var(--color-font);
+}
+
+.owner-info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 24px;
+  font-weight: 300;
+  font-size: 18px;
+  @include tablets {
+    font-size: 16px;
+  }
+  @include phones {
+    font-size: 14px;
+  }
+  
 }
 
 .owner-info-content_name {
   font-size: 60px;
   font-weight: 600;
+  margin: 0;
   margin-bottom: 1.5%;
-}
-
-.owner-info-content_title {
-  display: flex;
-  align-items: baseline;
-  justify-content: flex-start;
-  gap: 5px;
-  margin-bottom: 1%;
-}
-
-.owner-info-content_title-text {
-  font-size: 23px;
-  font-weight: 300;
-}
-
-.owner-info-content_id {
-  width: 30px;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.owner-info-content_license {
-  font-size: 20px;
-  font-weight: 300;
+  @include laptop {
+    font-size: 54px;
+  }
+  @include tablets {
+    font-size: 48px;
+  }
+  @include phones {
+    font-size: 24px;
+  }
 }

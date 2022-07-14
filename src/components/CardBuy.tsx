@@ -1,17 +1,27 @@
 import React, { FC } from "react";
 import classNames from "classnames/bind";
 import styles from "./CardBuy.module.scss";
+import { ReactComponent as Cross } from "../assets/icons/cross.svg";
+
 
 const cl = classNames.bind(styles);
 
 interface CardBuyPropsTypes {
   price: number;
-  isItemCart: boolean; 
+  weight: number;
+  isItemCart: boolean;
   isDisable: boolean;
   onAddToCart(): void;
 }
 
-export const CardBuy: FC<CardBuyPropsTypes> = ({price, isItemCart, isDisable, onAddToCart}) => {
+export const CardBuy: FC<CardBuyPropsTypes> = ({
+  price,
+  weight,
+  isItemCart,
+  isDisable,
+  onAddToCart,
+}) => {
+  console.log(isItemCart)
   return (
     <div className={cl("cardbuy")}>
       <div className={cl("cardbuy_price")}>
@@ -19,10 +29,16 @@ export const CardBuy: FC<CardBuyPropsTypes> = ({price, isItemCart, isDisable, on
         <div className={cl("cardbuy_sum")}>{price}&euro; кг.</div>
       </div>
       <button
-        className={cl("cardbuy_add", { cardbuy_add__true: isItemCart })}
+        className={cl(
+          "cardbuy_add",
+          { cardbuy_add__true: isItemCart },
+          { cardbuy_add__weight: !weight }
+        )}
         disabled={isItemCart === true ? false : isDisable}
         onClick={onAddToCart}
-      />
+      >
+        <Cross className={cl('cross')}/>
+      </button>
     </div>
   );
 };

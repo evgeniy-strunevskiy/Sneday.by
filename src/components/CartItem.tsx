@@ -27,8 +27,7 @@ export const CartItem: FC<ICartItemPropsTypes> = ({ cartItem }) => {
         <div className={cl("cart-item_image", "cart-item_el")}>
           <img src={cartItem.imgUrl} alt="vegetable" />
         </div>
-        <div className={cl("cart-item_title", "cart-item_el")}>{cartItem.title}</div>
-        <div className={cl("cart-item_name", "cart-item_el")}>"{cartItem.name}"</div>
+        <div className={cl("cart-item_title", "cart-item_el")}>{cartItem.title} "{cartItem.name}"</div>
         <div className={cl("cart-item_weight", "cart-item_el")}>{cartItem.weight} кг.</div>
         <div className={cl("cart-item_price", "cart-item_el")}>{cartItem.price} &euro;</div>
         <div className={cl("cart-item_button", "cart-item_el")}>

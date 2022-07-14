@@ -7,7 +7,7 @@ export interface rowsTypes {
 }
 
 export interface SectionsTypes {
-  //Не понимаю, как работает строка ниже, но работает
+  //Не понимаю почему работает строка ниже, но работает
   [key: string]: any;
   rowOne: rowsTypes;
   rowTwo: rowsTypes;

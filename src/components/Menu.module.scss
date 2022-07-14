@@ -38,6 +38,7 @@
 
 .menu_item {
   font-size: toRem(14);
+  position: relative;
 } 
 .menu_login {
   color: var(--color-font);
@@ -73,30 +74,17 @@
   }
 }
 
-
-// .menu_link {
-//   color: inherit;
-//   padding-bottom: 2%;
-//   background:
-//     linear-gradient(
-//       to right,
-//       transparent,
-//       transparent
-//     ),
-//     linear-gradient(
-//       to right,
-//       var(--color-body),
-//       var(--color-font),
-//   );
-//   background-size: 100% 3px, 0 3px;
-//   background-position: 100% 100%, 0 100%;
-//   background-repeat: no-repeat;
-//   transition: background-size 400ms;
-//   &_active {
-//     border: 1px solid black;
-//   }
-// }
-
-// .menu_link:hover {
-//   background-size: 0 3px, 100% 3px;
-// }
+.menu_cart-count {
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  line-height: 100%;
+  position: absolute;
+  bottom: 65%;
+  left: 92%;
+  border-radius: 50%;
+  background: var(--color-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
