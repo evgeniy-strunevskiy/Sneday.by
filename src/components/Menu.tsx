@@ -1,9 +1,6 @@
 import React, { FC, useEffect, useState } from "react";
 import styles from "./Menu.module.scss";
 import classNames from "classnames/bind";
-import { ReactComponent as User } from "../assets/icons/user.svg";
-import { ReactComponent as Heart } from "../assets/icons/heart.svg";
-import { Price } from "./UI/price/Price";
 import { NavLink } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../hooks/redux";
 import { removeLogin } from "../store/middleware/login";
@@ -20,6 +17,8 @@ export const Menu: FC<MenuPropsTypes> = ({ setFalseActive, isActive }) => {
   const { login } = useAppSelector((state) => state.login);
   const { cart } = useAppSelector((state) => state.cart);
   const [totalCart, setTotalCart] = useState<number>(0);
+
+  const auth = localStorage.getItem('auth')
 
   const setActive = ({ isActive }: { isActive: boolean }) =>
     isActive ? cl("menu_link", "menu_link_active") : cl("menu_link");
@@ -49,7 +48,7 @@ export const Menu: FC<MenuPropsTypes> = ({ setFalseActive, isActive }) => {
             Корзина
           </NavLink>
           {
-            totalCart > 0 && <div className={cl("menu_cart-count")}>{totalCart}</div>
+            totalCart > 0 && auth && <div className={cl("menu_cart-count")}>{totalCart}</div>
           }
         </li>
         <li className={cl("menu_item")} onClick={setFalseActive}>

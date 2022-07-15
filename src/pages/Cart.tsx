@@ -56,7 +56,7 @@ export const Cart: FC = () => {
         ) : (
           <div className={cl("cart_empty")}>
             <Box className={cl("cart_icon")} />
-            <h2 className={cl('cart_empty-text')}>Корзина пуста...</h2>
+            <h2 className={cl("cart_empty-text")}>Корзина пуста...</h2>
           </div>
         )}
       </div>

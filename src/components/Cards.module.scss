@@ -10,7 +10,7 @@
     gap: 40px;
   }
   @include tablets {
-    padding: 0 10%;
+    padding: 0 3%;
     grid-template-columns: repeat(2, 1fr);
     gap: 70px;
   }

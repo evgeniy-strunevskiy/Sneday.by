@@ -1,7 +1,37 @@
-@use '../sass/media' as *;
+@use "../sass/media" as *;
 
+.favorites {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.favorites_title {
+  margin: 0 0 30px;
+}
 
 .favorites_container {
   @include container;
   color: var(--color-font);
+  display: grid;
+  grid-template-columns: 1fr;
+  // grid-template-rows: max-content max-content;
+  // align-content: center;
+  // justify-items: center;
+}
+
+.favorites_empty {
+  width: 70%;
+  align-self: center;
+}
+
+.favorites_icon {
+  width: 100%;
+  fill: var(--color-font);
+  margin-bottom: 30px;
+}
+
+.favorites_empty-title {
+  color: var(--color-font);
+  text-align: center;
+  font-size: 24px;
 }
