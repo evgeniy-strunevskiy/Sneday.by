@@ -8,6 +8,7 @@ import { Loader } from "../components/UI/loader/Loader";
 import { Error } from "../components/UI/error/Error";
 import { MapSquare } from "../components/MapSquare";
 import { Banner } from "../components/Banner";
+import { Sidebar } from "../components/Sidebar";
 
 const cl = classNames.bind(styles);
 
@@ -92,27 +93,7 @@ export const Map: FC = () => {
         <div className={cl("map_content")}>
           {error && <Error error={error} />}
           {isLoading ? <Loader /> : <MapSquare sections={sections} />}
-          <div className={cl("sidebar")}>
-            <div className={cl("stock")}>
-              <h1 className={cl("stock_title")}>Акция</h1>
-              <p className={cl("stock_text")}>
-                Приведи друга на рынок и получи скидку{" "}
-              </p>
-              <div className={cl("stock_percent")}>10%</div>
-            </div>
-            <div className={cl("marketer")}>
-              <h3 className={cl("marketer_best")}>Лучший продавец</h3>
-              <div className={cl("marketer_image")}>
-                <img src={"./image/marketer.png"} alt="marketer" />
-              </div>
-              <div className={cl("marketer_content")}>
-                <h3 className={cl("marketer_name")}>Джанни Родари</h3>
-                <div className={cl("marketer_text")}>
-                "На этом свете вполне можно жить в мире. Для всех на земле есть место – и для медведей, и для луковиц."
-                </div>
-              </div>
-            </div>
-          </div>
+          <Sidebar />
         </div>
       </div>
     </div>

@@ -1,0 +1,111 @@
+@use "../sass/media" as *;
+
+.marketer {
+  padding: 10%;
+  background-color: #eedb00;
+  border-radius: 20px;
+  color: var(--color-drawer);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  'best' 
+  'image'
+  'content';
+  text-align: center;
+  @include tablets {
+    text-align: left;
+    padding:5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content;
+    align-content: center;
+    gap: 15px;
+    grid-template-areas: 
+    'best best best' 
+    'image content content';
+  }
+  @include phones {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'best'
+    'image'
+    'content';
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+.marketer_best {
+  grid-area: best;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10%;
+  padding: 8% 8%;
+  background-color: var(--color-body);
+  color: var(--color-font);
+  border-radius: 20px;
+  font-size: 12px;
+  @include tablets {
+    padding: 5%;
+    margin-bottom: 0%;
+  }
+  @include phones {
+    padding: 5% 0;
+  }
+}
+
+.marketer_image {
+  grid-area: image;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-in-out;
+  &:hover {
+      transform: translateY(-5px);
+  }
+  img {
+    max-width: 100%;
+  }
+  @include laptop {
+    padding: 0 10%;
+  }
+  @include tablets {
+    margin-bottom: 0%;
+    padding: 0 0%;
+  }
+  @include phones {
+    padding: 0 10%;
+  }
+}
+
+.marketer_content {
+  grid-area: content;
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.marketer_name {
+  font-weight: bold;
+  margin-bottom: 5%;
+  @include tablets {
+    font-size: 22px;
+  }
+  @include phones {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+.marketer_text {
+  @include laptop {
+    font-size: 12px;
+  }
+  @include tablets {
+    font-size: 14px;
+  }
+}

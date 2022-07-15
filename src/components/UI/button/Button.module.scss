@@ -11,7 +11,8 @@
   &:disabled {
     background: #D8D7D5;
   }
-  &:active {
-    background: var(--color-background-two);
+  &:hover {
+    background: var(--color-purple);
   }
+
 }
