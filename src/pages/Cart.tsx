@@ -1,10 +1,11 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 import styles from "./Cart.module.scss";
 import classNames from "classnames/bind";
 import { useAppDispatch, useAppSelector } from "../hooks/redux";
 import { CartList } from "../components/CartList";
 import { removeFromCart } from "../store/middleware/removingFromCart";
 import { ReactComponent as Box } from "../assets/icons/box.svg";
+import { getCart } from "../store/middleware/cart";
 
 const cl = classNames.bind(styles);
 
@@ -27,6 +28,10 @@ export const Cart: FC = () => {
       dispatch(removeFromCart(item.id));
     }
   };
+
+  useEffect(() => {
+    dispatch(getCart());
+  },[])
 
   return (
     <div className={cl("cart")}>

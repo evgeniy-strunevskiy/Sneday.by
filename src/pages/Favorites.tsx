@@ -1,14 +1,17 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 import classNames from "classnames/bind";
 import styles from "./Favorites.module.scss";
-import { useAppSelector } from "../hooks/redux";
+import { useAppDispatch, useAppSelector } from "../hooks/redux";
 import { Cards } from "../components/Cards";
 import { VegetablesTypes } from "../types/pointsTypes";
 import { ReactComponent as Avocado } from "../assets/icons/empty-avocado.svg";
+import { getPoints } from "../store/middleware/points";
+import { getFavorites } from "../store/middleware/favorites";
 
 const cl = classNames.bind(styles);
 
 export const Favorites: FC = () => {
+  const dispatch = useAppDispatch();
   const { favorites } = useAppSelector((state) => state.favorites);
   const { points } = useAppSelector((state) => state.points);
 
@@ -23,6 +26,11 @@ export const Favorites: FC = () => {
       })
     );
   });
+
+  useEffect(() => {
+    dispatch(getFavorites())
+    dispatch(getPoints());
+  },[])
 
   return (
     <div className={cl("favorites")}>

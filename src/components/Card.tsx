@@ -11,6 +11,8 @@ import { Range } from "./Range";
 import { CardBuy } from "./CardBuy";
 import { CardFavorite } from "./CardFavorite";
 import { CardVegetable } from "./CardVegetable";
+import { getCart } from "../store/middleware/cart";
+import { getFavorites } from "../store/middleware/favorites";
 
 const cl = classNames.bind(styles);
 
@@ -47,7 +49,6 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
 
   async function onAddToCart() {
     const price = weight * vegetable.price;
-    console.log(price.toFixed(1));
     const cartItem = {
       id: vegetable.id,
       weight: Number(weight.toFixed(1)),
@@ -58,7 +59,6 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
       name: vegetable.name,
     };
     if (cart.find((cartItem) => cartItem.id === vegetable.id)) {
-      console.log("removeCartItem");
       dispatch(removeFromCart(cartItem.id));
       setStep(0);
       setWeight(0);
@@ -67,7 +67,13 @@ export const Card: FC<CardProps> = ({ vegetable }) => {
     } else {
       dispatch(addToCart(cartItem));
     }
+
   }
+
+  useEffect(() => {
+    dispatch(getCart());
+    dispatch(getFavorites())
+  },[])
 
   useEffect(() => {
     cart.find((i) => i.id === vegetable.id)

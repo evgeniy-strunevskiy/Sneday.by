@@ -3,10 +3,7 @@ import { useEffect } from "react";
 import './App.scss';
 import { Router } from "./components/Router";
 import { useAppDispatch } from "./hooks/redux";
-import { getCart } from "./store/middleware/cart";
-import { getFavorites } from "./store/middleware/favorites";
-import { getPoints } from "./store/middleware/points";
-import { loginAdd, stopLoading } from "./store/slices/loginSlice";
+import { loginAdd, stopLoginLoading } from "./store/slices/loginSlice";
 
 
 function App() {
@@ -16,10 +13,7 @@ function App() {
     if(localStorage.getItem('auth')) {
       dispatch(loginAdd())
     }
-    dispatch(stopLoading())
-    dispatch(getFavorites())
-    dispatch(getPoints());
-    dispatch(getCart());
+    dispatch(stopLoginLoading())
   }, [])
   
 

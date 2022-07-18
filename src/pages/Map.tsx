@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useState } from "react";
 import styles from "./Map.module.scss";
 import classNames from "classnames/bind";
-import { useAppSelector } from "../hooks/redux";
+import { useAppDispatch, useAppSelector } from "../hooks/redux";
 import { SectionsTypes } from "../types/sectionsTypes";
 import { PointTypes } from "../types/pointsTypes";
 import { Loader } from "../components/UI/loader/Loader";
@@ -9,10 +9,12 @@ import { Error } from "../components/UI/error/Error";
 import { MapSquare } from "../components/MapSquare";
 import { Banner } from "../components/Banner";
 import { Sidebar } from "../components/Sidebar";
+import { getPoints } from "../store/middleware/points";
 
 const cl = classNames.bind(styles);
 
 export const Map: FC = () => {
+  const dispatch = useAppDispatch();
   const { points, isLoading, error } = useAppSelector((state) => state.points);
 
   const [sections, setSections] = useState<SectionsTypes>({
@@ -81,6 +83,11 @@ export const Map: FC = () => {
       return null;
     });
   };
+
+
+  useEffect(() => {
+    dispatch(getPoints());
+  },[])
 
   useEffect(() => {
     getSections(points);

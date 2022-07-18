@@ -45,12 +45,12 @@ const loginSlice = createSlice({
       state.isLoading = false;
       state.login = true;
     },
-    stopLoading(state) {
+    stopLoginLoading(state) {
       state.isLoading = false;
     },
   },
 });
 
-export const { loginSetting, stopLoading,loginAdd , loginRemove, loginSettingSuccess, loginSettingError } =
+export const { loginSetting, stopLoginLoading,loginAdd , loginRemove, loginSettingSuccess, loginSettingError } =
   loginSlice.actions;
 export default loginSlice.reducer;
