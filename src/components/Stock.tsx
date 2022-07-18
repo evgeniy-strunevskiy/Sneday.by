@@ -4,9 +4,8 @@ import classnames from "classnames/bind";
 
 const cl = classnames.bind(styles);
 
-interface IStockPropsTypes {}
 
-export const Stock: FC<IStockPropsTypes> = () => {
+export const Stock: FC = () => {
   return (
     <div className={cl("stock")}>
     <h1 className={cl("stock_title")}>Акция</h1>

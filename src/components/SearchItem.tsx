@@ -1,16 +1,16 @@
 import React, { FC } from "react";
-import { VegetableItemTypes } from "../types/vegetablesListTypes";
+import { IVegetableItemTypes } from "../types/vegetablesListTypes";
 import styles from "./SearchItem.module.scss";
 import classnames from "classnames/bind";
 
 const cl = classnames.bind(styles);
 
-interface SearchItemPropsTypes {
-  vegetable: VegetableItemTypes;
-  sendVegetable(vegetable: VegetableItemTypes): void;
+interface ISearchItemPropsTypes {
+  vegetable: IVegetableItemTypes;
+  sendVegetable(vegetable: IVegetableItemTypes): void;
 }
 
-export const SearchItem: FC<SearchItemPropsTypes> = ({
+export const SearchItem: FC<ISearchItemPropsTypes> = ({
   vegetable,
   sendVegetable,
 }) => {

@@ -5,8 +5,9 @@ import { Link } from 'react-router-dom';
 
 const cl = classNames.bind(styles);
 
+interface IClosePropsTypes {}
 
-export const Close: FC = () => {
+export const Close: FC<IClosePropsTypes> = () => {
   return (
     <Link to='/' className={cl('close')} ></Link>
   )

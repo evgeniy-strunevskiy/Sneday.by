@@ -1,9 +1,9 @@
-import { PointTypes } from "./pointsTypes";
+import { IPointTypes } from "./pointsTypes";
 
 export interface rowsTypes {
-  one: PointTypes[];
-  two: PointTypes[];
-  three: PointTypes[];
+  one: IPointTypes[];
+  two: IPointTypes[];
+  three: IPointTypes[];
 }
 
 export interface SectionsTypes {

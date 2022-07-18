@@ -8,12 +8,12 @@ import { sortArray, sortDefault } from "../data/data";
 
 const cl = classNames.bind(styles);
 
-interface FiltersPropsTypes {
+interface IFiltersPropsTypes {
   filter: IFiltersTypes;
   setFilter: (fitlter: IFiltersTypes) => void;
 }
 
-export const Filters: FC<FiltersPropsTypes> = ({ filter, setFilter }) => {
+export const Filters: FC<IFiltersPropsTypes> = ({ filter, setFilter }) => {
   return (
     <div className={cl("filters")}>
       <div className={cl("filters_sort")}>

@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { PointsTypes, PointTypes } from "../../types/pointsTypes";
+import { IPointsTypes, IPointTypes } from "../../types/pointsTypes";
 
-const initialState: PointsTypes = {
+const initialState: IPointsTypes = {
   points: [],
   isLoading: false,
   error: null,
@@ -15,7 +15,7 @@ const pointsSlice = createSlice({
     pointsFetching(state, action: PayloadAction<boolean>) {
       state.isLoading = action.payload;
     },
-    pointsFetchingSuccess(state, action: PayloadAction<PointTypes[]>) {
+    pointsFetchingSuccess(state, action: PayloadAction<IPointTypes[]>) {
       state.isLoading = false;
       state.points = action.payload
     },

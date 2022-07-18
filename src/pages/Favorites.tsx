@@ -3,7 +3,7 @@ import classNames from "classnames/bind";
 import styles from "./Favorites.module.scss";
 import { useAppDispatch, useAppSelector } from "../hooks/redux";
 import { Cards } from "../components/Cards";
-import { VegetablesTypes } from "../types/pointsTypes";
+import { IVegetablesTypes } from "../types/pointsTypes";
 import { ReactComponent as Avocado } from "../assets/icons/empty-avocado.svg";
 import { getPoints } from "../store/middleware/points";
 import { getFavorites } from "../store/middleware/favorites";
@@ -15,7 +15,7 @@ export const Favorites: FC = () => {
   const { favorites } = useAppSelector((state) => state.favorites);
   const { points } = useAppSelector((state) => state.points);
 
-  const favoritesCards: VegetablesTypes[] = [];
+  const favoritesCards: IVegetablesTypes[] = [];
 
   favorites.forEach((favorite) => {
     points.forEach((item) =>

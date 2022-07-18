@@ -4,12 +4,12 @@ import clasnames from "classnames/bind";
 
 const cl = clasnames.bind(styles);
 
-interface CardVegetablePropsTypes {
+interface ICardVegetablePropsTypes {
   title: string;
   name: string;
 }
 
-export const CardVegetable: FC<CardVegetablePropsTypes> = ({title, name}) => {
+export const CardVegetable: FC<ICardVegetablePropsTypes> = ({title, name}) => {
   return (
     <h3 className={cl("card_vegetable")}>
       {title}{" "}

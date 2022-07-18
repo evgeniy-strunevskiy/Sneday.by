@@ -1,8 +1,8 @@
-import { VegetableItemTypes } from './../../types/vegetablesListTypes';
+import { IVegetableItemTypes } from './../../types/vegetablesListTypes';
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import {VegetablesListTypes} from '../../types/vegetablesListTypes'
+import {IVegetablesListTypes} from '../../types/vegetablesListTypes'
 
-const initialState: VegetablesListTypes = {
+const initialState: IVegetablesListTypes = {
   vegetables: [],
   isLoading: false,
   error: null,
@@ -16,7 +16,7 @@ const vegetablesSlice = createSlice({
     vegetablesFetching(state, action: PayloadAction<boolean>) {
       state.isLoading = action.payload;
     },
-    vegetablesFetchingSuccess(state, action: PayloadAction<VegetableItemTypes[]>) {
+    vegetablesFetchingSuccess(state, action: PayloadAction<IVegetableItemTypes[]>) {
       state.isLoading = false;
       state.vegetables = action.payload
     },

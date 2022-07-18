@@ -2,7 +2,7 @@ export interface IFavoriteTypes {
   id: number;
 }
 
-export interface FavoritesTypes {
+export interface IFavoritesTypes {
   favorites: IFavoriteTypes[];
   isLoading: boolean;
   error: null | string;

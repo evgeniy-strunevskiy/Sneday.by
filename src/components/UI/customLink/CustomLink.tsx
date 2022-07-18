@@ -5,11 +5,11 @@ import classNames from 'classnames/bind';
 
 const cl = classNames.bind(styles);
 
-interface CustomLinkTypes {
+interface ICustomLinkPropsTypes {
   to: string
 }
 
-export const CustomLink: FC<CustomLinkTypes> = ({ children, to, ...props }) => {
+export const CustomLink: FC<ICustomLinkPropsTypes> = ({ children, to, ...props }) => {
   const match = useMatch(to);
 
   return (

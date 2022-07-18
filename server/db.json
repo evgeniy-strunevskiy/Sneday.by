@@ -3649,34 +3649,6 @@
     }
   ],
   "favorites": [],
-  "cart": [
-    {
-      "id": 1,
-      "weight": 3.2,
-      "price": 39.7,
-      "vegetable": "potate",
-      "imgUrl": "./image/potato.png",
-      "title": "Картофель",
-      "name": "Палац"
-    },
-    {
-      "id": 2,
-      "weight": 2.9,
-      "price": 23.2,
-      "vegetable": "beet",
-      "imgUrl": "./image/beet.png",
-      "title": "Свекла",
-      "name": "Атаман"
-    },
-    {
-      "id": 3,
-      "weight": 1.2,
-      "price": 10.8,
-      "vegetable": "carrot",
-      "imgUrl": "./image/carrot.png",
-      "title": "Морковь",
-      "name": "Паулинка"
-    }
-  ],
+  "cart": [],
   "orders": []
 }

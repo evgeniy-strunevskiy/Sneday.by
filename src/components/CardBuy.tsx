@@ -6,7 +6,7 @@ import { ReactComponent as Cross } from "../assets/icons/cross.svg";
 
 const cl = classNames.bind(styles);
 
-interface CardBuyPropsTypes {
+interface ICardBuyPropsTypes {
   price: number;
   weight: number;
   isItemCart: boolean;
@@ -14,7 +14,7 @@ interface CardBuyPropsTypes {
   onAddToCart(): void;
 }
 
-export const CardBuy: FC<CardBuyPropsTypes> = ({
+export const CardBuy: FC<ICardBuyPropsTypes> = ({
   price,
   weight,
   isItemCart,

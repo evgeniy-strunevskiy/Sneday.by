@@ -1,14 +1,14 @@
 import React, { FC } from "react";
 import styles from "./SearchList.module.scss";
 import classnames from "classnames/bind";
-import { VegetableItemTypes } from "../types/vegetablesListTypes";
+import { IVegetableItemTypes } from "../types/vegetablesListTypes";
 import { SearchItem } from "./SearchItem";
 
 const cl = classnames.bind(styles);
 
 interface SearchListPropTypes {
-  sortedVegetables: VegetableItemTypes[];
-  sendVegetable(vegetable: VegetableItemTypes): void;
+  sortedVegetables: IVegetableItemTypes[];
+  sendVegetable(vegetable: IVegetableItemTypes): void;
 }
 
 export const SearchList: FC<SearchListPropTypes> = ({

@@ -1,8 +1,8 @@
-import { LoginInterface } from './../../types/loginTypes';
+import { ILoginInterface } from './../../types/loginTypes';
 import { loginRemove, loginSetting, loginSettingError, loginSettingSuccess } from "../slices/loginSlice";
 import { AppDispatch } from "../store";
 
-export const setLogin = (data: LoginInterface) => async (dispatch: AppDispatch) => {
+export const setLogin = (data: ILoginInterface) => async (dispatch: AppDispatch) => {
   try {
     dispatch(loginSetting(true));
     //Здесь может быть асинхронная логика

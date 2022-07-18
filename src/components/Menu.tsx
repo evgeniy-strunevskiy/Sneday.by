@@ -7,12 +7,12 @@ import { removeLogin } from "../store/middleware/login";
 
 const cl = classNames.bind(styles);
 
-interface MenuPropsTypes {
+interface IMenuPropsTypes {
   isActive: boolean;
   setFalseActive: () => void;
 }
 
-export const Menu: FC<MenuPropsTypes> = ({ setFalseActive, isActive }) => {
+export const Menu: FC<IMenuPropsTypes> = ({ setFalseActive, isActive }) => {
   const dispatch = useAppDispatch();
   const { login } = useAppSelector((state) => state.login);
   const { cart } = useAppSelector((state) => state.cart);

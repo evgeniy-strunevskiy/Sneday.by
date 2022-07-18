@@ -1,4 +1,4 @@
-export interface VegetablesTypes {
+export interface IVegetablesTypes {
   id: number;
   title: any;
   vegetable: string;
@@ -8,18 +8,18 @@ export interface VegetablesTypes {
   imgUrl: string;
 }
 
-export interface PointTypes {
+export interface IPointTypes {
   id: number;
   name: string;
   owner: string;
   tel: number;
   logoUrl: string;
   isBusy: boolean;
-  vegetables: VegetablesTypes[]
+  vegetables: IVegetablesTypes[]
 }
 
-export interface PointsTypes { 
-  points: PointTypes[];
+export interface IPointsTypes { 
+  points: IPointTypes[];
   isLoading: boolean;
   error: null | string;
 }

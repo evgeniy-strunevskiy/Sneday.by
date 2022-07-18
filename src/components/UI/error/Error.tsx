@@ -4,11 +4,11 @@ import classNames from 'classnames/bind';
 
 const cl = classNames.bind(styles)
 
-interface ErrorPropTypes {
+interface IErrorPropsTypes {
   error: string
 }
 
-export const Error: FC<ErrorPropTypes> = ({error}) => {
+export const Error: FC<IErrorPropsTypes> = ({error}) => {
   return (
     <div className={cl('error')} >Произошла ошибка:{error}</div>
   )

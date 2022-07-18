@@ -4,7 +4,7 @@ import classNames from 'classnames/bind'
 
 const cl = classNames.bind(styles);
 
-interface InputFormProps extends InputHTMLAttributes<HTMLInputElement> {
+interface IInputFormPropsTypes extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
   label?: string;
   error?: string;
@@ -14,7 +14,7 @@ interface InputFormProps extends InputHTMLAttributes<HTMLInputElement> {
   setLoginState?: () => void;
 }
 
-export const InputForm: FC<InputFormProps> = ({
+export const InputForm: FC<IInputFormPropsTypes> = ({
   register,
   name,
   error,

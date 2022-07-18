@@ -5,14 +5,14 @@ import { Input } from './UI/input/Input';
 
 const cl = classNames.bind(styles);
 
-interface RangePropsTypes {
+interface IRangePropsTypes {
   step: number;
   weight: number ;
   handleRange(e: React.ChangeEvent<HTMLInputElement>): void; 
   isItemCart: boolean; 
 }
 
-export const Range: FC<RangePropsTypes> = ({step, handleRange, isItemCart, weight}) => {
+export const Range: FC<IRangePropsTypes> = ({step, handleRange, isItemCart, weight}) => {
   return (
     <div className={cl("range")}>
     <div className={cl("field")}>

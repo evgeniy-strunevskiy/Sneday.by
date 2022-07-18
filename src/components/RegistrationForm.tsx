@@ -1,7 +1,6 @@
 import { FC } from "react";
 import classNames from "classnames/bind";
 import styles from "./RegistrationForm.module.scss";
-import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -11,12 +10,12 @@ import { NewUser } from "./NewUser";
 
 const cl = classNames.bind(styles);
 
-interface RegistrationInterface {
+interface IRegistrationInterface {
   email: string;
   password: string;
 }
 
-interface RegistrationFormTypes {
+interface IRegistrationFormPropsTypes {
   fromPage: string;
 }
 
@@ -30,14 +29,14 @@ const EmailSchema = yup.object().shape({
     .required("Обязательно"),
 });
 
-export const RegistrationForm: FC<RegistrationFormTypes> = ({ fromPage }) => {
+export const RegistrationForm: FC<IRegistrationFormPropsTypes> = ({ fromPage }) => {
   const {
     register,
     formState: { errors },
     handleSubmit,
-  } = useForm<RegistrationInterface>({ resolver: yupResolver(EmailSchema) });
+  } = useForm<IRegistrationInterface>({ resolver: yupResolver(EmailSchema) });
 
-  const onSubmit = (data: RegistrationInterface) => {
+  const onSubmit = (data: IRegistrationInterface) => {
     console.log(data);
   };
 

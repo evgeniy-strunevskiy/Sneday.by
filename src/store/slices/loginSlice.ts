@@ -1,14 +1,14 @@
-import { LoginInterface } from './../../types/loginTypes';
+import { ILoginInterface } from './../../types/loginTypes';
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-interface InitialStateTypes {
+interface IInitialStateTypes {
   login: boolean;
   isLoading: boolean;
   error: null | string;
-  user: LoginInterface
+  user: ILoginInterface
 }
 
-const initialState: InitialStateTypes = {
+const initialState: IInitialStateTypes = {
   login: false,
   isLoading: true,
   error: null,

@@ -1,20 +1,20 @@
 import { ICartItemTypes } from './../types/cartTypes';
-import { VegetableItemTypes } from './../types/vegetablesListTypes';
-import { PointTypes } from './../types/pointsTypes';
+import { IVegetableItemTypes } from './../types/vegetablesListTypes';
+import { IPointTypes } from './../types/pointsTypes';
 import axios from "axios";
 import { IFavoriteTypes } from '../types/favoritesTypes';
 
 export class PointsServer {
   static async getAll() {
-    const response = await axios.get<PointTypes[]>("http://localhost:3001/points");
+    const response = await axios.get<IPointTypes[]>("http://localhost:3001/points");
     return response.data;
   }
   static async getVegetables() {
-    const response = await axios.get<VegetableItemTypes[]>("http://localhost:3001/vegetables");
+    const response = await axios.get<IVegetableItemTypes[]>("http://localhost:3001/vegetables");
     return response.data;
   }
   static async getOwner(id: string | undefined) {
-    const response = await axios.get<PointTypes>(`http://localhost:3001/points/${id}`);
+    const response = await axios.get<IPointTypes>(`http://localhost:3001/points/${id}`);
     return response.data;
   }
   static async addFavorite(favorite: IFavoriteTypes) {

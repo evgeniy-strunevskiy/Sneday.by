@@ -4,7 +4,9 @@ import classNames from 'classnames/bind';
 
 const cl = classNames.bind(styles);
 
-export const Button: FC = ({children}) => {
+interface IButtonPropsTypes {}
+
+export const Button: FC<IButtonPropsTypes> = ({children}) => {
   return (
     <button className={cl('button')} >{children}</button>
   )

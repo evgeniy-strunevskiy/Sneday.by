@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 const cl = classnames.bind(styles);
 
-interface NewUserPropsTypes {
+interface INewUserPropsTypes {
   text: string;
   account: string;
   link: string;
 }
 
-export const NewUser: FC<NewUserPropsTypes> = ({ text, account, link }) => {
+export const NewUser: FC<INewUserPropsTypes> = ({ text, account, link }) => {
   return (
     <div className={cl("new-user")}>
       <span>{text} </span>

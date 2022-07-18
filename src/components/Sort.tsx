@@ -5,14 +5,14 @@ import classNames from "classnames/bind";
 
 const cl = classNames.bind(styles);
 
-interface SortPropsTypes {
+interface ISortPropsTypes {
   filter: IFiltersTypes;
   setFilter: (fitlter: IFiltersTypes) => void;
   sortDefault: string;
   sortArray: ISortArrayTypes[];
 }
 
-export const Sort: FC<SortPropsTypes> = ({
+export const Sort: FC<ISortPropsTypes> = ({
   filter,
   setFilter,
   sortDefault,

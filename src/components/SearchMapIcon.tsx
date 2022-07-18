@@ -5,12 +5,12 @@ import classNames from "classnames/bind";
 import styles from "./SearchMapIcon.module.scss";
 const cl = classNames.bind(styles);
 
-interface SearchMapIconPropsTypes {
+interface ISearchMapIconPropsTypes {
   searchMap: string;
   clearSearchMap(): void;
 }
 
-export const SearchMapIcon: FC<SearchMapIconPropsTypes> = ({searchMap, clearSearchMap}) => {
+export const SearchMapIcon: FC<ISearchMapIconPropsTypes> = ({searchMap, clearSearchMap}) => {
   return (
     <>
       {searchMap ? (

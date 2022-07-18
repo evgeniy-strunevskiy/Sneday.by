@@ -3,7 +3,7 @@ import styles from "./Map.module.scss";
 import classNames from "classnames/bind";
 import { useAppDispatch, useAppSelector } from "../hooks/redux";
 import { SectionsTypes } from "../types/sectionsTypes";
-import { PointTypes } from "../types/pointsTypes";
+import { IPointTypes } from "../types/pointsTypes";
 import { Loader } from "../components/UI/loader/Loader";
 import { Error } from "../components/UI/error/Error";
 import { MapSquare } from "../components/MapSquare";
@@ -30,7 +30,7 @@ export const Map: FC = () => {
     },
   });
 
-  const getSections = (points: PointTypes[]) => {
+  const getSections = (points: IPointTypes[]) => {
     setSections({
       rowOne: {
         one: [],

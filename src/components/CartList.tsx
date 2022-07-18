@@ -6,11 +6,11 @@ import { CartItem } from './CartItem'
 
 const cl = classNames.bind(styles)
 
-interface ICartListTypes {
+interface ICartListPropsTypes {
   cart: ICartItemTypes[]
 }
 
-export const CartList: FC<ICartListTypes> = ({cart}) => {
+export const CartList: FC<ICartListPropsTypes> = ({cart}) => {
 
   return (
       <ul className={cl('cart_list')}>

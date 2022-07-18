@@ -6,11 +6,11 @@ import { MapSection } from "./MapSection"
 
 const cl = classNames.bind(styles);
 
-interface MapRowTypes {
+interface IMapRowPropsTypes {
   rows: rowsTypes;
 }
 
-export const MapRow: FC<MapRowTypes> = ({ rows }) => {
+export const MapRow: FC<IMapRowPropsTypes> = ({ rows }) => {
   return (
     <div className={cl("rows")}>
       {Object.entries(rows).map(([key, section]) => (

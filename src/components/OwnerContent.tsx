@@ -10,9 +10,7 @@ import { OwnerInfo } from "../components/OwnerInfo";
 
 const cl = classNames.bind(styles);
 
-interface OwnerContentProps {}
-
-export const OwnerContent: FC<OwnerContentProps> = () => {
+export const OwnerContent: FC = () => {
   const { owner } = useAppSelector((state) => state.owner);
 
   const [filter, setFilter] = useState<IFiltersTypes>({

@@ -5,12 +5,12 @@ import styles from "./CardFavorite.module.scss";
 
 const cl = classNames.bind(styles);
 
-interface CardFavoritePropsTypes {
+interface ICardFavoritePropsTypes {
   isFavorite: boolean;
   handleFavorites(): void;
 }
 
-export const CardFavorite: FC<CardFavoritePropsTypes> = ({
+export const CardFavorite: FC<ICardFavoritePropsTypes> = ({
   handleFavorites,
   isFavorite,
 }) => {

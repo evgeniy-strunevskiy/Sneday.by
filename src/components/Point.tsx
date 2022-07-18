@@ -2,17 +2,17 @@ import classNames from "classnames/bind";
 import { FC } from "react";
 import { Link } from "react-router-dom";
 import { useAppSelector } from "../hooks/redux";
-import { PointTypes } from "../types/pointsTypes";
+import { IPointTypes } from "../types/pointsTypes";
 import styles from "./Point.module.scss";
 
 
 const cl = classNames.bind(styles);
 
-interface PointComponentTypes {
-  point: PointTypes;
+interface IPointPropsTypes {
+  point: IPointTypes;
 }
 
-export const Point: FC<PointComponentTypes> = ({ point }) => {
+export const Point: FC<IPointPropsTypes> = ({ point }) => {
   const isbusy = !point.isBusy;
   let price = null;
   const { vegetable } = useAppSelector((state) => state.searchMap);

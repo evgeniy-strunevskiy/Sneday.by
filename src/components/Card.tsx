@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useState } from "react";
 import classNames from "classnames/bind";
 import styles from "./Card.module.scss";
-import { VegetablesTypes } from "../types/pointsTypes";
+import { IVegetablesTypes } from "../types/pointsTypes";
 import { useAppDispatch, useAppSelector } from "../hooks/redux";
 import { addFavorite } from "../store/middleware/addingFavorites";
 import { removeFavorite } from "../store/middleware/removingFavorites";
@@ -16,10 +16,10 @@ import { getFavorites } from "../store/middleware/favorites";
 
 const cl = classNames.bind(styles);
 
-interface CardProps {
-  vegetable: VegetablesTypes;
+interface ICardPropsTypes {
+  vegetable: IVegetablesTypes;
 }
-export const Card: FC<CardProps> = ({ vegetable }) => {
+export const Card: FC<ICardPropsTypes> = ({ vegetable }) => {
   const dispatch = useAppDispatch();
   const [step, setStep] = useState<number>(100);
   const [weight, setWeight] = useState<number>(0);

@@ -4,7 +4,7 @@ import styles from "./SearchMap.module.scss";
 import { useAppDispatch, useAppSelector } from "../hooks/redux";
 import { getVegetables } from "../store/middleware/vegetables";
 import { getVegetableMap } from "../store/slices/searchMapSlice";
-import { VegetableItemTypes } from "../types/vegetablesListTypes";
+import { IVegetableItemTypes } from "../types/vegetablesListTypes";
 import { Input } from "./UI/input/Input";
 import { SearchList } from "./SearchList";
 import { SearchMapIcon } from "./SearchMapIcon";
@@ -15,10 +15,10 @@ export const SearchMap: FC = () => {
   const dispatch = useAppDispatch();
   const { vegetables } = useAppSelector((state) => state.vegetables);
   const [searchMap, setSearchMap] = useState<string>("");
-  const [sortedVegetables, setsortedVegetables] = useState<VegetableItemTypes[]>([]);
+  const [sortedVegetables, setsortedVegetables] = useState<IVegetableItemTypes[]>([]);
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-    let matches: VegetableItemTypes[] = [];
+    let matches: IVegetableItemTypes[] = [];
     if (e.target.value.length >= 2) {
       matches = vegetables.filter((item) =>
         item.name.toLowerCase().includes(e.target.value.toLowerCase())
@@ -28,7 +28,7 @@ export const SearchMap: FC = () => {
     setsortedVegetables(matches);
   };
 
-  function sendVegetable(vegetable: VegetableItemTypes) {
+  function sendVegetable(vegetable: IVegetableItemTypes) {
     dispatch(getVegetableMap(vegetable.name));
     setSearchMap(vegetable.name);
     setsortedVegetables([]);

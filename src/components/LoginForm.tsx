@@ -7,14 +7,13 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { InputForm } from "./UI/InputForm/InputForm";
 import { Button } from "./UI/button/Button";
-import { LoginInterface } from "../types/loginTypes";
+import { ILoginInterface } from "../types/loginTypes";
 import { useAppDispatch } from "../hooks/redux";
 import { setLogin } from "../store/middleware/login";
-import { NewUser } from "./NewUser";
 
 const cl = classNames.bind(styles);
 
-interface LoginFormTypes {
+interface ILoginFormPropsTypes {
   fromPage: string;
 }
 
@@ -28,16 +27,16 @@ const EmailSchema = yup.object().shape({
     .required("Обязательно"),
 });
 
-export const LoginForm: FC<LoginFormTypes> = ({ fromPage }) => {
+export const LoginForm: FC<ILoginFormPropsTypes> = ({ fromPage }) => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
   const {
     register,
     formState: { errors },
     handleSubmit,
-  } = useForm<LoginInterface>({ resolver: yupResolver(EmailSchema) });
+  } = useForm<ILoginInterface>({ resolver: yupResolver(EmailSchema) });
 
-  const onSubmit = (data: LoginInterface) => {
+  const onSubmit = (data: ILoginInterface) => {
     dispatch(setLogin(data));
     navigate("/");
   };

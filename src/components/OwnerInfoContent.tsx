@@ -1,15 +1,15 @@
 import React, { FC } from "react";
-import { PointTypes } from "../types/pointsTypes";
+import { IPointTypes } from "../types/pointsTypes";
 import styles from './OwnerInfoContent.module.scss';
 import classnames from 'classnames/bind';
 
 const cl = classnames.bind(styles);
 
-interface OwnerInfoContentPropsTypes {
-  owner: PointTypes;
+interface IOwnerInfoContentPropsTypes {
+  owner: IPointTypes;
 }
 
-export const OwnerInfoContent: FC<OwnerInfoContentPropsTypes> = ({ owner }) => {
+export const OwnerInfoContent: FC<IOwnerInfoContentPropsTypes> = ({ owner }) => {
   return (
     <div className={cl("owner-info-content")}>
       <h1 className={cl("owner-info-content_name")}>{owner.owner}</h1>

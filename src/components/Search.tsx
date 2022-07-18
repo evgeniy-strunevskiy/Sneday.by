@@ -6,12 +6,12 @@ import { Input } from "./UI/input/Input";
 
 const cl = classNames.bind(styles);
 
-interface SearchPropsTypes {
+interface ISearchPropsTypes {
   filter: IFiltersTypes;
   setFilter: (fitlter: IFiltersTypes) => void;
 }
 
-export const Search: FC<SearchPropsTypes> = ({ filter, setFilter }) => {
+export const Search: FC<ISearchPropsTypes> = ({ filter, setFilter }) => {
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFilter({ ...filter, search: e.target.value });
   };

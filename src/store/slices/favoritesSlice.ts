@@ -1,7 +1,7 @@
-import { FavoritesTypes, IFavoriteTypes } from './../../types/favoritesTypes';
+import { IFavoritesTypes, IFavoriteTypes } from './../../types/favoritesTypes';
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-const initialState: FavoritesTypes = {
+const initialState: IFavoritesTypes = {
   favorites: [],
   isLoading: false,
   error: null,

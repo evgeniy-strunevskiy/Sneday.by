@@ -1,8 +1,8 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { PointTypes } from "../../types/pointsTypes";
+import { IPointTypes } from "../../types/pointsTypes";
 
-const initialState: {owner: PointTypes, isLoading: boolean, error: null | string} = {
-  owner: {} as PointTypes,
+const initialState: {owner: IPointTypes, isLoading: boolean, error: null | string} = {
+  owner: {} as IPointTypes,
   isLoading: true,
   error: null,
 }
@@ -14,7 +14,7 @@ const ownerSlice = createSlice({
     ownerFetching(state, action: PayloadAction<boolean>) {
       state.isLoading = action.payload;
     },
-    ownerFetchingSuccess(state, action: PayloadAction<PointTypes>) {
+    ownerFetchingSuccess(state, action: PayloadAction<IPointTypes>) {
       state.isLoading = false;
       state.owner = action.payload
     },

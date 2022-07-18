@@ -8,11 +8,11 @@ import { MapHelp } from "./MapHelp";
 
 const cl = classNames.bind(styles);
 
-interface MapSquareTypes {
+interface IMapSquarePropsTypes {
   sections: SectionsTypes;
 }
 
-export const MapSquare: FC<MapSquareTypes> = ({ sections }) => {
+export const MapSquare: FC<IMapSquarePropsTypes> = ({ sections }) => {
 
   return (
     <div className={cl("square")}>

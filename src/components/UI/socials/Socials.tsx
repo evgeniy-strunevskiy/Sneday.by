@@ -25,9 +25,9 @@ const networks = [
      },
 ];
 
-interface SocialPropsTypes {}
+interface ISocialPropsTypes {}
 
-export const Socials: FC<SocialPropsTypes> = () => {
+export const Socials: FC<ISocialPropsTypes> = () => {
   return (
     <div className={cl("socials")}>
       <ul className={cl("socials_list")}>
