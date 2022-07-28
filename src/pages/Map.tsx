@@ -10,8 +10,20 @@ import { MapSquare } from "../components/MapSquare";
 import { Banner } from "../components/Banner";
 import { Sidebar } from "../components/Sidebar";
 import { getPoints } from "../store/middleware/points";
+import { GMap } from "../components/GMap/GMap";
+import { useJsApiLoader } from "@react-google-maps/api";
+import { ICenter } from "../types/center";
 
 const cl = classNames.bind(styles);
+
+const API_KEY = 'AIzaSyAVY5wku4x9kgUibzXUf4VhHtJ5gh1tjAw';
+
+ 
+const center: ICenter = {
+  lat: 52.083829873165634,
+  lng: 23.7130254725566
+};
+
 
 export const Map: FC = () => {
   const dispatch = useAppDispatch();
@@ -84,6 +96,10 @@ export const Map: FC = () => {
     });
   };
 
+  const { isLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: API_KEY,
+  })
 
   useEffect(() => {
     dispatch(getPoints());
@@ -92,6 +108,8 @@ export const Map: FC = () => {
   useEffect(() => {
     getSections(points);
   }, [points]);
+
+
 
   return (
     <div className={cl("map")}>
@@ -102,6 +120,11 @@ export const Map: FC = () => {
           {isLoading ? <Loader /> : <MapSquare sections={sections} />}
           <Sidebar />
         </div>
+        {
+          isLoaded ? (
+            <GMap center={center} />
+          ) : (<div><Loader /></div>)
+        }
       </div>
     </div>
   );

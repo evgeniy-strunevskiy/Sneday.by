@@ -33,7 +33,7 @@
   height: toRem(45);
   margin-right: 10px;
   fill: var(--color-font);
-  // stroke: var(--color-font);
+  transition: all .2s ease-in-out;
   &__user {
     fill: transparent;
     &:hover {
@@ -47,4 +47,5 @@
   font-family: 'Pacifico';
   flex: 0 0 auto;
   font-size: toRem(26);
+  transition: all .2s ease-in-out;
 }

@@ -3649,6 +3649,16 @@
     }
   ],
   "favorites": [],
-  "cart": [],
+  "cart": [
+    {
+      "id": 1,
+      "weight": 1.8,
+      "price": 22.3,
+      "vegetable": "potate",
+      "imgUrl": "./image/potato.png",
+      "title": "Картофель",
+      "name": "Палац"
+    }
+  ],
   "orders": []
 }

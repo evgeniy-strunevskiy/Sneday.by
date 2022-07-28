@@ -45,6 +45,7 @@
   background-color: var(--color-body);
   padding: 10px 30px;
   border-radius: 69px 0px / 50px;
+  transition: all .2s ease-in-out;
   cursor: pointer;
   &:hover {
     background-color: var(--color-purple);
@@ -61,6 +62,7 @@
 }
 
 .menu_link {
+  transition: all .2s ease-in-out;
   &_active {
     border-bottom: 1px solid var(--color-gold-dark);
     color: var(--color-gold)
