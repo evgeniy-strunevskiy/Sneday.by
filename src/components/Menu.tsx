@@ -28,7 +28,6 @@ export const Menu: FC<IMenuPropsTypes> = ({ setFalseActive, isActive }) => {
     dispatch(removeLogin());
   };
 
-  console.log(totalCart);
 
   useEffect(() => {
     const totalCartCount = cart.reduce((sum, item) => sum + 1, 0);

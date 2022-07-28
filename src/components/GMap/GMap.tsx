@@ -19,7 +19,6 @@ interface GMapPropsTypes {
 export const GMap: FC<GMapPropsTypes>= ({center}) => {
   const mapRef = useRef(undefined);
   const [zoom, setZoom] = useState<undefined | number>(undefined);
-  console.log(zoom)
 
   const onLoad = useCallback(function callback(map) {
     const bounds = new window.google.maps.LatLngBounds(center);

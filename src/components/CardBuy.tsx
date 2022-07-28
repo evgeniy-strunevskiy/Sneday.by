@@ -21,7 +21,6 @@ export const CardBuy: FC<ICardBuyPropsTypes> = ({
   isDisable,
   onAddToCart,
 }) => {
-  console.log(isItemCart)
   return (
     <div className={cl("cardbuy")}>
       <div className={cl("cardbuy_price")}>

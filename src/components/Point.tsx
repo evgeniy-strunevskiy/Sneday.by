@@ -17,7 +17,6 @@ export const Point: FC<IPointPropsTypes> = ({ point }) => {
   let price = null;
   const { vegetable } = useAppSelector((state) => state.searchMap);
 
-  console.log(vegetable);
 
   if (vegetable) {
     point.vegetables.map((item) =>
