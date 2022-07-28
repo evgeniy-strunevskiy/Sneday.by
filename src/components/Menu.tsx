@@ -4,6 +4,7 @@ import classNames from "classnames/bind";
 import { NavLink } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../hooks/redux";
 import { removeLogin } from "../store/middleware/login";
+import { getCart } from "../store/middleware/cart";
 
 const cl = classNames.bind(styles);
 
@@ -17,6 +18,8 @@ export const Menu: FC<IMenuPropsTypes> = ({ setFalseActive, isActive }) => {
   const { login } = useAppSelector((state) => state.login);
   const { cart } = useAppSelector((state) => state.cart);
   const [totalCart, setTotalCart] = useState<number>(0);
+
+  console.log(totalCart)
 
   const auth = localStorage.getItem('auth')
 
@@ -33,6 +36,10 @@ export const Menu: FC<IMenuPropsTypes> = ({ setFalseActive, isActive }) => {
     const totalCartCount = cart.reduce((sum, item) => sum + 1, 0);
     setTotalCart(totalCartCount);
   }, [cart]);
+
+  useEffect(() => {
+    dispatch(getCart());
+  },[])
 
   return (
     <nav className={cl("menu", { active: isActive })}>
