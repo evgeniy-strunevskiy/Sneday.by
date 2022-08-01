@@ -1,4 +1,28 @@
 .card_favorite {
+  &__disable {
+    position: relative;
+      &::before {
+        content: 'Войдите в аккаунт';
+        background: rgba($color: white, $alpha: 1);
+        font-size: 12px;
+        white-space: nowrap;
+        padding: 7px 10px;
+        border-radius: 20px 20px 20px 20px;
+        position: absolute;
+        top: 117%;
+        right: 100%;
+        visibility: hidden;
+        transition: .2s ease-in-out;
+      }
+      &:hover {
+        &::before {
+          visibility: visible;
+        }
+      }
+  }
+}
+
+.card_favorite-btn {
   width: 25px;
   height: 25px;
 }

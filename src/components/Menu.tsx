@@ -19,7 +19,6 @@ export const Menu: FC<IMenuPropsTypes> = ({ setFalseActive, isActive }) => {
   const { cart } = useAppSelector((state) => state.cart);
   const [totalCart, setTotalCart] = useState<number>(0);
 
-  console.log(totalCart)
 
   const auth = localStorage.getItem('auth')
 

@@ -11,6 +11,7 @@ interface ICardBuyPropsTypes {
   weight: number;
   isItemCart: boolean;
   isDisable: boolean;
+  login: boolean;
   onAddToCart(): void;
 }
 
@@ -20,6 +21,7 @@ export const CardBuy: FC<ICardBuyPropsTypes> = ({
   isItemCart,
   isDisable,
   onAddToCart,
+  login,
 }) => {
   return (
     <div className={cl("cardbuy")}>
@@ -31,7 +33,8 @@ export const CardBuy: FC<ICardBuyPropsTypes> = ({
         className={cl(
           "cardbuy_add",
           { cardbuy_add__true: isItemCart },
-          { cardbuy_add__weight: !weight }
+          { cardbuy_add__weight: login && !weight },
+          { cardbuy_add__disable: !login && isDisable },
         )}
         disabled={isItemCart === true ? false : isDisable}
         onClick={onAddToCart}

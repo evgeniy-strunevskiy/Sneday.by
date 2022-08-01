@@ -21,6 +21,7 @@ interface ICardPropsTypes {
 }
 export const Card: FC<ICardPropsTypes> = ({ vegetable }) => {
   const dispatch = useAppDispatch();
+  const {login} = useAppSelector(state => state.login);
   const [step, setStep] = useState<number>(100);
   const [weight, setWeight] = useState<number>(0);
   const [isDisable, setIsDisable] = useState<boolean>(true);
@@ -76,25 +77,27 @@ export const Card: FC<ICardPropsTypes> = ({ vegetable }) => {
   },[])
 
   useEffect(() => {
-    cart.find((i) => i.id === vegetable.id)
-      ? setIsItemCart(true)
-      : setIsItemCart(false);
-    favorites.find((i) => i.id === vegetable.id)
-      ? setIsFavorite(true)
-      : setIsFavorite(false);
-
-    cart.map((cartItem) => {
-      if (cartItem.id === vegetable.id) {
-        setWeight(cartItem.weight);
-        setStep(cartItem.weight * 1000);
-      }
-      return null;
-    });
-  }, [cart, favorites, vegetable.id]);
+    if(login) {
+      cart.find((i) => i.id === vegetable.id)
+        ? setIsItemCart(true)
+        : setIsItemCart(false);
+      favorites.find((i) => i.id === vegetable.id)
+        ? setIsFavorite(true)
+        : setIsFavorite(false);
+  
+      cart.map((cartItem) => {
+        if (cartItem.id === vegetable.id) {
+          setWeight(cartItem.weight);
+          setStep(cartItem.weight * 1000);
+        }
+        return null;
+      });
+    }
+  }, [cart, favorites, vegetable.id, login]);
 
   return (
     <li className={cl("card")}>
-      <CardFavorite isFavorite={isFavorite} handleFavorites={handleFavorites} />
+      <CardFavorite isFavorite={isFavorite} isDisable={!login} handleFavorites={handleFavorites} />
       <div className={cl("card_image")}>
         <img src={vegetable.imgUrl} alt="vegetable" />
       </div>
@@ -104,12 +107,14 @@ export const Card: FC<ICardPropsTypes> = ({ vegetable }) => {
         weight={weight}
         handleRange={handleRange}
         isItemCart={isItemCart}
+        isDisable={!login}
       />
       <CardBuy
         price={vegetable.price}
         weight={weight}
         isItemCart={isItemCart}
-        isDisable={isDisable}
+        isDisable={!login || isDisable}
+        login={login}
         onAddToCart={onAddToCart}
       />
     </li>
