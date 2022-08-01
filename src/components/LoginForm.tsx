@@ -38,7 +38,7 @@ export const LoginForm: FC<ILoginFormPropsTypes> = ({ fromPage }) => {
 
   const onSubmit = (data: ILoginInterface) => {
     dispatch(setLogin(data));
-    navigate("/");
+    navigate(fromPage);
   };
 
   return (

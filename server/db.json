@@ -3648,21 +3648,7 @@
       "name": "Кабачок"
     }
   ],
-  "favorites": [
-    {
-      "id": 1
-    }
-  ],
-  "cart": [
-    {
-      "id": 18,
-      "weight": 3,
-      "price": 24,
-      "vegetable": "beet",
-      "imgUrl": "./image/beet.png",
-      "title": "Свекла",
-      "name": "Атаман"
-    }
-  ],
+  "favorites": [],
+  "cart": [],
   "orders": []
 }
