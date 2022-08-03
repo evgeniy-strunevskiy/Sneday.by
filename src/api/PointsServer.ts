@@ -3,6 +3,7 @@ import { IVegetableItemTypes } from './../types/vegetablesListTypes';
 import { IPointTypes } from './../types/pointsTypes';
 import axios from "axios";
 import { IFavoriteTypes } from '../types/favoritesTypes';
+import { ICommentTypes } from '../types/commentsTypes';
 
 export class PointsServer {
   static async getAll() {
@@ -27,6 +28,10 @@ export class PointsServer {
   }
   static async getFavorites() {
     const response = await axios.get<IFavoriteTypes[]>(`http://localhost:3001/favorites`);
+    return response.data;
+  }
+  static async getComments() {
+    const response = await axios.get<ICommentTypes[]>(`http://localhost:3001/comments`);
     return response.data;
   }
   static async getCart() {

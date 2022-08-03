@@ -5,6 +5,7 @@ import vegetablesReducer from './slices/vegetablesSlice'
 import searchMapReducer from './slices/searchMapSlice'
 import ownerReducer from './slices/ownerSlice'
 import favoritesReducer from './slices/favoritesSlice'
+import commentsReducer from './slices/commentsSlice'
 import cartReducer from './slices/cartSlice'
 
 const rootReducer = combineReducers({
@@ -14,6 +15,7 @@ const rootReducer = combineReducers({
  searchMap: searchMapReducer,
  owner: ownerReducer,
  favorites: favoritesReducer,
+ comments: commentsReducer,
  cart: cartReducer,
 });
 

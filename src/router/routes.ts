@@ -5,6 +5,7 @@ import { NoteFound } from "../pages/NoteFound";
 import { Orders } from '../pages/Orders';
 import { Owner } from '../pages/Owner';
 import { Cart } from '../pages/Cart';
+import { Comments } from '../pages/Comments';
 
 export const privateRoutes = [
   { path: "favorites", element: Favorites },
@@ -16,5 +17,6 @@ export const publicRoutes = [
   { path: "index", element: Map },
   { path: ":id", element: Owner },
   { path: "login", element: Login },
+  { path: "comments", element: Comments },
   { path: "*", element: NoteFound },
 ];

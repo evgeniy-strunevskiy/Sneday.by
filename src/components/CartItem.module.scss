@@ -8,14 +8,13 @@
 .cart-item_container {
   display: grid;
   grid-template-columns: max-content 1fr minmax(max-content, 1fr) 1fr min-content;
-  // grid-template-columns: repeat(auto-fit, minmax(max-content, 1fr));
   gap: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #a2cc4e;
   align-items: center;
   justify-items: start;
   @include phones {
-    font-size: 12px;
+    font-size: 12px; 
   }
 }
 
