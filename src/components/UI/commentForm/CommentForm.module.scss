@@ -1,0 +1,21 @@
+.comment-form_list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.comment-form_item {
+  position: relative;
+}
+
+.comment-form_btn {
+  color: var(--color-font);
+  background: var(--color-background-two);
+  padding: 10px 15px;
+  border-radius: 10px;
+  &:hover {
+    background: var(--color-background-one);
+  }
+}

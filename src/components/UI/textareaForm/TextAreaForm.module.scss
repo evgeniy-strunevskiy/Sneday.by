@@ -1,0 +1,27 @@
+@use "../../../sass/media.scss" as *;
+@use "../../../sass/rem.scss" as *;
+
+.textarea_textarea {
+  border: 1px solid #E4E4E4;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px 5px;
+  &::placeholder {
+    color: var(--color-body);
+    opacity: .3;
+  }
+}
+
+.textarea_label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.textarea_error {
+  font-size: toRem(12);
+  position: absolute;
+  top: 90%;
+  left: 0;
+  color: red;
+}

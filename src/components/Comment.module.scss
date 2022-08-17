@@ -3,25 +3,21 @@
 .comment-item {
   display: grid;
   grid-template-columns: 1fr;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--color-font);
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .comment {
   color: var(--color-font);
   display: grid;
-  grid-template-columns: minmax(50px, 150px) 1fr;
-  gap: 30px;
+  grid-template-columns:  1fr;
+  justify-items: flex-start;
+  gap: 10px;
   align-items: center;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid var(--color-font);
-  @include tablets {
-  grid-template-columns: minmax(30px, 120px) 1fr;
-  gap: 20px;
-}
-@include phones {
-    grid-template-columns: minmax(20px, 100px) 1fr;
-    gap: 10px;
-  }
 }
 
 .comment_image {
@@ -37,27 +33,12 @@
   max-width: 100%;
 }
 
-.comment_info {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 10px;
-  @include tablets {
-    font-size: 14px;
-  }
-  @include phones {
-    font-size: 12px;
-  }
-}
+
 
 .comment_name {
-  font-size: 18px;
-  background-color: var(--color-body);
+  background-color: var(--color-purple);
   padding: 5px 10px;
   border-radius: 10px;
-  @include tablets {
-    font-size: 16px;
-  }
   @include phones {
     font-size: 14px;
   }

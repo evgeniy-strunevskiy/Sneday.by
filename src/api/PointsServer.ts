@@ -30,9 +30,15 @@ export class PointsServer {
     const response = await axios.get<IFavoriteTypes[]>(`http://localhost:3001/favorites`);
     return response.data;
   }
-  static async getComments() {
-    const response = await axios.get<ICommentTypes[]>(`http://localhost:3001/comments`);
-    return response.data;
+  static async getComments(limit: number, page: number) {
+    const response = await axios.get<ICommentTypes[]>(`http://localhost:3001/comments`, {
+      params: {
+        _limit: limit,
+        _page: page
+      }
+    });
+    const totalCount = response.headers["x-total-count"];
+    return {data: response.data, totalCount};
   }
   static async getCart() {
     const response = await axios.get<ICartItemTypes[]>(`http://localhost:3001/cart`);
@@ -44,6 +50,10 @@ export class PointsServer {
   }
   static async removeFromCart(cartItem: number) {
     const response = await axios.delete<number>(`http://localhost:3001/cart/${cartItem}`);
+    return response.data;
+  }
+  static async addComment(comment: ICommentTypes) {
+    const response = await axios.post<ICommentTypes>(`http://localhost:3001/comments`, comment);
     return response.data;
   }
 }

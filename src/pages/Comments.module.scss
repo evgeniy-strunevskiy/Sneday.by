@@ -9,4 +9,17 @@
   @include container;
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: max-content 1fr max-content;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.comments_btn {
+  font-weight: 700;
+  color: var(--color-drawer);
+  background-color: var(--color-gold-dark);
+  padding: 20px;
+  border-radius: 7px;
+  justify-self: center;
 }

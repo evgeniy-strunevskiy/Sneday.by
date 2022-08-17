@@ -13,7 +13,7 @@ interface ICommentsListPropsTypes {
 export const CommentsList:FC<ICommentsListPropsTypes> = ({comments}) => {
   return (
     <ul className={cl('comments-list')}>
-      {comments.map(com => <Comment comment={com} />)}
+      {comments.map(com => <Comment key={com.id} comment={com} />)}
     </ul>
   )
 }

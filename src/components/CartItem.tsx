@@ -16,8 +16,6 @@ export const CartItem: FC<ICartItemPropsTypes> = ({ cartItem }) => {
   const dispatch = useAppDispatch()
 
   const removeCartItem = () => {
-    console.log('removeCartItem')
-
       dispatch(removeFromCart(cartItem.id));
   }
 

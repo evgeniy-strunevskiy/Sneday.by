@@ -61,6 +61,11 @@ export const Menu: FC<IMenuPropsTypes> = ({ setFalseActive, isActive }) => {
             Избранное
           </NavLink>
         </li>
+        <li className={cl("menu_item")} onClick={setFalseActive}>
+          <NavLink to="comments" className={setActive}>
+            Комментарии
+          </NavLink>
+        </li>
         {login ? (
           <li className={cl("menu_item")} onClick={handleLogin}>
             <NavLink to="/" className={cl("menu_login")}>

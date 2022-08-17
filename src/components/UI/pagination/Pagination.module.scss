@@ -1,0 +1,26 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--color-font);
+}
+
+.pagination-item {
+  font-size: 14px;
+  display: block;
+  background: var(--color-purple);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pagination-btn {
+  background: var(--color-font);
+  padding: 5px 10px;
+  border-radius: 10px;
+}

@@ -9,7 +9,6 @@ export const addFavorite =
   (favorite: IFavoriteTypes) => async (dispatch: AppDispatch) => {
     try {
       dispatch(favoritesFetching(true));
-      console.log('addFavorite')
       await PointsServer.addFavorite(favorite);
       dispatch(getFavorites())
       dispatch(favoritesFetching(false));

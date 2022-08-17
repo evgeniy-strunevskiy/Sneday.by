@@ -22,6 +22,7 @@ export const InputForm: FC<IInputFormPropsTypes> = ({
   wrapperClass,
   ...rest
 }) => {
+
   return (
     <>
       {label && <label className={cl('input_label')} htmlFor={name}>{label}:</label>}
