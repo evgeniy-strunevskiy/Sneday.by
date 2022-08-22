@@ -1,0 +1,15 @@
+@use "../sass/media" as *;
+
+.footer {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-font);
+  border-top: 1px solid #a2cc4e;
+  @include phones {
+    font-size: 12px;
+  }
+}
