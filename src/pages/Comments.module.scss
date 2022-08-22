@@ -1,10 +1,5 @@
 @use "../sass/media" as *;
 
-.comments {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
 .comments_container {
   @include container;
   display: grid;

@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: minmax(min-content, max-content)  minmax(160px, max-content);
   grid-template-areas: "content" "vegetable";
-  gap: 10px;
+  justify-content: center;
   border-radius: 20px;
   position: relative;
   overflow: hidden;

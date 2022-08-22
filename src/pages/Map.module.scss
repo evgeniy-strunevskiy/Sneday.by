@@ -7,7 +7,7 @@
 
 .map_description {
   font-weight: 300;
-  margin-top: -20px;
+  margin-top: -40px;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -16,9 +16,9 @@
 }
 
 .map_content {
-  align-items: center;
+  // align-items: center;
   justify-items: center;
-
+  margin-bottom: 50px;
   display: grid;
   grid-template-columns: 1fr min-content;
 
