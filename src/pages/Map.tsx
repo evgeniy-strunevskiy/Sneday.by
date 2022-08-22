@@ -114,17 +114,20 @@ export const Map: FC = () => {
   return (
     <div className={cl("map")}>
       <div className={cl("map_container")}>
+        <div className={cl("map_description")}>Овощной рынок "СНЕДАЙ". Брест, набережная Франциска Скорины</div>
         <Banner />
         <div className={cl("map_content")}>
           {error && <Error error={error} />}
           {isLoading ? <Loader /> : <MapSquare sections={sections} />}
           <Sidebar />
         </div>
-        {
-          isLoaded ? (
-            <GMap center={center} />
-          ) : (<div><Loader /></div>)
-        }
+        <div className={cl("map_google")}>
+          {
+            isLoaded ? (
+              <GMap center={center} />
+            ) : (<div><Loader /></div>)
+          }
+        </div>
       </div>
     </div>
   );

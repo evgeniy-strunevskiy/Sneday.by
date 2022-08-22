@@ -1,14 +1,26 @@
 @use "../sass/media" as *;
 
-
 .map_container {
   @include container;
   color: var(--color-font);
 }
 
+.map_description {
+  margin-top: -20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-background-one);
+  border-radius: 0px 0px 20px 20px;
+}
+
 .map_content {
+  align-items: center;
+  justify-items: center;
+
   display: grid;
   grid-template-columns: 1fr min-content;
+
   gap: 40px;
   @include tablets {
     grid-template-columns: 1fr;
@@ -21,3 +33,8 @@
   justify-content: center;
 }
 
+.map_google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

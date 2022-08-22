@@ -16,7 +16,6 @@ const cl = classNames.bind(styles);
 interface ILoginFormPropsTypes {
   fromPage: string;
 }
-
 const EmailSchema = yup.object().shape({
   email: yup.string().email("Введите верный email").required("Обязательно"),
   password: yup
