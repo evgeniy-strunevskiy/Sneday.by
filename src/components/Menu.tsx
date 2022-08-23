@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useState } from "react";
 import styles from "./Menu.module.scss";
 import classNames from "classnames/bind";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../hooks/redux";
 import { removeLogin } from "../store/middleware/login";
 import { getCart } from "../store/middleware/cart";
@@ -14,6 +14,10 @@ interface IMenuPropsTypes {
 }
 
 export const Menu: FC<IMenuPropsTypes> = ({ setFalseActive, isActive }) => {
+
+  const location = useLocation();
+
+
   const dispatch = useAppDispatch();
   const { login } = useAppSelector((state) => state.login);
   const { cart } = useAppSelector((state) => state.cart);
@@ -74,7 +78,7 @@ export const Menu: FC<IMenuPropsTypes> = ({ setFalseActive, isActive }) => {
           </li>
         ) : (
           <li className={cl("menu_item")} onClick={setFalseActive}>
-            <NavLink to="login" className={cl("menu_login")}>
+            <NavLink to="login" className={cl("menu_login")} state={{from: {path: location.pathname}}}>
               Войти
             </NavLink>
           </li>

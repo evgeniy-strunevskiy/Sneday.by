@@ -11,12 +11,12 @@ export const privateRoutes = [
   { path: "favorites", element: Favorites },
   { path: "orders", element: Orders },
   { path: "cart", element: Cart },
+  { path: "comments", element: Comments },
 ];
 
 export const publicRoutes = [
   { path: "index", element: Map },
   { path: ":id", element: Owner },
   { path: "login", element: Login },
-  { path: "comments", element: Comments },
   { path: "*", element: NoteFound },
 ];

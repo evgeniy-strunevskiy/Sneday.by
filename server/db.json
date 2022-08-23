@@ -3648,7 +3648,11 @@
       "name": "Кабачок"
     }
   ],
-  "favorites": [],
+  "favorites": [
+    {
+      "id": 1
+    }
+  ],
   "cart": [],
   "orders": [],
   "comments": [

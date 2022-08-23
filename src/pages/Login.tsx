@@ -16,7 +16,7 @@ type LocationState = {
 
 export const Login: FC = () => {
   const location = useLocation();
-  const from = (location.state as LocationState)?.from.path;
+  const from = (location.state as LocationState)?.from.path;  
   const fromPage = from || '/';
 
   return (
