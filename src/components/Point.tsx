@@ -5,7 +5,6 @@ import { useAppSelector } from "../hooks/redux";
 import { IPointTypes } from "../types/pointsTypes";
 import styles from "./Point.module.scss";
 
-
 const cl = classNames.bind(styles);
 
 interface IPointPropsTypes {
@@ -17,7 +16,6 @@ export const Point: FC<IPointPropsTypes> = ({ point }) => {
   let price = null;
   const { vegetable } = useAppSelector((state) => state.searchMap);
 
-
   if (vegetable) {
     point.vegetables.map((item) =>
       item.title === vegetable ? (price = item.price) : null
@@ -27,9 +25,14 @@ export const Point: FC<IPointPropsTypes> = ({ point }) => {
   return (
     <Link
       to={`${point.id}`}
-      className={cl("point",{ point_busy: isbusy }, { point_link: isbusy }, { point_price: price })}
+      className={cl(
+        "point",
+        { point_busy: isbusy },
+        { point_link: isbusy },
+        { point_price: price }
+      )}
     >
-      {price ? `${price} р.` : point.id}
+      {price ? `${price} €` : point.id}
     </Link>
   );
 };

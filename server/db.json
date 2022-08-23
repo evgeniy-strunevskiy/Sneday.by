@@ -8,19 +8,11 @@
       "isBusy": true,
       "vegetables": [
         {
-          "id": 1,
-          "vegetable": "potate",
-          "title": "Картофель",
-          "name": "Палац",
-          "price": 12.4,
-          "imgUrl": "./image/potato.png"
-        },
-        {
           "id": 2,
           "vegetable": "beet",
           "title": "Свекла",
           "name": "Атаман",
-          "price": 8,
+          "price": 12,
           "imgUrl": "./image/beet.png"
         },
         {
@@ -28,7 +20,7 @@
           "vegetable": "carrot",
           "title": "Морковь",
           "name": "Паулинка",
-          "price": 9,
+          "price": 11,
           "imgUrl": "./image/carrot.png"
         },
         {
@@ -36,7 +28,7 @@
           "vegetable": "corn",
           "title": "Кукуруза",
           "name": "Ранняя",
-          "price": 12,
+          "price": 10,
           "imgUrl": "./image/corn.png"
         },
         {
@@ -44,7 +36,7 @@
           "vegetable": "cucumber",
           "title": "Огурец",
           "name": "Журавленок",
-          "price": 13,
+          "price": 9,
           "imgUrl": "./image/cucumber.png"
         },
         {
@@ -64,19 +56,11 @@
           "imgUrl": "./image/garlic.png"
         },
         {
-          "id": 8,
-          "vegetable": "horseradish",
-          "title": "Имбирь",
-          "name": "Шакспир",
-          "price": 11,
-          "imgUrl": "./image/horseradish.png"
-        },
-        {
           "id": 9,
           "vegetable": "onion",
           "title": "Лук",
           "name": "Ветразь",
-          "price": 12,
+          "price": 8,
           "imgUrl": "./image/onion.png"
         },
         {
@@ -84,7 +68,7 @@
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 13,
           "imgUrl": "./image/peper.png"
         },
         {
@@ -108,7 +92,7 @@
           "vegetable": "tomato",
           "title": "Помидор",
           "name": "Раница",
-          "price": 9,
+          "price": 7,
           "imgUrl": "./image/tomato.png"
         },
         {
@@ -116,7 +100,7 @@
           "vegetable": "vegetmarrow",
           "title": "Кабачок",
           "name": "Хелена",
-          "price": 11,
+          "price": 8,
           "imgUrl": "./image/vegetmarrow.png"
         },
         {
@@ -124,7 +108,7 @@
           "vegetable": "broccoli",
           "title": "Брокколи",
           "name": "Анна",
-          "price": 11,
+          "price": 12,
           "imgUrl": "./image/broccoli.png"
         },
         {
@@ -132,7 +116,7 @@
           "vegetable": "cabbage",
           "title": "Капуста",
           "name": "Белая",
-          "price": 11,
+          "price": 9,
           "imgUrl": "./image/cabbage.png"
         }
       ]
@@ -149,47 +133,15 @@
           "vegetable": "potate",
           "title": "Картофель",
           "name": "Палац",
-          "price": 10,
-          "imgUrl": "./image/potato.png"
-        },
-        {
-          "id": 18,
-          "vegetable": "beet",
-          "title": "Свекла",
-          "name": "Атаман",
           "price": 8,
-          "imgUrl": "./image/beet.png"
-        },
-        {
-          "id": 19,
-          "vegetable": "carrot",
-          "title": "Морковь",
-          "name": "Паулинка",
-          "price": 9,
-          "imgUrl": "./image/carrot.png"
-        },
-        {
-          "id": 20,
-          "vegetable": "corn",
-          "title": "Кукуруза",
-          "name": "Ранняя",
-          "price": 12,
-          "imgUrl": "./image/corn.png"
-        },
-        {
-          "id": 21,
-          "vegetable": "cucumber",
-          "title": "Огурец",
-          "name": "Журавленок",
-          "price": 13,
-          "imgUrl": "./image/cucumber.png"
+          "imgUrl": "./image/potato.png"
         },
         {
           "id": 22,
           "vegetable": "eggplant",
           "title": "Баклажан",
           "name": "Черномор",
-          "price": 12,
+          "price": 11,
           "imgUrl": "./image/eggplant.png"
         },
         {
@@ -197,7 +149,7 @@
           "vegetable": "garlic",
           "title": "Чеснок",
           "name": "Харнась",
-          "price": 10,
+          "price": 14,
           "imgUrl": "./image/garlic.png"
         },
         {
@@ -205,56 +157,24 @@
           "vegetable": "horseradish",
           "title": "Имбирь",
           "name": "Шакспир",
-          "price": 11,
+          "price": 8,
           "imgUrl": "./image/horseradish.png"
-        },
-        {
-          "id": 25,
-          "vegetable": "onion",
-          "title": "Лук",
-          "name": "Ветразь",
-          "price": 12,
-          "imgUrl": "./image/onion.png"
-        },
-        {
-          "id": 26,
-          "vegetable": "peper",
-          "title": "Перец",
-          "name": "Алеся",
-          "price": 15,
-          "imgUrl": "./image/peper.png"
         },
         {
           "id": 27,
           "vegetable": "pumpkin",
           "title": "Тыква",
           "name": "Плюшка",
-          "price": 15,
+          "price": 12,
           "imgUrl": "./image/pumpkin.png"
-        },
-        {
-          "id": 28,
-          "vegetable": "radish",
-          "title": "Редис",
-          "name": "Ватра",
-          "price": 9,
-          "imgUrl": "./image/radish.png"
         },
         {
           "id": 29,
           "vegetable": "tomato",
           "title": "Помидор",
           "name": "Раница",
-          "price": 9,
+          "price": 14,
           "imgUrl": "./image/tomato.png"
-        },
-        {
-          "id": 30,
-          "vegetable": "vegetmarrow",
-          "title": "Кабачок",
-          "name": "Хелена",
-          "price": 11,
-          "imgUrl": "./image/vegetmarrow.png"
         }
       ]
     },
@@ -274,67 +194,19 @@
       "isBusy": true,
       "vegetables": [
         {
-          "id": 31,
-          "vegetable": "potate",
-          "title": "Картофель",
-          "name": "Палац",
-          "price": 10,
-          "imgUrl": "./image/potato.png"
-        },
-        {
           "id": 32,
           "vegetable": "beet",
           "title": "Свекла",
           "name": "Атаман",
-          "price": 8,
+          "price": 12,
           "imgUrl": "./image/beet.png"
-        },
-        {
-          "id": 33,
-          "vegetable": "carrot",
-          "title": "Морковь",
-          "name": "Паулинка",
-          "price": 9,
-          "imgUrl": "./image/carrot.png"
-        },
-        {
-          "id": 34,
-          "vegetable": "corn",
-          "title": "Кукуруза",
-          "name": "Ранняя",
-          "price": 12,
-          "imgUrl": "./image/corn.png"
-        },
-        {
-          "id": 35,
-          "vegetable": "cucumber",
-          "title": "Огурец",
-          "name": "Журавленок",
-          "price": 13,
-          "imgUrl": "./image/cucumber.png"
-        },
-        {
-          "id": 36,
-          "vegetable": "eggplant",
-          "title": "Баклажан",
-          "name": "Черномор",
-          "price": 12,
-          "imgUrl": "./image/eggplant.png"
-        },
-        {
-          "id": 37,
-          "vegetable": "garlic",
-          "title": "Чеснок",
-          "name": "Харнась",
-          "price": 10,
-          "imgUrl": "./image/garlic.png"
         },
         {
           "id": 38,
           "vegetable": "horseradish",
           "title": "Имбирь",
           "name": "Шакспир",
-          "price": 11,
+          "price": 10,
           "imgUrl": "./image/horseradish.png"
         },
         {
@@ -342,7 +214,7 @@
           "vegetable": "onion",
           "title": "Лук",
           "name": "Ветразь",
-          "price": 12,
+          "price": 9,
           "imgUrl": "./image/onion.png"
         },
         {
@@ -350,7 +222,7 @@
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 7,
           "imgUrl": "./image/peper.png"
         },
         {
@@ -358,32 +230,8 @@
           "vegetable": "pumpkin",
           "title": "Тыква",
           "name": "Плюшка",
-          "price": 15,
+          "price": 10,
           "imgUrl": "./image/pumpkin.png"
-        },
-        {
-          "id": 42,
-          "vegetable": "radish",
-          "title": "Редис",
-          "name": "Ватра",
-          "price": 9,
-          "imgUrl": "./image/radish.png"
-        },
-        {
-          "id": 43,
-          "vegetable": "tomato",
-          "title": "Помидор",
-          "name": "Раница",
-          "price": 9,
-          "imgUrl": "./image/tomato.png"
-        },
-        {
-          "id": 44,
-          "vegetable": "vegetmarrow",
-          "title": "Кабачок",
-          "name": "Хелена",
-          "price": 11,
-          "imgUrl": "./image/vegetmarrow.png"
         }
       ]
     },
@@ -399,23 +247,15 @@
           "vegetable": "potate",
           "title": "Картофель",
           "name": "Палац",
-          "price": 10,
+          "price": 7,
           "imgUrl": "./image/potato.png"
-        },
-        {
-          "id": 46,
-          "vegetable": "beet",
-          "title": "Свекла",
-          "name": "Атаман",
-          "price": 8,
-          "imgUrl": "./image/beet.png"
         },
         {
           "id": 47,
           "vegetable": "carrot",
           "title": "Морковь",
           "name": "Паулинка",
-          "price": 9,
+          "price": 8,
           "imgUrl": "./image/carrot.png"
         },
         {
@@ -423,7 +263,7 @@
           "vegetable": "corn",
           "title": "Кукуруза",
           "name": "Ранняя",
-          "price": 12,
+          "price": 11,
           "imgUrl": "./image/corn.png"
         },
         {
@@ -431,7 +271,7 @@
           "vegetable": "cucumber",
           "title": "Огурец",
           "name": "Журавленок",
-          "price": 13,
+          "price": 10,
           "imgUrl": "./image/cucumber.png"
         },
         {
@@ -439,7 +279,7 @@
           "vegetable": "eggplant",
           "title": "Баклажан",
           "name": "Черномор",
-          "price": 12,
+          "price": 8,
           "imgUrl": "./image/eggplant.png"
         },
         {
@@ -447,31 +287,15 @@
           "vegetable": "garlic",
           "title": "Чеснок",
           "name": "Харнась",
-          "price": 10,
+          "price": 7,
           "imgUrl": "./image/garlic.png"
-        },
-        {
-          "id": 52,
-          "vegetable": "horseradish",
-          "title": "Имбирь",
-          "name": "Шакспир",
-          "price": 11,
-          "imgUrl": "./image/horseradish.png"
-        },
-        {
-          "id": 53,
-          "vegetable": "onion",
-          "title": "Лук",
-          "name": "Ветразь",
-          "price": 12,
-          "imgUrl": "./image/onion.png"
         },
         {
           "id": 54,
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 12,
           "imgUrl": "./image/peper.png"
         },
         {
@@ -479,7 +303,7 @@
           "vegetable": "pumpkin",
           "title": "Тыква",
           "name": "Плюшка",
-          "price": 15,
+          "price": 8,
           "imgUrl": "./image/pumpkin.png"
         },
         {
@@ -487,7 +311,7 @@
           "vegetable": "radish",
           "title": "Редис",
           "name": "Ватра",
-          "price": 9,
+          "price": 11,
           "imgUrl": "./image/radish.png"
         },
         {
@@ -495,16 +319,8 @@
           "vegetable": "tomato",
           "title": "Помидор",
           "name": "Раница",
-          "price": 9,
+          "price": 10,
           "imgUrl": "./image/tomato.png"
-        },
-        {
-          "id": 58,
-          "vegetable": "vegetmarrow",
-          "title": "Кабачок",
-          "name": "Хелена",
-          "price": 11,
-          "imgUrl": "./image/vegetmarrow.png"
         }
       ]
     },
@@ -516,107 +332,27 @@
       "isBusy": true,
       "vegetables": [
         {
-          "id": 59,
-          "vegetable": "potate",
-          "title": "Картофель",
-          "name": "Палац",
-          "price": 10,
-          "imgUrl": "./image/potato.png"
-        },
-        {
           "id": 60,
           "vegetable": "beet",
           "title": "Свекла",
           "name": "Атаман",
-          "price": 8,
+          "price": 7,
           "imgUrl": "./image/beet.png"
-        },
-        {
-          "id": 61,
-          "vegetable": "carrot",
-          "title": "Морковь",
-          "name": "Паулинка",
-          "price": 9,
-          "imgUrl": "./image/carrot.png"
-        },
-        {
-          "id": 62,
-          "vegetable": "corn",
-          "title": "Кукуруза",
-          "name": "Ранняя",
-          "price": 12,
-          "imgUrl": "./image/corn.png"
-        },
-        {
-          "id": 5,
-          "vegetable": "cucumber",
-          "title": "Огурец",
-          "name": "Журавленок",
-          "price": 13,
-          "imgUrl": "./image/cucumber.png"
-        },
-        {
-          "id": 63,
-          "vegetable": "eggplant",
-          "title": "Баклажан",
-          "name": "Черномор",
-          "price": 12,
-          "imgUrl": "./image/eggplant.png"
-        },
-        {
-          "id": 64,
-          "vegetable": "garlic",
-          "title": "Чеснок",
-          "name": "Харнась",
-          "price": 10,
-          "imgUrl": "./image/garlic.png"
         },
         {
           "id": 65,
           "vegetable": "horseradish",
           "title": "Имбирь",
           "name": "Шакспир",
-          "price": 11,
+          "price": 8,
           "imgUrl": "./image/horseradish.png"
-        },
-        {
-          "id": 66,
-          "vegetable": "onion",
-          "title": "Лук",
-          "name": "Ветразь",
-          "price": 12,
-          "imgUrl": "./image/onion.png"
-        },
-        {
-          "id": 67,
-          "vegetable": "peper",
-          "title": "Перец",
-          "name": "Алеся",
-          "price": 15,
-          "imgUrl": "./image/peper.png"
-        },
-        {
-          "id": 68,
-          "vegetable": "pumpkin",
-          "title": "Тыква",
-          "name": "Плюшка",
-          "price": 15,
-          "imgUrl": "./image/pumpkin.png"
-        },
-        {
-          "id": 69,
-          "vegetable": "radish",
-          "title": "Редис",
-          "name": "Ватра",
-          "price": 9,
-          "imgUrl": "./image/radish.png"
         },
         {
           "id": 70,
           "vegetable": "tomato",
           "title": "Помидор",
           "name": "Раница",
-          "price": 9,
+          "price": 10,
           "imgUrl": "./image/tomato.png"
         },
         {
@@ -624,7 +360,7 @@
           "vegetable": "vegetmarrow",
           "title": "Кабачок",
           "name": "Хелена",
-          "price": 11,
+          "price": 9,
           "imgUrl": "./image/vegetmarrow.png"
         }
       ]
@@ -649,71 +385,15 @@
           "vegetable": "potate",
           "title": "Картофель",
           "name": "Палац",
-          "price": 10,
+          "price": 7,
           "imgUrl": "./image/potato.png"
-        },
-        {
-          "id": 87,
-          "vegetable": "beet",
-          "title": "Свекла",
-          "name": "Атаман",
-          "price": 8,
-          "imgUrl": "./image/beet.png"
-        },
-        {
-          "id": 88,
-          "vegetable": "carrot",
-          "title": "Морковь",
-          "name": "Паулинка",
-          "price": 9,
-          "imgUrl": "./image/carrot.png"
-        },
-        {
-          "id": 89,
-          "vegetable": "corn",
-          "title": "Кукуруза",
-          "name": "Ранняя",
-          "price": 12,
-          "imgUrl": "./image/corn.png"
-        },
-        {
-          "id": 90,
-          "vegetable": "cucumber",
-          "title": "Огурец",
-          "name": "Журавленок",
-          "price": 13,
-          "imgUrl": "./image/cucumber.png"
-        },
-        {
-          "id": 91,
-          "vegetable": "eggplant",
-          "title": "Баклажан",
-          "name": "Черномор",
-          "price": 12,
-          "imgUrl": "./image/eggplant.png"
-        },
-        {
-          "id": 92,
-          "vegetable": "garlic",
-          "title": "Чеснок",
-          "name": "Харнась",
-          "price": 10,
-          "imgUrl": "./image/garlic.png"
-        },
-        {
-          "id": 93,
-          "vegetable": "horseradish",
-          "title": "Имбирь",
-          "name": "Шакспир",
-          "price": 11,
-          "imgUrl": "./image/horseradish.png"
         },
         {
           "id": 94,
           "vegetable": "onion",
           "title": "Лук",
           "name": "Ветразь",
-          "price": 12,
+          "price": 8,
           "imgUrl": "./image/onion.png"
         },
         {
@@ -721,7 +401,7 @@
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 9,
           "imgUrl": "./image/peper.png"
         },
         {
@@ -729,31 +409,15 @@
           "vegetable": "pumpkin",
           "title": "Тыква",
           "name": "Плюшка",
-          "price": 15,
+          "price": 7,
           "imgUrl": "./image/pumpkin.png"
-        },
-        {
-          "id": 97,
-          "vegetable": "radish",
-          "title": "Редис",
-          "name": "Ватра",
-          "price": 9,
-          "imgUrl": "./image/radish.png"
-        },
-        {
-          "id": 98,
-          "vegetable": "tomato",
-          "title": "Помидор",
-          "name": "Раница",
-          "price": 9,
-          "imgUrl": "./image/tomato.png"
         },
         {
           "id": 99,
           "vegetable": "vegetmarrow",
           "title": "Кабачок",
           "name": "Хелена",
-          "price": 11,
+          "price": 12,
           "imgUrl": "./image/vegetmarrow.png"
         }
       ]
@@ -766,19 +430,11 @@
       "isBusy": true,
       "vegetables": [
         {
-          "id": 100,
-          "vegetable": "potate",
-          "title": "Картофель",
-          "name": "Палац",
-          "price": 10,
-          "imgUrl": "./image/potato.png"
-        },
-        {
           "id": 101,
           "vegetable": "beet",
           "title": "Свекла",
           "name": "Атаман",
-          "price": 8,
+          "price": 9,
           "imgUrl": "./image/beet.png"
         },
         {
@@ -786,7 +442,7 @@
           "vegetable": "carrot",
           "title": "Морковь",
           "name": "Паулинка",
-          "price": 9,
+          "price": 8,
           "imgUrl": "./image/carrot.png"
         },
         {
@@ -794,7 +450,7 @@
           "vegetable": "corn",
           "title": "Кукуруза",
           "name": "Ранняя",
-          "price": 12,
+          "price": 7,
           "imgUrl": "./image/corn.png"
         },
         {
@@ -802,7 +458,7 @@
           "vegetable": "cucumber",
           "title": "Огурец",
           "name": "Журавленок",
-          "price": 13,
+          "price": 10,
           "imgUrl": "./image/cucumber.png"
         },
         {
@@ -810,23 +466,15 @@
           "vegetable": "eggplant",
           "title": "Баклажан",
           "name": "Черномор",
-          "price": 12,
+          "price": 11,
           "imgUrl": "./image/eggplant.png"
-        },
-        {
-          "id": 106,
-          "vegetable": "garlic",
-          "title": "Чеснок",
-          "name": "Харнась",
-          "price": 10,
-          "imgUrl": "./image/garlic.png"
         },
         {
           "id": 107,
           "vegetable": "horseradish",
           "title": "Имбирь",
           "name": "Шакспир",
-          "price": 11,
+          "price": 10,
           "imgUrl": "./image/horseradish.png"
         },
         {
@@ -834,7 +482,7 @@
           "vegetable": "onion",
           "title": "Лук",
           "name": "Ветразь",
-          "price": 12,
+          "price": 9,
           "imgUrl": "./image/onion.png"
         },
         {
@@ -842,7 +490,7 @@
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 8,
           "imgUrl": "./image/peper.png"
         },
         {
@@ -850,7 +498,7 @@
           "vegetable": "pumpkin",
           "title": "Тыква",
           "name": "Плюшка",
-          "price": 15,
+          "price": 7,
           "imgUrl": "./image/pumpkin.png"
         },
         {
@@ -858,7 +506,7 @@
           "vegetable": "radish",
           "title": "Редис",
           "name": "Ватра",
-          "price": 9,
+          "price": 10,
           "imgUrl": "./image/radish.png"
         },
         {
@@ -866,16 +514,8 @@
           "vegetable": "tomato",
           "title": "Помидор",
           "name": "Раница",
-          "price": 9,
-          "imgUrl": "./image/tomato.png"
-        },
-        {
-          "id": 113,
-          "vegetable": "vegetmarrow",
-          "title": "Кабачок",
-          "name": "Хелена",
           "price": 11,
-          "imgUrl": "./image/vegetmarrow.png"
+          "imgUrl": "./image/tomato.png"
         }
       ]
     },
@@ -887,107 +527,27 @@
       "isBusy": true,
       "vegetables": [
         {
-          "id": 114,
-          "vegetable": "potate",
-          "title": "Картофель",
-          "name": "Палац",
-          "price": 10,
-          "imgUrl": "./image/potato.png"
-        },
-        {
-          "id": 115,
-          "vegetable": "beet",
-          "title": "Свекла",
-          "name": "Атаман",
-          "price": 8,
-          "imgUrl": "./image/beet.png"
-        },
-        {
-          "id": 116,
-          "vegetable": "carrot",
-          "title": "Морковь",
-          "name": "Паулинка",
-          "price": 9,
-          "imgUrl": "./image/carrot.png"
-        },
-        {
-          "id": 117,
-          "vegetable": "corn",
-          "title": "Кукуруза",
-          "name": "Ранняя",
-          "price": 12,
-          "imgUrl": "./image/corn.png"
-        },
-        {
-          "id": 118,
-          "vegetable": "cucumber",
-          "title": "Огурец",
-          "name": "Журавленок",
-          "price": 13,
-          "imgUrl": "./image/cucumber.png"
-        },
-        {
-          "id": 119,
-          "vegetable": "eggplant",
-          "title": "Баклажан",
-          "name": "Черномор",
-          "price": 12,
-          "imgUrl": "./image/eggplant.png"
-        },
-        {
           "id": 120,
           "vegetable": "garlic",
           "title": "Чеснок",
           "name": "Харнась",
-          "price": 10,
+          "price": 7,
           "imgUrl": "./image/garlic.png"
-        },
-        {
-          "id": 121,
-          "vegetable": "horseradish",
-          "title": "Имбирь",
-          "name": "Шакспир",
-          "price": 11,
-          "imgUrl": "./image/horseradish.png"
-        },
-        {
-          "id": 122,
-          "vegetable": "onion",
-          "title": "Лук",
-          "name": "Ветразь",
-          "price": 12,
-          "imgUrl": "./image/onion.png"
         },
         {
           "id": 123,
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 8,
           "imgUrl": "./image/peper.png"
-        },
-        {
-          "id": 124,
-          "vegetable": "pumpkin",
-          "title": "Тыква",
-          "name": "Плюшка",
-          "price": 15,
-          "imgUrl": "./image/pumpkin.png"
-        },
-        {
-          "id": 125,
-          "vegetable": "radish",
-          "title": "Редис",
-          "name": "Ватра",
-          "price": 9,
-          "imgUrl": "./image/radish.png"
         },
         {
           "id": 126,
           "vegetable": "tomato",
           "title": "Помидор",
           "name": "Раница",
-          "price": 9,
+          "price": 10,
           "imgUrl": "./image/tomato.png"
         },
         {
@@ -995,7 +555,7 @@
           "vegetable": "vegetmarrow",
           "title": "Кабачок",
           "name": "Хелена",
-          "price": 11,
+          "price": 12,
           "imgUrl": "./image/vegetmarrow.png"
         }
       ]
@@ -1012,7 +572,7 @@
           "vegetable": "potate",
           "title": "Картофель",
           "name": "Палац",
-          "price": 10,
+          "price": 7,
           "imgUrl": "./image/potato.png"
         },
         {
@@ -1020,7 +580,7 @@
           "vegetable": "beet",
           "title": "Свекла",
           "name": "Атаман",
-          "price": 8,
+          "price": 9,
           "imgUrl": "./image/beet.png"
         },
         {
@@ -1028,7 +588,7 @@
           "vegetable": "carrot",
           "title": "Морковь",
           "name": "Паулинка",
-          "price": 9,
+          "price": 10,
           "imgUrl": "./image/carrot.png"
         },
         {
@@ -1036,7 +596,7 @@
           "vegetable": "corn",
           "title": "Кукуруза",
           "name": "Ранняя",
-          "price": 12,
+          "price": 11,
           "imgUrl": "./image/corn.png"
         },
         {
@@ -1044,7 +604,7 @@
           "vegetable": "cucumber",
           "title": "Огурец",
           "name": "Журавленок",
-          "price": 13,
+          "price": 12,
           "imgUrl": "./image/cucumber.png"
         },
         {
@@ -1052,72 +612,32 @@
           "vegetable": "eggplant",
           "title": "Баклажан",
           "name": "Черномор",
-          "price": 12,
+          "price": 8,
           "imgUrl": "./image/eggplant.png"
-        },
-        {
-          "id": 143,
-          "vegetable": "garlic",
-          "title": "Чеснок",
-          "name": "Харнась",
-          "price": 10,
-          "imgUrl": "./image/garlic.png"
         },
         {
           "id": 144,
           "vegetable": "horseradish",
           "title": "Имбирь",
           "name": "Шакспир",
-          "price": 11,
+          "price": 10,
           "imgUrl": "./image/horseradish.png"
-        },
-        {
-          "id": 145,
-          "vegetable": "onion",
-          "title": "Лук",
-          "name": "Ветразь",
-          "price": 12,
-          "imgUrl": "./image/onion.png"
         },
         {
           "id": 146,
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 12,
           "imgUrl": "./image/peper.png"
-        },
-        {
-          "id": 147,
-          "vegetable": "pumpkin",
-          "title": "Тыква",
-          "name": "Плюшка",
-          "price": 15,
-          "imgUrl": "./image/pumpkin.png"
         },
         {
           "id": 148,
           "vegetable": "radish",
           "title": "Редис",
           "name": "Ватра",
-          "price": 9,
+          "price": 8,
           "imgUrl": "./image/radish.png"
-        },
-        {
-          "id": 149,
-          "vegetable": "tomato",
-          "title": "Помидор",
-          "name": "Раница",
-          "price": 9,
-          "imgUrl": "./image/tomato.png"
-        },
-        {
-          "id": 150,
-          "vegetable": "vegetmarrow",
-          "title": "Кабачок",
-          "name": "Хелена",
-          "price": 11,
-          "imgUrl": "./image/vegetmarrow.png"
         }
       ]
     },
@@ -1129,115 +649,43 @@
       "isBusy": true,
       "vegetables": [
         {
-          "id": 151,
-          "vegetable": "potate",
-          "title": "Картофель",
-          "name": "Палац",
-          "price": 10,
-          "imgUrl": "./image/potato.png"
-        },
-        {
           "id": 152,
           "vegetable": "beet",
           "title": "Свекла",
           "name": "Атаман",
-          "price": 8,
+          "price": 7,
           "imgUrl": "./image/beet.png"
-        },
-        {
-          "id": 153,
-          "vegetable": "carrot",
-          "title": "Морковь",
-          "name": "Паулинка",
-          "price": 9,
-          "imgUrl": "./image/carrot.png"
-        },
-        {
-          "id": 154,
-          "vegetable": "corn",
-          "title": "Кукуруза",
-          "name": "Ранняя",
-          "price": 12,
-          "imgUrl": "./image/corn.png"
-        },
-        {
-          "id": 155,
-          "vegetable": "cucumber",
-          "title": "Огурец",
-          "name": "Журавленок",
-          "price": 13,
-          "imgUrl": "./image/cucumber.png"
         },
         {
           "id": 156,
           "vegetable": "eggplant",
           "title": "Баклажан",
           "name": "Черномор",
-          "price": 12,
+          "price": 8,
           "imgUrl": "./image/eggplant.png"
-        },
-        {
-          "id": 157,
-          "vegetable": "garlic",
-          "title": "Чеснок",
-          "name": "Харнась",
-          "price": 10,
-          "imgUrl": "./image/garlic.png"
-        },
-        {
-          "id": 158,
-          "vegetable": "horseradish",
-          "title": "Имбирь",
-          "name": "Шакспир",
-          "price": 11,
-          "imgUrl": "./image/horseradish.png"
         },
         {
           "id": 159,
           "vegetable": "onion",
           "title": "Лук",
           "name": "Ветразь",
-          "price": 12,
+          "price": 9,
           "imgUrl": "./image/onion.png"
-        },
-        {
-          "id": 160,
-          "vegetable": "peper",
-          "title": "Перец",
-          "name": "Алеся",
-          "price": 15,
-          "imgUrl": "./image/peper.png"
         },
         {
           "id": 161,
           "vegetable": "pumpkin",
           "title": "Тыква",
           "name": "Плюшка",
-          "price": 15,
+          "price": 10,
           "imgUrl": "./image/pumpkin.png"
-        },
-        {
-          "id": 162,
-          "vegetable": "radish",
-          "title": "Редис",
-          "name": "Ватра",
-          "price": 9,
-          "imgUrl": "./image/radish.png"
-        },
-        {
-          "id": 163,
-          "vegetable": "tomato",
-          "title": "Помидор",
-          "name": "Раница",
-          "price": 9,
-          "imgUrl": "./image/tomato.png"
         },
         {
           "id": 164,
           "vegetable": "vegetmarrow",
           "title": "Кабачок",
           "name": "Хелена",
-          "price": 11,
+          "price": 12,
           "imgUrl": "./image/vegetmarrow.png"
         }
       ]
@@ -1258,67 +706,27 @@
       "isBusy": true,
       "vegetables": [
         {
-          "id": 166,
-          "vegetable": "potate",
-          "title": "Картофель",
-          "name": "Палац",
-          "price": 10,
-          "imgUrl": "./image/potato.png"
-        },
-        {
-          "id": 167,
-          "vegetable": "beet",
-          "title": "Свекла",
-          "name": "Атаман",
-          "price": 8,
-          "imgUrl": "./image/beet.png"
-        },
-        {
           "id": 168,
           "vegetable": "carrot",
           "title": "Морковь",
           "name": "Паулинка",
-          "price": 9,
+          "price": 7,
           "imgUrl": "./image/carrot.png"
-        },
-        {
-          "id": 169,
-          "vegetable": "corn",
-          "title": "Кукуруза",
-          "name": "Ранняя",
-          "price": 12,
-          "imgUrl": "./image/corn.png"
-        },
-        {
-          "id": 170,
-          "vegetable": "cucumber",
-          "title": "Огурец",
-          "name": "Журавленок",
-          "price": 13,
-          "imgUrl": "./image/cucumber.png"
         },
         {
           "id": 171,
           "vegetable": "eggplant",
           "title": "Баклажан",
           "name": "Черномор",
-          "price": 12,
+          "price": 8,
           "imgUrl": "./image/eggplant.png"
-        },
-        {
-          "id": 172,
-          "vegetable": "garlic",
-          "title": "Чеснок",
-          "name": "Харнась",
-          "price": 10,
-          "imgUrl": "./image/garlic.png"
         },
         {
           "id": 173,
           "vegetable": "horseradish",
           "title": "Имбирь",
           "name": "Шакспир",
-          "price": 11,
+          "price": 9,
           "imgUrl": "./image/horseradish.png"
         },
         {
@@ -1326,7 +734,7 @@
           "vegetable": "onion",
           "title": "Лук",
           "name": "Ветразь",
-          "price": 12,
+          "price": 9,
           "imgUrl": "./image/onion.png"
         },
         {
@@ -1334,7 +742,7 @@
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 11,
           "imgUrl": "./image/peper.png"
         },
         {
@@ -1342,32 +750,8 @@
           "vegetable": "pumpkin",
           "title": "Тыква",
           "name": "Плюшка",
-          "price": 15,
+          "price": 7,
           "imgUrl": "./image/pumpkin.png"
-        },
-        {
-          "id": 177,
-          "vegetable": "radish",
-          "title": "Редис",
-          "name": "Ватра",
-          "price": 9,
-          "imgUrl": "./image/radish.png"
-        },
-        {
-          "id": 178,
-          "vegetable": "tomato",
-          "title": "Помидор",
-          "name": "Раница",
-          "price": 9,
-          "imgUrl": "./image/tomato.png"
-        },
-        {
-          "id": 179,
-          "vegetable": "vegetmarrow",
-          "title": "Кабачок",
-          "name": "Хелена",
-          "price": 11,
-          "imgUrl": "./image/vegetmarrow.png"
         }
       ]
     },
@@ -1383,7 +767,7 @@
           "vegetable": "potate",
           "title": "Картофель",
           "name": "Палац",
-          "price": 10,
+          "price": 7,
           "imgUrl": "./image/potato.png"
         },
         {
@@ -1399,7 +783,7 @@
           "vegetable": "carrot",
           "title": "Морковь",
           "name": "Паулинка",
-          "price": 9,
+          "price": 10,
           "imgUrl": "./image/carrot.png"
         },
         {
@@ -1407,7 +791,7 @@
           "vegetable": "corn",
           "title": "Кукуруза",
           "name": "Ранняя",
-          "price": 12,
+          "price": 13,
           "imgUrl": "./image/corn.png"
         },
         {
@@ -1415,80 +799,24 @@
           "vegetable": "cucumber",
           "title": "Огурец",
           "name": "Журавленок",
-          "price": 13,
+          "price": 7,
           "imgUrl": "./image/cucumber.png"
-        },
-        {
-          "id": 185,
-          "vegetable": "eggplant",
-          "title": "Баклажан",
-          "name": "Черномор",
-          "price": 12,
-          "imgUrl": "./image/eggplant.png"
         },
         {
           "id": 186,
           "vegetable": "garlic",
           "title": "Чеснок",
           "name": "Харнась",
-          "price": 10,
+          "price": 8,
           "imgUrl": "./image/garlic.png"
-        },
-        {
-          "id": 187,
-          "vegetable": "horseradish",
-          "title": "Имбирь",
-          "name": "Шакспир",
-          "price": 11,
-          "imgUrl": "./image/horseradish.png"
-        },
-        {
-          "id": 188,
-          "vegetable": "onion",
-          "title": "Лук",
-          "name": "Ветразь",
-          "price": 12,
-          "imgUrl": "./image/onion.png"
-        },
-        {
-          "id": 189,
-          "vegetable": "peper",
-          "title": "Перец",
-          "name": "Алеся",
-          "price": 15,
-          "imgUrl": "./image/peper.png"
         },
         {
           "id": 190,
           "vegetable": "pumpkin",
           "title": "Тыква",
           "name": "Плюшка",
-          "price": 15,
+          "price": 9,
           "imgUrl": "./image/pumpkin.png"
-        },
-        {
-          "id": 191,
-          "vegetable": "radish",
-          "title": "Редис",
-          "name": "Ватра",
-          "price": 9,
-          "imgUrl": "./image/radish.png"
-        },
-        {
-          "id": 192,
-          "vegetable": "tomato",
-          "title": "Помидор",
-          "name": "Раница",
-          "price": 9,
-          "imgUrl": "./image/tomato.png"
-        },
-        {
-          "id": 193,
-          "vegetable": "vegetmarrow",
-          "title": "Кабачок",
-          "name": "Хелена",
-          "price": 11,
-          "imgUrl": "./image/vegetmarrow.png"
         }
       ]
     },
@@ -1500,51 +828,19 @@
       "isBusy": true,
       "vegetables": [
         {
-          "id": 194,
-          "vegetable": "potate",
-          "title": "Картофель",
-          "name": "Палац",
-          "price": 10,
-          "imgUrl": "./image/potato.png"
-        },
-        {
           "id": 195,
           "vegetable": "beet",
           "title": "Свекла",
           "name": "Атаман",
-          "price": 8,
+          "price": 7,
           "imgUrl": "./image/beet.png"
-        },
-        {
-          "id": 196,
-          "vegetable": "carrot",
-          "title": "Морковь",
-          "name": "Паулинка",
-          "price": 9,
-          "imgUrl": "./image/carrot.png"
-        },
-        {
-          "id": 197,
-          "vegetable": "corn",
-          "title": "Кукуруза",
-          "name": "Ранняя",
-          "price": 12,
-          "imgUrl": "./image/corn.png"
-        },
-        {
-          "id": 198,
-          "vegetable": "cucumber",
-          "title": "Огурец",
-          "name": "Журавленок",
-          "price": 13,
-          "imgUrl": "./image/cucumber.png"
         },
         {
           "id": 199,
           "vegetable": "eggplant",
           "title": "Баклажан",
           "name": "Черномор",
-          "price": 12,
+          "price": 8,
           "imgUrl": "./image/eggplant.png"
         },
         {
@@ -1552,7 +848,7 @@
           "vegetable": "garlic",
           "title": "Чеснок",
           "name": "Харнась",
-          "price": 10,
+          "price": 9,
           "imgUrl": "./image/garlic.png"
         },
         {
@@ -1560,7 +856,7 @@
           "vegetable": "horseradish",
           "title": "Имбирь",
           "name": "Шакспир",
-          "price": 11,
+          "price": 10,
           "imgUrl": "./image/horseradish.png"
         },
         {
@@ -1568,7 +864,7 @@
           "vegetable": "onion",
           "title": "Лук",
           "name": "Ветразь",
-          "price": 12,
+          "price": 11,
           "imgUrl": "./image/onion.png"
         },
         {
@@ -1576,7 +872,7 @@
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 12,
           "imgUrl": "./image/peper.png"
         },
         {
@@ -1584,7 +880,7 @@
           "vegetable": "pumpkin",
           "title": "Тыква",
           "name": "Плюшка",
-          "price": 15,
+          "price": 11,
           "imgUrl": "./image/pumpkin.png"
         },
         {
@@ -1592,7 +888,7 @@
           "vegetable": "radish",
           "title": "Редис",
           "name": "Ватра",
-          "price": 9,
+          "price": 10,
           "imgUrl": "./image/radish.png"
         },
         {
@@ -1600,16 +896,8 @@
           "vegetable": "tomato",
           "title": "Помидор",
           "name": "Раница",
-          "price": 9,
+          "price": 8,
           "imgUrl": "./image/tomato.png"
-        },
-        {
-          "id": 207,
-          "vegetable": "vegetmarrow",
-          "title": "Кабачок",
-          "name": "Хелена",
-          "price": 11,
-          "imgUrl": "./image/vegetmarrow.png"
         }
       ]
     },
@@ -1625,39 +913,15 @@
           "vegetable": "potate",
           "title": "Картофель",
           "name": "Палац",
-          "price": 10,
+          "price": 7,
           "imgUrl": "./image/potato.png"
-        },
-        {
-          "id": 209,
-          "vegetable": "beet",
-          "title": "Свекла",
-          "name": "Атаман",
-          "price": 8,
-          "imgUrl": "./image/beet.png"
-        },
-        {
-          "id": 210,
-          "vegetable": "carrot",
-          "title": "Морковь",
-          "name": "Паулинка",
-          "price": 9,
-          "imgUrl": "./image/carrot.png"
-        },
-        {
-          "id": 211,
-          "vegetable": "corn",
-          "title": "Кукуруза",
-          "name": "Ранняя",
-          "price": 12,
-          "imgUrl": "./image/corn.png"
         },
         {
           "id": 212,
           "vegetable": "cucumber",
           "title": "Огурец",
           "name": "Журавленок",
-          "price": 13,
+          "price": 8,
           "imgUrl": "./image/cucumber.png"
         },
         {
@@ -1665,31 +929,15 @@
           "vegetable": "eggplant",
           "title": "Баклажан",
           "name": "Черномор",
-          "price": 12,
+          "price": 9,
           "imgUrl": "./image/eggplant.png"
-        },
-        {
-          "id": 214,
-          "vegetable": "garlic",
-          "title": "Чеснок",
-          "name": "Харнась",
-          "price": 10,
-          "imgUrl": "./image/garlic.png"
-        },
-        {
-          "id": 215,
-          "vegetable": "horseradish",
-          "title": "Имбирь",
-          "name": "Шакспир",
-          "price": 11,
-          "imgUrl": "./image/horseradish.png"
         },
         {
           "id": 216,
           "vegetable": "onion",
           "title": "Лук",
           "name": "Ветразь",
-          "price": 12,
+          "price": 10,
           "imgUrl": "./image/onion.png"
         },
         {
@@ -1697,23 +945,15 @@
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 11,
           "imgUrl": "./image/peper.png"
-        },
-        {
-          "id": 218,
-          "vegetable": "pumpkin",
-          "title": "Тыква",
-          "name": "Плюшка",
-          "price": 15,
-          "imgUrl": "./image/pumpkin.png"
         },
         {
           "id": 219,
           "vegetable": "radish",
           "title": "Редис",
           "name": "Ватра",
-          "price": 9,
+          "price": 12,
           "imgUrl": "./image/radish.png"
         },
         {
@@ -1721,16 +961,8 @@
           "vegetable": "tomato",
           "title": "Помидор",
           "name": "Раница",
-          "price": 9,
+          "price": 7,
           "imgUrl": "./image/tomato.png"
-        },
-        {
-          "id": 230,
-          "vegetable": "vegetmarrow",
-          "title": "Кабачок",
-          "name": "Хелена",
-          "price": 11,
-          "imgUrl": "./image/vegetmarrow.png"
         }
       ]
     },
@@ -1750,115 +982,35 @@
       "isBusy": true,
       "vegetables": [
         {
-          "id": 232,
-          "vegetable": "potate",
-          "title": "Картофель",
-          "name": "Палац",
-          "price": 10,
-          "imgUrl": "./image/potato.png"
-        },
-        {
-          "id": 233,
-          "vegetable": "beet",
-          "title": "Свекла",
-          "name": "Атаман",
-          "price": 8,
-          "imgUrl": "./image/beet.png"
-        },
-        {
           "id": 234,
           "vegetable": "carrot",
           "title": "Морковь",
           "name": "Паулинка",
-          "price": 9,
+          "price": 8,
           "imgUrl": "./image/carrot.png"
-        },
-        {
-          "id": 235,
-          "vegetable": "corn",
-          "title": "Кукуруза",
-          "name": "Ранняя",
-          "price": 12,
-          "imgUrl": "./image/corn.png"
         },
         {
           "id": 236,
           "vegetable": "cucumber",
           "title": "Огурец",
           "name": "Журавленок",
-          "price": 13,
+          "price": 9,
           "imgUrl": "./image/cucumber.png"
-        },
-        {
-          "id": 237,
-          "vegetable": "eggplant",
-          "title": "Баклажан",
-          "name": "Черномор",
-          "price": 12,
-          "imgUrl": "./image/eggplant.png"
-        },
-        {
-          "id": 238,
-          "vegetable": "garlic",
-          "title": "Чеснок",
-          "name": "Харнась",
-          "price": 10,
-          "imgUrl": "./image/garlic.png"
-        },
-        {
-          "id": 239,
-          "vegetable": "horseradish",
-          "title": "Имбирь",
-          "name": "Шакспир",
-          "price": 11,
-          "imgUrl": "./image/horseradish.png"
-        },
-        {
-          "id": 240,
-          "vegetable": "onion",
-          "title": "Лук",
-          "name": "Ветразь",
-          "price": 12,
-          "imgUrl": "./image/onion.png"
-        },
-        {
-          "id": 241,
-          "vegetable": "peper",
-          "title": "Перец",
-          "name": "Алеся",
-          "price": 15,
-          "imgUrl": "./image/peper.png"
         },
         {
           "id": 242,
           "vegetable": "pumpkin",
           "title": "Тыква",
           "name": "Плюшка",
-          "price": 15,
+          "price": 10,
           "imgUrl": "./image/pumpkin.png"
-        },
-        {
-          "id": 243,
-          "vegetable": "radish",
-          "title": "Редис",
-          "name": "Ватра",
-          "price": 9,
-          "imgUrl": "./image/radish.png"
-        },
-        {
-          "id": 244,
-          "vegetable": "tomato",
-          "title": "Помидор",
-          "name": "Раница",
-          "price": 9,
-          "imgUrl": "./image/tomato.png"
         },
         {
           "id": 245,
           "vegetable": "vegetmarrow",
           "title": "Кабачок",
           "name": "Хелена",
-          "price": 11,
+          "price": 12,
           "imgUrl": "./image/vegetmarrow.png"
         }
       ]
@@ -1875,7 +1027,7 @@
           "vegetable": "potate",
           "title": "Картофель",
           "name": "Палац",
-          "price": 10,
+          "price": 11,
           "imgUrl": "./image/potato.png"
         },
         {
@@ -1883,55 +1035,31 @@
           "vegetable": "beet",
           "title": "Свекла",
           "name": "Атаман",
-          "price": 8,
+          "price": 12,
           "imgUrl": "./image/beet.png"
-        },
-        {
-          "id": 2470,
-          "vegetable": "carrot",
-          "title": "Морковь",
-          "name": "Паулинка",
-          "price": 9,
-          "imgUrl": "./image/carrot.png"
         },
         {
           "id": 248,
           "vegetable": "corn",
           "title": "Кукуруза",
           "name": "Ранняя",
-          "price": 12,
+          "price": 11,
           "imgUrl": "./image/corn.png"
-        },
-        {
-          "id": 249,
-          "vegetable": "cucumber",
-          "title": "Огурец",
-          "name": "Журавленок",
-          "price": 13,
-          "imgUrl": "./image/cucumber.png"
         },
         {
           "id": 250,
           "vegetable": "eggplant",
           "title": "Баклажан",
           "name": "Черномор",
-          "price": 12,
-          "imgUrl": "./image/eggplant.png"
-        },
-        {
-          "id": 2510,
-          "vegetable": "garlic",
-          "title": "Чеснок",
-          "name": "Харнась",
           "price": 10,
-          "imgUrl": "./image/garlic.png"
+          "imgUrl": "./image/eggplant.png"
         },
         {
           "id": 251,
           "vegetable": "horseradish",
           "title": "Имбирь",
           "name": "Шакспир",
-          "price": 11,
+          "price": 9,
           "imgUrl": "./image/horseradish.png"
         },
         {
@@ -1939,7 +1067,7 @@
           "vegetable": "onion",
           "title": "Лук",
           "name": "Ветразь",
-          "price": 12,
+          "price": 8,
           "imgUrl": "./image/onion.png"
         },
         {
@@ -1947,23 +1075,15 @@
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 7,
           "imgUrl": "./image/peper.png"
-        },
-        {
-          "id": 254,
-          "vegetable": "pumpkin",
-          "title": "Тыква",
-          "name": "Плюшка",
-          "price": 15,
-          "imgUrl": "./image/pumpkin.png"
         },
         {
           "id": 255,
           "vegetable": "radish",
           "title": "Редис",
           "name": "Ватра",
-          "price": 9,
+          "price": 8,
           "imgUrl": "./image/radish.png"
         },
         {
@@ -1971,16 +1091,8 @@
           "vegetable": "tomato",
           "title": "Помидор",
           "name": "Раница",
-          "price": 9,
+          "price": 10,
           "imgUrl": "./image/tomato.png"
-        },
-        {
-          "id": 257,
-          "vegetable": "vegetmarrow",
-          "title": "Кабачок",
-          "name": "Хелена",
-          "price": 11,
-          "imgUrl": "./image/vegetmarrow.png"
         }
       ]
     },
@@ -1992,75 +1104,35 @@
       "isBusy": true,
       "vegetables": [
         {
-          "id": 258,
-          "vegetable": "potate",
-          "title": "Картофель",
-          "name": "Палац",
-          "price": 10,
-          "imgUrl": "./image/potato.png"
-        },
-        {
-          "id": 259,
-          "vegetable": "beet",
-          "title": "Свекла",
-          "name": "Атаман",
-          "price": 8,
-          "imgUrl": "./image/beet.png"
-        },
-        {
           "id": 260,
           "vegetable": "carrot",
           "title": "Морковь",
           "name": "Паулинка",
-          "price": 9,
+          "price": 10,
           "imgUrl": "./image/carrot.png"
-        },
-        {
-          "id": 261,
-          "vegetable": "corn",
-          "title": "Кукуруза",
-          "name": "Ранняя",
-          "price": 12,
-          "imgUrl": "./image/corn.png"
         },
         {
           "id": 262,
           "vegetable": "cucumber",
           "title": "Огурец",
           "name": "Журавленок",
-          "price": 13,
+          "price": 11,
           "imgUrl": "./image/cucumber.png"
-        },
-        {
-          "id": 263,
-          "vegetable": "eggplant",
-          "title": "Баклажан",
-          "name": "Черномор",
-          "price": 12,
-          "imgUrl": "./image/eggplant.png"
         },
         {
           "id": 264,
           "vegetable": "garlic",
           "title": "Чеснок",
           "name": "Харнась",
-          "price": 10,
+          "price": 12,
           "imgUrl": "./image/garlic.png"
-        },
-        {
-          "id": 265,
-          "vegetable": "horseradish",
-          "title": "Имбирь",
-          "name": "Шакспир",
-          "price": 11,
-          "imgUrl": "./image/horseradish.png"
         },
         {
           "id": 266,
           "vegetable": "onion",
           "title": "Лук",
           "name": "Ветразь",
-          "price": 12,
+          "price": 13,
           "imgUrl": "./image/onion.png"
         },
         {
@@ -2068,7 +1140,7 @@
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 11,
           "imgUrl": "./image/peper.png"
         },
         {
@@ -2076,32 +1148,16 @@
           "vegetable": "pumpkin",
           "title": "Тыква",
           "name": "Плюшка",
-          "price": 15,
+          "price": 10,
           "imgUrl": "./image/pumpkin.png"
-        },
-        {
-          "id": 269,
-          "vegetable": "radish",
-          "title": "Редис",
-          "name": "Ватра",
-          "price": 9,
-          "imgUrl": "./image/radish.png"
         },
         {
           "id": 270,
           "vegetable": "tomato",
           "title": "Помидор",
           "name": "Раница",
-          "price": 9,
+          "price": 7,
           "imgUrl": "./image/tomato.png"
-        },
-        {
-          "id": 271,
-          "vegetable": "vegetmarrow",
-          "title": "Кабачок",
-          "name": "Хелена",
-          "price": 11,
-          "imgUrl": "./image/vegetmarrow.png"
         }
       ]
     },
@@ -2117,23 +1173,15 @@
           "vegetable": "potate",
           "title": "Картофель",
           "name": "Палац",
-          "price": 10,
-          "imgUrl": "./image/potato.png"
-        },
-        {
-          "id": 273,
-          "vegetable": "beet",
-          "title": "Свекла",
-          "name": "Атаман",
           "price": 8,
-          "imgUrl": "./image/beet.png"
+          "imgUrl": "./image/potato.png"
         },
         {
           "id": 274,
           "vegetable": "carrot",
           "title": "Морковь",
           "name": "Паулинка",
-          "price": 9,
+          "price": 10,
           "imgUrl": "./image/carrot.png"
         },
         {
@@ -2141,23 +1189,15 @@
           "vegetable": "corn",
           "title": "Кукуруза",
           "name": "Ранняя",
-          "price": 12,
+          "price": 11,
           "imgUrl": "./image/corn.png"
-        },
-        {
-          "id": 276,
-          "vegetable": "cucumber",
-          "title": "Огурец",
-          "name": "Журавленок",
-          "price": 13,
-          "imgUrl": "./image/cucumber.png"
         },
         {
           "id": 2770,
           "vegetable": "eggplant",
           "title": "Баклажан",
           "name": "Черномор",
-          "price": 12,
+          "price": 7,
           "imgUrl": "./image/eggplant.png"
         },
         {
@@ -2165,7 +1205,7 @@
           "vegetable": "garlic",
           "title": "Чеснок",
           "name": "Харнась",
-          "price": 10,
+          "price": 8,
           "imgUrl": "./image/garlic.png"
         },
         {
@@ -2173,7 +1213,7 @@
           "vegetable": "horseradish",
           "title": "Имбирь",
           "name": "Шакспир",
-          "price": 11,
+          "price": 9,
           "imgUrl": "./image/horseradish.png"
         },
         {
@@ -2189,7 +1229,7 @@
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 7,
           "imgUrl": "./image/peper.png"
         },
         {
@@ -2197,32 +1237,8 @@
           "vegetable": "pumpkin",
           "title": "Тыква",
           "name": "Плюшка",
-          "price": 15,
-          "imgUrl": "./image/pumpkin.png"
-        },
-        {
-          "id": 282,
-          "vegetable": "radish",
-          "title": "Редис",
-          "name": "Ватра",
-          "price": 9,
-          "imgUrl": "./image/radish.png"
-        },
-        {
-          "id": 283,
-          "vegetable": "tomato",
-          "title": "Помидор",
-          "name": "Раница",
-          "price": 9,
-          "imgUrl": "./image/tomato.png"
-        },
-        {
-          "id": 284,
-          "vegetable": "vegetmarrow",
-          "title": "Кабачок",
-          "name": "Хелена",
           "price": 11,
-          "imgUrl": "./image/vegetmarrow.png"
+          "imgUrl": "./image/pumpkin.png"
         }
       ]
     },
@@ -2242,14 +1258,6 @@
       "isBusy": true,
       "vegetables": [
         {
-          "id": 285,
-          "vegetable": "potate",
-          "title": "Картофель",
-          "name": "Палац",
-          "price": 10,
-          "imgUrl": "./image/potato.png"
-        },
-        {
           "id": 286,
           "vegetable": "beet",
           "title": "Свекла",
@@ -2258,83 +1266,27 @@
           "imgUrl": "./image/beet.png"
         },
         {
-          "id": 287,
-          "vegetable": "carrot",
-          "title": "Морковь",
-          "name": "Паулинка",
-          "price": 9,
-          "imgUrl": "./image/carrot.png"
-        },
-        {
           "id": 288,
           "vegetable": "corn",
           "title": "Кукуруза",
           "name": "Ранняя",
-          "price": 12,
-          "imgUrl": "./image/corn.png"
-        },
-        {
-          "id": 289,
-          "vegetable": "cucumber",
-          "title": "Огурец",
-          "name": "Журавленок",
-          "price": 13,
-          "imgUrl": "./image/cucumber.png"
-        },
-        {
-          "id": 290,
-          "vegetable": "eggplant",
-          "title": "Баклажан",
-          "name": "Черномор",
-          "price": 12,
-          "imgUrl": "./image/eggplant.png"
-        },
-        {
-          "id": 300,
-          "vegetable": "garlic",
-          "title": "Чеснок",
-          "name": "Харнась",
-          "price": 10,
-          "imgUrl": "./image/garlic.png"
-        },
-        {
-          "id": 301,
-          "vegetable": "horseradish",
-          "title": "Имбирь",
-          "name": "Шакспир",
           "price": 11,
-          "imgUrl": "./image/horseradish.png"
-        },
-        {
-          "id": 302,
-          "vegetable": "onion",
-          "title": "Лук",
-          "name": "Ветразь",
-          "price": 12,
-          "imgUrl": "./image/onion.png"
+          "imgUrl": "./image/corn.png"
         },
         {
           "id": 303,
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 10,
           "imgUrl": "./image/peper.png"
-        },
-        {
-          "id": 304,
-          "vegetable": "pumpkin",
-          "title": "Тыква",
-          "name": "Плюшка",
-          "price": 15,
-          "imgUrl": "./image/pumpkin.png"
         },
         {
           "id": 305,
           "vegetable": "radish",
           "title": "Редис",
           "name": "Ватра",
-          "price": 9,
+          "price": 8,
           "imgUrl": "./image/radish.png"
         },
         {
@@ -2342,7 +1294,7 @@
           "vegetable": "tomato",
           "title": "Помидор",
           "name": "Раница",
-          "price": 9,
+          "price": 7,
           "imgUrl": "./image/tomato.png"
         },
         {
@@ -2350,7 +1302,7 @@
           "vegetable": "vegetmarrow",
           "title": "Кабачок",
           "name": "Хелена",
-          "price": 11,
+          "price": 12,
           "imgUrl": "./image/vegetmarrow.png"
         }
       ]
@@ -2363,43 +1315,19 @@
       "isBusy": true,
       "vegetables": [
         {
-          "id": 307,
-          "vegetable": "potate",
-          "title": "Картофель",
-          "name": "Палац",
-          "price": 10,
-          "imgUrl": "./image/potato.png"
-        },
-        {
-          "id": 308,
-          "vegetable": "beet",
-          "title": "Свекла",
-          "name": "Атаман",
-          "price": 8,
-          "imgUrl": "./image/beet.png"
-        },
-        {
           "id": 309,
           "vegetable": "carrot",
           "title": "Морковь",
           "name": "Паулинка",
-          "price": 9,
+          "price": 7,
           "imgUrl": "./image/carrot.png"
-        },
-        {
-          "id": 310,
-          "vegetable": "corn",
-          "title": "Кукуруза",
-          "name": "Ранняя",
-          "price": 12,
-          "imgUrl": "./image/corn.png"
         },
         {
           "id": 311,
           "vegetable": "cucumber",
           "title": "Огурец",
           "name": "Журавленок",
-          "price": 13,
+          "price": 8,
           "imgUrl": "./image/cucumber.png"
         },
         {
@@ -2407,71 +1335,31 @@
           "vegetable": "eggplant",
           "title": "Баклажан",
           "name": "Черномор",
-          "price": 12,
+          "price": 9,
           "imgUrl": "./image/eggplant.png"
-        },
-        {
-          "id": 313,
-          "vegetable": "garlic",
-          "title": "Чеснок",
-          "name": "Харнась",
-          "price": 10,
-          "imgUrl": "./image/garlic.png"
         },
         {
           "id": 314,
           "vegetable": "horseradish",
           "title": "Имбирь",
           "name": "Шакспир",
-          "price": 11,
+          "price": 10,
           "imgUrl": "./image/horseradish.png"
-        },
-        {
-          "id": 315,
-          "vegetable": "onion",
-          "title": "Лук",
-          "name": "Ветразь",
-          "price": 12,
-          "imgUrl": "./image/onion.png"
         },
         {
           "id": 316,
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 11,
           "imgUrl": "./image/peper.png"
-        },
-        {
-          "id": 317,
-          "vegetable": "pumpkin",
-          "title": "Тыква",
-          "name": "Плюшка",
-          "price": 15,
-          "imgUrl": "./image/pumpkin.png"
-        },
-        {
-          "id": 318,
-          "vegetable": "radish",
-          "title": "Редис",
-          "name": "Ватра",
-          "price": 9,
-          "imgUrl": "./image/radish.png"
-        },
-        {
-          "id": 319,
-          "vegetable": "tomato",
-          "title": "Помидор",
-          "name": "Раница",
-          "price": 9,
-          "imgUrl": "./image/tomato.png"
         },
         {
           "id": 320,
           "vegetable": "vegetmarrow",
           "title": "Кабачок",
           "name": "Хелена",
-          "price": 11,
+          "price": 12,
           "imgUrl": "./image/vegetmarrow.png"
         }
       ]
@@ -2488,7 +1376,7 @@
           "vegetable": "potate",
           "title": "Картофель",
           "name": "Палац",
-          "price": 10,
+          "price": 11,
           "imgUrl": "./image/potato.png"
         },
         {
@@ -2496,39 +1384,15 @@
           "vegetable": "beet",
           "title": "Свекла",
           "name": "Атаман",
-          "price": 8,
+          "price": 10,
           "imgUrl": "./image/beet.png"
-        },
-        {
-          "id": 323,
-          "vegetable": "carrot",
-          "title": "Морковь",
-          "name": "Паулинка",
-          "price": 9,
-          "imgUrl": "./image/carrot.png"
-        },
-        {
-          "id": 324,
-          "vegetable": "corn",
-          "title": "Кукуруза",
-          "name": "Ранняя",
-          "price": 12,
-          "imgUrl": "./image/corn.png"
-        },
-        {
-          "id": 325,
-          "vegetable": "cucumber",
-          "title": "Огурец",
-          "name": "Журавленок",
-          "price": 13,
-          "imgUrl": "./image/cucumber.png"
         },
         {
           "id": 326,
           "vegetable": "eggplant",
           "title": "Баклажан",
           "name": "Черномор",
-          "price": 12,
+          "price": 9,
           "imgUrl": "./image/eggplant.png"
         },
         {
@@ -2536,39 +1400,23 @@
           "vegetable": "garlic",
           "title": "Чеснок",
           "name": "Харнась",
-          "price": 10,
+          "price": 8,
           "imgUrl": "./image/garlic.png"
-        },
-        {
-          "id": 328,
-          "vegetable": "horseradish",
-          "title": "Имбирь",
-          "name": "Шакспир",
-          "price": 11,
-          "imgUrl": "./image/horseradish.png"
         },
         {
           "id": 329,
           "vegetable": "onion",
           "title": "Лук",
           "name": "Ветразь",
-          "price": 12,
+          "price": 7,
           "imgUrl": "./image/onion.png"
-        },
-        {
-          "id": 330,
-          "vegetable": "peper",
-          "title": "Перец",
-          "name": "Алеся",
-          "price": 15,
-          "imgUrl": "./image/peper.png"
         },
         {
           "id": 331,
           "vegetable": "pumpkin",
           "title": "Тыква",
           "name": "Плюшка",
-          "price": 15,
+          "price": 8,
           "imgUrl": "./image/pumpkin.png"
         },
         {
@@ -2576,7 +1424,7 @@
           "vegetable": "radish",
           "title": "Редис",
           "name": "Ватра",
-          "price": 9,
+          "price": 10,
           "imgUrl": "./image/radish.png"
         },
         {
@@ -2584,7 +1432,7 @@
           "vegetable": "tomato",
           "title": "Помидор",
           "name": "Раница",
-          "price": 9,
+          "price": 11,
           "imgUrl": "./image/tomato.png"
         },
         {
@@ -2592,7 +1440,7 @@
           "vegetable": "vegetmarrow",
           "title": "Кабачок",
           "name": "Хелена",
-          "price": 11,
+          "price": 12,
           "imgUrl": "./image/vegetmarrow.png"
         }
       ]
@@ -2605,27 +1453,11 @@
       "isBusy": true,
       "vegetables": [
         {
-          "id": 335,
-          "vegetable": "potate",
-          "title": "Картофель",
-          "name": "Палац",
-          "price": 10,
-          "imgUrl": "./image/potato.png"
-        },
-        {
-          "id": 336,
-          "vegetable": "beet",
-          "title": "Свекла",
-          "name": "Атаман",
-          "price": 8,
-          "imgUrl": "./image/beet.png"
-        },
-        {
           "id": 337,
           "vegetable": "carrot",
           "title": "Морковь",
           "name": "Паулинка",
-          "price": 9,
+          "price": 8,
           "imgUrl": "./image/carrot.png"
         },
         {
@@ -2633,31 +1465,15 @@
           "vegetable": "corn",
           "title": "Кукуруза",
           "name": "Ранняя",
-          "price": 12,
+          "price": 10,
           "imgUrl": "./image/corn.png"
-        },
-        {
-          "id": 338,
-          "vegetable": "cucumber",
-          "title": "Огурец",
-          "name": "Журавленок",
-          "price": 13,
-          "imgUrl": "./image/cucumber.png"
-        },
-        {
-          "id": 339,
-          "vegetable": "eggplant",
-          "title": "Баклажан",
-          "name": "Черномор",
-          "price": 12,
-          "imgUrl": "./image/eggplant.png"
         },
         {
           "id": 340,
           "vegetable": "garlic",
           "title": "Чеснок",
           "name": "Харнась",
-          "price": 10,
+          "price": 11,
           "imgUrl": "./image/garlic.png"
         },
         {
@@ -2665,7 +1481,7 @@
           "vegetable": "horseradish",
           "title": "Имбирь",
           "name": "Шакспир",
-          "price": 11,
+          "price": 12,
           "imgUrl": "./image/horseradish.png"
         },
         {
@@ -2673,23 +1489,15 @@
           "vegetable": "onion",
           "title": "Лук",
           "name": "Ветразь",
-          "price": 12,
+          "price": 10,
           "imgUrl": "./image/onion.png"
-        },
-        {
-          "id": 343,
-          "vegetable": "peper",
-          "title": "Перец",
-          "name": "Алеся",
-          "price": 15,
-          "imgUrl": "./image/peper.png"
         },
         {
           "id": 344,
           "vegetable": "pumpkin",
           "title": "Тыква",
           "name": "Плюшка",
-          "price": 15,
+          "price": 9,
           "imgUrl": "./image/pumpkin.png"
         },
         {
@@ -2697,7 +1505,7 @@
           "vegetable": "radish",
           "title": "Редис",
           "name": "Ватра",
-          "price": 9,
+          "price": 8,
           "imgUrl": "./image/radish.png"
         },
         {
@@ -2705,7 +1513,7 @@
           "vegetable": "tomato",
           "title": "Помидор",
           "name": "Раница",
-          "price": 9,
+          "price": 7,
           "imgUrl": "./image/tomato.png"
         },
         {
@@ -2713,7 +1521,7 @@
           "vegetable": "vegetmarrow",
           "title": "Кабачок",
           "name": "Хелена",
-          "price": 11,
+          "price": 10,
           "imgUrl": "./image/vegetmarrow.png"
         }
       ]
@@ -2738,39 +1546,15 @@
           "vegetable": "potate",
           "title": "Картофель",
           "name": "Палац",
-          "price": 10,
+          "price": 11,
           "imgUrl": "./image/potato.png"
-        },
-        {
-          "id": 349,
-          "vegetable": "beet",
-          "title": "Свекла",
-          "name": "Атаман",
-          "price": 8,
-          "imgUrl": "./image/beet.png"
-        },
-        {
-          "id": 350,
-          "vegetable": "carrot",
-          "title": "Морковь",
-          "name": "Паулинка",
-          "price": 9,
-          "imgUrl": "./image/carrot.png"
-        },
-        {
-          "id": 351,
-          "vegetable": "corn",
-          "title": "Кукуруза",
-          "name": "Ранняя",
-          "price": 12,
-          "imgUrl": "./image/corn.png"
         },
         {
           "id": 352,
           "vegetable": "cucumber",
           "title": "Огурец",
           "name": "Журавленок",
-          "price": 13,
+          "price": 12,
           "imgUrl": "./image/cucumber.png"
         },
         {
@@ -2778,39 +1562,15 @@
           "vegetable": "eggplant",
           "title": "Баклажан",
           "name": "Черномор",
-          "price": 12,
+          "price": 9,
           "imgUrl": "./image/eggplant.png"
-        },
-        {
-          "id": 354,
-          "vegetable": "garlic",
-          "title": "Чеснок",
-          "name": "Харнась",
-          "price": 10,
-          "imgUrl": "./image/garlic.png"
-        },
-        {
-          "id": 355,
-          "vegetable": "horseradish",
-          "title": "Имбирь",
-          "name": "Шакспир",
-          "price": 11,
-          "imgUrl": "./image/horseradish.png"
-        },
-        {
-          "id": 356,
-          "vegetable": "onion",
-          "title": "Лук",
-          "name": "Ветразь",
-          "price": 12,
-          "imgUrl": "./image/onion.png"
         },
         {
           "id": 357,
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 11,
           "imgUrl": "./image/peper.png"
         },
         {
@@ -2818,7 +1578,7 @@
           "vegetable": "pumpkin",
           "title": "Тыква",
           "name": "Плюшка",
-          "price": 15,
+          "price": 9,
           "imgUrl": "./image/pumpkin.png"
         },
         {
@@ -2826,23 +1586,15 @@
           "vegetable": "radish",
           "title": "Редис",
           "name": "Ватра",
-          "price": 9,
+          "price": 8,
           "imgUrl": "./image/radish.png"
-        },
-        {
-          "id": 360,
-          "vegetable": "tomato",
-          "title": "Помидор",
-          "name": "Раница",
-          "price": 9,
-          "imgUrl": "./image/tomato.png"
         },
         {
           "id": 361,
           "vegetable": "vegetmarrow",
           "title": "Кабачок",
           "name": "Хелена",
-          "price": 11,
+          "price": 7,
           "imgUrl": "./image/vegetmarrow.png"
         }
       ]
@@ -2859,7 +1611,7 @@
           "vegetable": "potate",
           "title": "Картофель",
           "name": "Палац",
-          "price": 10,
+          "price": 11,
           "imgUrl": "./image/potato.png"
         },
         {
@@ -2867,7 +1619,7 @@
           "vegetable": "beet",
           "title": "Свекла",
           "name": "Атаман",
-          "price": 8,
+          "price": 12,
           "imgUrl": "./image/beet.png"
         },
         {
@@ -2875,7 +1627,7 @@
           "vegetable": "carrot",
           "title": "Морковь",
           "name": "Паулинка",
-          "price": 9,
+          "price": 7,
           "imgUrl": "./image/carrot.png"
         },
         {
@@ -2883,31 +1635,15 @@
           "vegetable": "corn",
           "title": "Кукуруза",
           "name": "Ранняя",
-          "price": 12,
+          "price": 8,
           "imgUrl": "./image/corn.png"
-        },
-        {
-          "id": 365,
-          "vegetable": "cucumber",
-          "title": "Огурец",
-          "name": "Журавленок",
-          "price": 13,
-          "imgUrl": "./image/cucumber.png"
-        },
-        {
-          "id": 366,
-          "vegetable": "eggplant",
-          "title": "Баклажан",
-          "name": "Черномор",
-          "price": 12,
-          "imgUrl": "./image/eggplant.png"
         },
         {
           "id": 367,
           "vegetable": "garlic",
           "title": "Чеснок",
           "name": "Харнась",
-          "price": 10,
+          "price": 15,
           "imgUrl": "./image/garlic.png"
         },
         {
@@ -2915,7 +1651,7 @@
           "vegetable": "horseradish",
           "title": "Имбирь",
           "name": "Шакспир",
-          "price": 11,
+          "price": 6,
           "imgUrl": "./image/horseradish.png"
         },
         {
@@ -2923,47 +1659,15 @@
           "vegetable": "onion",
           "title": "Лук",
           "name": "Ветразь",
-          "price": 12,
+          "price": 7,
           "imgUrl": "./image/onion.png"
-        },
-        {
-          "id": 370,
-          "vegetable": "peper",
-          "title": "Перец",
-          "name": "Алеся",
-          "price": 15,
-          "imgUrl": "./image/peper.png"
-        },
-        {
-          "id": 372,
-          "vegetable": "pumpkin",
-          "title": "Тыква",
-          "name": "Плюшка",
-          "price": 15,
-          "imgUrl": "./image/pumpkin.png"
-        },
-        {
-          "id": 373,
-          "vegetable": "radish",
-          "title": "Редис",
-          "name": "Ватра",
-          "price": 9,
-          "imgUrl": "./image/radish.png"
-        },
-        {
-          "id": 374,
-          "vegetable": "tomato",
-          "title": "Помидор",
-          "name": "Раница",
-          "price": 9,
-          "imgUrl": "./image/tomato.png"
         },
         {
           "id": 375,
           "vegetable": "vegetmarrow",
           "title": "Кабачок",
           "name": "Хелена",
-          "price": 11,
+          "price": 14,
           "imgUrl": "./image/vegetmarrow.png"
         }
       ]
@@ -2976,51 +1680,19 @@
       "isBusy": true,
       "vegetables": [
         {
-          "id": 377,
-          "vegetable": "potate",
-          "title": "Картофель",
-          "name": "Палац",
-          "price": 10,
-          "imgUrl": "./image/potato.png"
-        },
-        {
-          "id": 380,
-          "vegetable": "beet",
-          "title": "Свекла",
-          "name": "Атаман",
-          "price": 8,
-          "imgUrl": "./image/beet.png"
-        },
-        {
-          "id": 390,
-          "vegetable": "carrot",
-          "title": "Морковь",
-          "name": "Паулинка",
-          "price": 9,
-          "imgUrl": "./image/carrot.png"
-        },
-        {
           "id": 3910,
           "vegetable": "corn",
           "title": "Кукуруза",
           "name": "Ранняя",
-          "price": 12,
+          "price": 7,
           "imgUrl": "./image/corn.png"
-        },
-        {
-          "id": 391,
-          "vegetable": "cucumber",
-          "title": "Огурец",
-          "name": "Журавленок",
-          "price": 13,
-          "imgUrl": "./image/cucumber.png"
         },
         {
           "id": 392,
           "vegetable": "eggplant",
           "title": "Баклажан",
           "name": "Черномор",
-          "price": 12,
+          "price": 8,
           "imgUrl": "./image/eggplant.png"
         },
         {
@@ -3028,23 +1700,15 @@
           "vegetable": "garlic",
           "title": "Чеснок",
           "name": "Харнась",
-          "price": 10,
-          "imgUrl": "./image/garlic.png"
-        },
-        {
-          "id": 394,
-          "vegetable": "horseradish",
-          "title": "Имбирь",
-          "name": "Шакспир",
           "price": 11,
-          "imgUrl": "./image/horseradish.png"
+          "imgUrl": "./image/garlic.png"
         },
         {
           "id": 395,
           "vegetable": "onion",
           "title": "Лук",
           "name": "Ветразь",
-          "price": 12,
+          "price": 13,
           "imgUrl": "./image/onion.png"
         },
         {
@@ -3052,7 +1716,7 @@
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 14,
           "imgUrl": "./image/peper.png"
         },
         {
@@ -3060,7 +1724,7 @@
           "vegetable": "pumpkin",
           "title": "Тыква",
           "name": "Плюшка",
-          "price": 15,
+          "price": 6,
           "imgUrl": "./image/pumpkin.png"
         },
         {
@@ -3068,7 +1732,7 @@
           "vegetable": "radish",
           "title": "Редис",
           "name": "Ватра",
-          "price": 9,
+          "price": 10,
           "imgUrl": "./image/radish.png"
         },
         {
@@ -3076,7 +1740,7 @@
           "vegetable": "tomato",
           "title": "Помидор",
           "name": "Раница",
-          "price": 9,
+          "price": 11,
           "imgUrl": "./image/tomato.png"
         },
         {
@@ -3084,7 +1748,7 @@
           "vegetable": "vegetmarrow",
           "title": "Кабачок",
           "name": "Хелена",
-          "price": 11,
+          "price": 12,
           "imgUrl": "./image/vegetmarrow.png"
         }
       ]
@@ -3101,7 +1765,7 @@
           "vegetable": "potate",
           "title": "Картофель",
           "name": "Палац",
-          "price": 10,
+          "price": 7,
           "imgUrl": "./image/potato.png"
         },
         {
@@ -3109,7 +1773,7 @@
           "vegetable": "beet",
           "title": "Свекла",
           "name": "Атаман",
-          "price": 8,
+          "price": 9,
           "imgUrl": "./image/beet.png"
         },
         {
@@ -3117,96 +1781,32 @@
           "vegetable": "carrot",
           "title": "Морковь",
           "name": "Паулинка",
-          "price": 9,
+          "price": 10,
           "imgUrl": "./image/carrot.png"
-        },
-        {
-          "id": 404,
-          "vegetable": "corn",
-          "title": "Кукуруза",
-          "name": "Ранняя",
-          "price": 12,
-          "imgUrl": "./image/corn.png"
-        },
-        {
-          "id": 405,
-          "vegetable": "cucumber",
-          "title": "Огурец",
-          "name": "Журавленок",
-          "price": 13,
-          "imgUrl": "./image/cucumber.png"
         },
         {
           "id": 406,
           "vegetable": "eggplant",
           "title": "Баклажан",
           "name": "Черномор",
-          "price": 12,
+          "price": 11,
           "imgUrl": "./image/eggplant.png"
-        },
-        {
-          "id": 407,
-          "vegetable": "garlic",
-          "title": "Чеснок",
-          "name": "Харнась",
-          "price": 10,
-          "imgUrl": "./image/garlic.png"
         },
         {
           "id": 408,
           "vegetable": "horseradish",
           "title": "Имбирь",
           "name": "Шакспир",
-          "price": 11,
-          "imgUrl": "./image/horseradish.png"
-        },
-        {
-          "id": 409,
-          "vegetable": "onion",
-          "title": "Лук",
-          "name": "Ветразь",
           "price": 12,
-          "imgUrl": "./image/onion.png"
-        },
-        {
-          "id": 410,
-          "vegetable": "peper",
-          "title": "Перец",
-          "name": "Алеся",
-          "price": 15,
-          "imgUrl": "./image/peper.png"
-        },
-        {
-          "id": 411,
-          "vegetable": "pumpkin",
-          "title": "Тыква",
-          "name": "Плюшка",
-          "price": 15,
-          "imgUrl": "./image/pumpkin.png"
-        },
-        {
-          "id": 412,
-          "vegetable": "radish",
-          "title": "Редис",
-          "name": "Ватра",
-          "price": 9,
-          "imgUrl": "./image/radish.png"
+          "imgUrl": "./image/horseradish.png"
         },
         {
           "id": 413,
           "vegetable": "tomato",
           "title": "Помидор",
           "name": "Раница",
-          "price": 9,
+          "price": 7,
           "imgUrl": "./image/tomato.png"
-        },
-        {
-          "id": 414,
-          "vegetable": "vegetmarrow",
-          "title": "Кабачок",
-          "name": "Хелена",
-          "price": 11,
-          "imgUrl": "./image/vegetmarrow.png"
         }
       ]
     },
@@ -3218,27 +1818,11 @@
       "isBusy": true,
       "vegetables": [
         {
-          "id": 415,
-          "vegetable": "potate",
-          "title": "Картофель",
-          "name": "Палац",
-          "price": 10,
-          "imgUrl": "./image/potato.png"
-        },
-        {
-          "id": 416,
-          "vegetable": "beet",
-          "title": "Свекла",
-          "name": "Атаман",
-          "price": 8,
-          "imgUrl": "./image/beet.png"
-        },
-        {
           "id": 417,
           "vegetable": "carrot",
           "title": "Морковь",
           "name": "Паулинка",
-          "price": 9,
+          "price": 7,
           "imgUrl": "./image/carrot.png"
         },
         {
@@ -3246,7 +1830,7 @@
           "vegetable": "corn",
           "title": "Кукуруза",
           "name": "Ранняя",
-          "price": 12,
+          "price": 8,
           "imgUrl": "./image/corn.png"
         },
         {
@@ -3254,7 +1838,7 @@
           "vegetable": "cucumber",
           "title": "Огурец",
           "name": "Журавленок",
-          "price": 13,
+          "price": 9,
           "imgUrl": "./image/cucumber.png"
         },
         {
@@ -3262,7 +1846,7 @@
           "vegetable": "eggplant",
           "title": "Баклажан",
           "name": "Черномор",
-          "price": 12,
+          "price": 10,
           "imgUrl": "./image/eggplant.png"
         },
         {
@@ -3270,63 +1854,15 @@
           "vegetable": "garlic",
           "title": "Чеснок",
           "name": "Харнась",
-          "price": 10,
-          "imgUrl": "./image/garlic.png"
-        },
-        {
-          "id": 4201,
-          "vegetable": "horseradish",
-          "title": "Имбирь",
-          "name": "Шакспир",
           "price": 11,
-          "imgUrl": "./image/horseradish.png"
-        },
-        {
-          "id": 4211,
-          "vegetable": "onion",
-          "title": "Лук",
-          "name": "Ветразь",
-          "price": 12,
-          "imgUrl": "./image/onion.png"
-        },
-        {
-          "id": 4221,
-          "vegetable": "peper",
-          "title": "Перец",
-          "name": "Алеся",
-          "price": 15,
-          "imgUrl": "./image/peper.png"
-        },
-        {
-          "id": 423,
-          "vegetable": "pumpkin",
-          "title": "Тыква",
-          "name": "Плюшка",
-          "price": 15,
-          "imgUrl": "./image/pumpkin.png"
-        },
-        {
-          "id": 424,
-          "vegetable": "radish",
-          "title": "Редис",
-          "name": "Ватра",
-          "price": 9,
-          "imgUrl": "./image/radish.png"
-        },
-        {
-          "id": 425,
-          "vegetable": "tomato",
-          "title": "Помидор",
-          "name": "Раница",
-          "price": 9,
-          "imgUrl": "./image/tomato.png"
+          "imgUrl": "./image/garlic.png"
         },
         {
           "id": 426,
           "vegetable": "vegetmarrow",
           "title": "Кабачок",
           "name": "Хелена",
-          "price": 11,
+          "price": 12,
           "imgUrl": "./image/vegetmarrow.png"
         }
       ]
@@ -3339,59 +1875,19 @@
       "isBusy": true,
       "vegetables": [
         {
-          "id": 427,
-          "vegetable": "potate",
-          "title": "Картофель",
-          "name": "Палац",
-          "price": 10,
-          "imgUrl": "./image/potato.png"
-        },
-        {
           "id": 428,
           "vegetable": "beet",
           "title": "Свекла",
           "name": "Атаман",
-          "price": 8,
+          "price": 7,
           "imgUrl": "./image/beet.png"
-        },
-        {
-          "id": 429,
-          "vegetable": "carrot",
-          "title": "Морковь",
-          "name": "Паулинка",
-          "price": 9,
-          "imgUrl": "./image/carrot.png"
-        },
-        {
-          "id": 430,
-          "vegetable": "corn",
-          "title": "Кукуруза",
-          "name": "Ранняя",
-          "price": 12,
-          "imgUrl": "./image/corn.png"
-        },
-        {
-          "id": 431,
-          "vegetable": "cucumber",
-          "title": "Огурец",
-          "name": "Журавленок",
-          "price": 13,
-          "imgUrl": "./image/cucumber.png"
-        },
-        {
-          "id": 432,
-          "vegetable": "eggplant",
-          "title": "Баклажан",
-          "name": "Черномор",
-          "price": 12,
-          "imgUrl": "./image/eggplant.png"
         },
         {
           "id": 433,
           "vegetable": "garlic",
           "title": "Чеснок",
           "name": "Харнась",
-          "price": 10,
+          "price": 8,
           "imgUrl": "./image/garlic.png"
         },
         {
@@ -3399,7 +1895,7 @@
           "vegetable": "horseradish",
           "title": "Имбирь",
           "name": "Шакспир",
-          "price": 11,
+          "price": 9,
           "imgUrl": "./image/horseradish.png"
         },
         {
@@ -3407,7 +1903,7 @@
           "vegetable": "onion",
           "title": "Лук",
           "name": "Ветразь",
-          "price": 12,
+          "price": 10,
           "imgUrl": "./image/onion.png"
         },
         {
@@ -3415,7 +1911,7 @@
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 11,
           "imgUrl": "./image/peper.png"
         },
         {
@@ -3423,7 +1919,7 @@
           "vegetable": "pumpkin",
           "title": "Тыква",
           "name": "Плюшка",
-          "price": 15,
+          "price": 12,
           "imgUrl": "./image/pumpkin.png"
         },
         {
@@ -3431,24 +1927,8 @@
           "vegetable": "radish",
           "title": "Редис",
           "name": "Ватра",
-          "price": 9,
+          "price": 7,
           "imgUrl": "./image/radish.png"
-        },
-        {
-          "id": 439,
-          "vegetable": "tomato",
-          "title": "Помидор",
-          "name": "Раница",
-          "price": 9,
-          "imgUrl": "./image/tomato.png"
-        },
-        {
-          "id": 440,
-          "vegetable": "vegetmarrow",
-          "title": "Кабачок",
-          "name": "Хелена",
-          "price": 11,
-          "imgUrl": "./image/vegetmarrow.png"
         }
       ]
     },
@@ -3464,23 +1944,15 @@
           "vegetable": "potate",
           "title": "Картофель",
           "name": "Палац",
-          "price": 10,
+          "price": 7,
           "imgUrl": "./image/potato.png"
-        },
-        {
-          "id": 442,
-          "vegetable": "beet",
-          "title": "Свекла",
-          "name": "Атаман",
-          "price": 8,
-          "imgUrl": "./image/beet.png"
         },
         {
           "id": 443,
           "vegetable": "carrot",
           "title": "Морковь",
           "name": "Паулинка",
-          "price": 9,
+          "price": 8,
           "imgUrl": "./image/carrot.png"
         },
         {
@@ -3488,7 +1960,7 @@
           "vegetable": "corn",
           "title": "Кукуруза",
           "name": "Ранняя",
-          "price": 12,
+          "price": 9,
           "imgUrl": "./image/corn.png"
         },
         {
@@ -3496,7 +1968,7 @@
           "vegetable": "cucumber",
           "title": "Огурец",
           "name": "Журавленок",
-          "price": 13,
+          "price": 11,
           "imgUrl": "./image/cucumber.png"
         },
         {
@@ -3504,7 +1976,7 @@
           "vegetable": "eggplant",
           "title": "Баклажан",
           "name": "Черномор",
-          "price": 12,
+          "price": 13,
           "imgUrl": "./image/eggplant.png"
         },
         {
@@ -3512,7 +1984,7 @@
           "vegetable": "garlic",
           "title": "Чеснок",
           "name": "Харнась",
-          "price": 10,
+          "price": 6,
           "imgUrl": "./image/garlic.png"
         },
         {
@@ -3520,7 +1992,7 @@
           "vegetable": "horseradish",
           "title": "Имбирь",
           "name": "Шакспир",
-          "price": 11,
+          "price": 7,
           "imgUrl": "./image/horseradish.png"
         },
         {
@@ -3528,7 +2000,7 @@
           "vegetable": "onion",
           "title": "Лук",
           "name": "Ветразь",
-          "price": 12,
+          "price": 14,
           "imgUrl": "./image/onion.png"
         },
         {
@@ -3536,7 +2008,7 @@
           "vegetable": "peper",
           "title": "Перец",
           "name": "Алеся",
-          "price": 15,
+          "price": 7,
           "imgUrl": "./image/peper.png"
         },
         {
@@ -3544,7 +2016,7 @@
           "vegetable": "pumpkin",
           "title": "Тыква",
           "name": "Плюшка",
-          "price": 15,
+          "price": 8,
           "imgUrl": "./image/pumpkin.png"
         },
         {
@@ -3552,7 +2024,7 @@
           "vegetable": "radish",
           "title": "Редис",
           "name": "Ватра",
-          "price": 9,
+          "price": 10,
           "imgUrl": "./image/radish.png"
         },
         {
@@ -3560,7 +2032,7 @@
           "vegetable": "tomato",
           "title": "Помидор",
           "name": "Раница",
-          "price": 9,
+          "price": 11,
           "imgUrl": "./image/tomato.png"
         },
         {
@@ -3568,7 +2040,7 @@
           "vegetable": "vegetmarrow",
           "title": "Кабачок",
           "name": "Хелена",
-          "price": 11,
+          "price": 10,
           "imgUrl": "./image/vegetmarrow.png"
         }
       ]
@@ -3648,11 +2120,7 @@
       "name": "Кабачок"
     }
   ],
-  "favorites": [
-    {
-      "id": 1
-    }
-  ],
+  "favorites": [],
   "cart": [],
   "orders": [],
   "comments": [

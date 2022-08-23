@@ -10,7 +10,7 @@ export const MapHelp: FC = () => {
       <ul className={cl("map-help_explanations")}>
         <li className={cl("map-help_explanation")}>
           <div className={cl("map-help_circle", "map-help_circle__gold")} />
-          <div className={cl("map-help_explanationText")}>Товар есть</div>
+          <div className={cl("map-help_explanationText")}>Цена товара</div>
         </li>
         <li className={cl("map-help_explanation")}>
           <div className={cl("map-help_circle", "map-help_circle__white")} />
