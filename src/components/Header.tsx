@@ -12,13 +12,13 @@ export const Header: FC = () => {
 
   function setActive() {
     setIsActive(!isActive);
-  };
+  }
 
   function setFalseActive() {
-    if(isActive) {
+    if (isActive) {
       setIsActive(false);
     }
-  };
+  }
 
   if (isActive) {
     document.body.style.overflow = "hidden";

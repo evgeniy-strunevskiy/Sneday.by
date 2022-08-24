@@ -12,24 +12,32 @@ interface ICartItemPropsTypes {
 }
 
 export const CartItem: FC<ICartItemPropsTypes> = ({ cartItem }) => {
-
-  const dispatch = useAppDispatch()
+  const dispatch = useAppDispatch();
 
   const removeCartItem = () => {
-      dispatch(removeFromCart(cartItem.id));
-  }
+    dispatch(removeFromCart(cartItem.id));
+  };
 
   return (
     <li key={cartItem.id} className={cl("cart-item")}>
-      <div className={cl("cart-item_container", )}>
+      <div className={cl("cart-item_container")}>
         <div className={cl("cart-item_image", "cart-item_el")}>
           <img src={cartItem.imgUrl} alt="vegetable" />
         </div>
-        <div className={cl("cart-item_title", "cart-item_el")}>{cartItem.title} "{cartItem.name}"</div>
-        <div className={cl("cart-item_weight", "cart-item_el")}>{cartItem.weight} кг.</div>
-        <div className={cl("cart-item_price", "cart-item_el")}>{cartItem.price} &euro;</div>
+        <div className={cl("cart-item_title", "cart-item_el")}>
+          {cartItem.title} "{cartItem.name}"
+        </div>
+        <div className={cl("cart-item_weight", "cart-item_el")}>
+          {cartItem.weight} кг.
+        </div>
+        <div className={cl("cart-item_price", "cart-item_el")}>
+          {cartItem.price} &euro;
+        </div>
         <div className={cl("cart-item_button", "cart-item_el")}>
-          <button onClick={removeCartItem} className={cl("cart-item_delete-btn")} />
+          <button
+            onClick={removeCartItem}
+            className={cl("cart-item_delete-btn")}
+          />
         </div>
       </div>
     </li>

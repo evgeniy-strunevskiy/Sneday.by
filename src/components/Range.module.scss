@@ -1,7 +1,4 @@
 .range {
-  // background: #fff;
-  // box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
-  // padding: 7px 0;
   border-radius: 7px;
   margin-bottom: 6%;
   z-index: 0;
@@ -31,7 +28,6 @@
   height: 100%;
   position: relative;
   display: grid;
-  // grid-template-columns: max-content 1fr;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -40,7 +36,6 @@
   justify-self: flex-start;
   font-size: 14px;
   color: var(--color-font-two);
-  // font-weight: 600;
   display: flex;
   justify-content: space-between;
   gap: 5px;
@@ -70,19 +65,19 @@
   height: 10px;
   background: var(--color-font-two);
   border-radius: 50%;
-  background: #8a6b92;
+  background: var(--color-purple);
   cursor: pointer;
 }
 .range input::-moz-range-thumb {
   -webkit-appearance: none;
   width: 20px;
   height: 20px;
-  background: red;
+  background: purple;
   border-radius: 50%;
-  background: #664aff;
-  border: 1px solid #664aff;
+  background: var(--color-purple);
+  border: 1px solid var(--color-purple);
   cursor: pointer;
 }
 .range input::-moz-range-progress {
-  background: #664aff;
+  background: var(--color-purple);
 }

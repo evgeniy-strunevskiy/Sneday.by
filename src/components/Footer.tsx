@@ -1,11 +1,13 @@
-import React, { FC } from 'react'
-import classNames from 'classnames/bind'
-import styles from './Footer.module.scss'
+import React, { FC } from "react";
+import classNames from "classnames/bind";
+import styles from "./Footer.module.scss";
 
 const cl = classNames.bind(styles);
 
 export const Footer: FC = () => {
   return (
-    <footer className={cl('footer')}>Автор и разработчик сайта: Евгений Струневский</footer>
-  )
-}
+    <footer className={cl("footer")}>
+      Автор и разработчик сайта: Евгений Струневский
+    </footer>
+  );
+};

@@ -1,13 +1,13 @@
 @use '../sass/media.scss' as *;
 
 .map-help_explanations {
-  color: black;
+  color: var(--color-drawer);
   display: grid;
   grid-template-columns: repeat(3, max-content) ;
+  gap: 10px;
   @include phones {
     grid-template-columns: max-content ;
   }
-  gap: 10px;
 }
 .map-help_explanation {
   color: var(--color-font);

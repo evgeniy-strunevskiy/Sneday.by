@@ -10,7 +10,10 @@ interface ISearchMapIconPropsTypes {
   clearSearchMap(): void;
 }
 
-export const SearchMapIcon: FC<ISearchMapIconPropsTypes> = ({searchMap, clearSearchMap}) => {
+export const SearchMapIcon: FC<ISearchMapIconPropsTypes> = ({
+  searchMap,
+  clearSearchMap,
+}) => {
   return (
     <>
       {searchMap ? (

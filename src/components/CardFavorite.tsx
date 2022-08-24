@@ -17,9 +17,11 @@ export const CardFavorite: FC<ICardFavoritePropsTypes> = ({
   isDisable,
 }) => {
   return (
-    <div  className={cl("card_favorite", {
-      card_favorite__disable: isDisable,
-    })}>
+    <div
+      className={cl("card_favorite", {
+        card_favorite__disable: isDisable,
+      })}
+    >
       <button
         onClick={handleFavorites}
         disabled={isDisable}

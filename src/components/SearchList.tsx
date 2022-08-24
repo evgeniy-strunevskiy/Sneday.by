@@ -18,7 +18,11 @@ export const SearchList: FC<SearchListPropTypes> = ({
   return (
     <ul className={cl("search_list")}>
       {sortedVegetables.map((vegetable) => (
-        <SearchItem key={vegetable.id} vegetable={vegetable} sendVegetable={sendVegetable} />
+        <SearchItem
+          key={vegetable.id}
+          vegetable={vegetable}
+          sendVegetable={sendVegetable}
+        />
       ))}
     </ul>
   );

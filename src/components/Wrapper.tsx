@@ -9,14 +9,13 @@ import { Main } from "./Main";
 const cl = classNames.bind(styles);
 
 export const Wrapper: FC = () => {
-
   return (
     <div className={cl("wrapper")}>
-        <Header />
-        <Main>
-          <Outlet />
-        </Main>
-        <Footer />
-      </div>
+      <Header />
+      <Main>
+        <Outlet />
+      </Main>
+      <Footer />
+    </div>
   );
 };

@@ -29,7 +29,9 @@ const EmailSchema = yup.object().shape({
     .required("Обязательно"),
 });
 
-export const RegistrationForm: FC<IRegistrationFormPropsTypes> = ({ fromPage }) => {
+export const RegistrationForm: FC<IRegistrationFormPropsTypes> = ({
+  fromPage,
+}) => {
   const {
     register,
     formState: { errors },
@@ -66,7 +68,7 @@ export const RegistrationForm: FC<IRegistrationFormPropsTypes> = ({ fromPage }) 
       <div
         className={cl("registration-form_row", "registration-form_row__center")}
       >
-        <NewUser text={'Есть аккаунт?'} account={'Войти'} link={'/login'} />
+        <NewUser text={"Есть аккаунт?"} account={"Войти"} link={"/login"} />
       </div>
     </form>
   );

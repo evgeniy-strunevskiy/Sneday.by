@@ -21,7 +21,7 @@ interface ICardPropsTypes {
 }
 export const Card: FC<ICardPropsTypes> = ({ vegetable }) => {
   const dispatch = useAppDispatch();
-  const {login} = useAppSelector(state => state.login);
+  const { login } = useAppSelector((state) => state.login);
   const [step, setStep] = useState<number>(100);
   const [weight, setWeight] = useState<number>(0);
   const [isDisable, setIsDisable] = useState<boolean>(true);
@@ -68,23 +68,22 @@ export const Card: FC<ICardPropsTypes> = ({ vegetable }) => {
     } else {
       dispatch(addToCart(cartItem));
     }
-
   }
 
   useEffect(() => {
     dispatch(getCart());
-    dispatch(getFavorites())
-  },[])
+    dispatch(getFavorites());
+  }, []);
 
   useEffect(() => {
-    if(login) {
+    if (login) {
       cart.find((i) => i.id === vegetable.id)
         ? setIsItemCart(true)
         : setIsItemCart(false);
       favorites.find((i) => i.id === vegetable.id)
         ? setIsFavorite(true)
         : setIsFavorite(false);
-  
+
       cart.map((cartItem) => {
         if (cartItem.id === vegetable.id) {
           setWeight(cartItem.weight);
@@ -97,7 +96,11 @@ export const Card: FC<ICardPropsTypes> = ({ vegetable }) => {
 
   return (
     <li className={cl("card")}>
-      <CardFavorite isFavorite={isFavorite} isDisable={!login} handleFavorites={handleFavorites} />
+      <CardFavorite
+        isFavorite={isFavorite}
+        isDisable={!login}
+        handleFavorites={handleFavorites}
+      />
       <div className={cl("card_image")}>
         <img src={vegetable.imgUrl} alt="vegetable" />
       </div>

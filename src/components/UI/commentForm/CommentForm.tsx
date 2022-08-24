@@ -28,21 +28,20 @@ export const CommentForm: FC<ICommentFormPropsTypes> = () => {
 
   const onSubmit = async (data: ICommentFormTypes) => {
     const today = new Date();
-    const login =  localStorage.getItem('auth')
-    
-    console.log(login)
+    const login = localStorage.getItem("auth");
+
+    console.log(login);
 
     const comment = {
       id: Date.now(),
-      date: today.toLocaleString(), 
+      date: today.toLocaleString(),
       name: data.name,
       email: data.email,
       content: data.comment,
-      login: login
-    }
-    const response = await PointsServer.addComment(comment)
-    console.log(response)
-    
+      login: login,
+    };
+    const response = await PointsServer.addComment(comment);
+    console.log(response);
   };
 
   return (

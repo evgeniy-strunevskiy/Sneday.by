@@ -1,8 +1,7 @@
 @use "../../../sass/media.scss" as *;
-@use "../../../sass/rem.scss" as *;
 
 .textarea_textarea {
-  border: 1px solid #E4E4E4;
+  border: 1px solid var(--color-light-gray);
   margin-bottom: 10px;
   width: 100%;
   padding: 10px 5px;
@@ -19,9 +18,9 @@
 }
 
 .textarea_error {
-  font-size: toRem(12);
+  font-size: 12px;
   position: absolute;
   top: 90%;
   left: 0;
-  color: red;
+  color: var(--color-red);
 }

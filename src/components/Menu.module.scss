@@ -1,5 +1,4 @@
 @use '../sass/icons' as *;
-@use '../sass/rem' as *;
 @use '../sass/media' as *;
 
 .menu {
@@ -27,7 +26,7 @@
 .menu_list {
   display: flex;
   align-items: center;
-  gap: toRem(20);
+  gap: 20px;
   @include tablets {
     display: flex;
     flex-direction: column;
@@ -37,7 +36,7 @@
 }
 
 .menu_item {
-  font-size: toRem(14);
+  font-size: 14px;
   position: relative;
 } 
 .menu_login {

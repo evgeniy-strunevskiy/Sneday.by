@@ -10,7 +10,7 @@ interface IRangePropsTypes {
   weight: number;
   handleRange(e: React.ChangeEvent<HTMLInputElement>): void;
   isItemCart: boolean;
-  isDisable: boolean
+  isDisable: boolean;
 }
 
 export const Range: FC<IRangePropsTypes> = ({
@@ -18,11 +18,10 @@ export const Range: FC<IRangePropsTypes> = ({
   handleRange,
   isItemCart,
   weight,
-  isDisable
+  isDisable,
 }) => {
-
   return (
-    <div className={cl("range", {range__disable: isDisable})}>
+    <div className={cl("range", { range__disable: isDisable })}>
       <div className={cl("field")}>
         <Input
           type="range"

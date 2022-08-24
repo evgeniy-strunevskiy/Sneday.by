@@ -1,15 +1,13 @@
-@use '/src/sass/rem.scss' as *;
-
 .button {
   color: var(--color-font);
   background: var(--color-body);
 
   width: 100%;
-  font-size: toRem(26);
+  font-size: 26px;
   padding: 16px 0;
   border-radius: 70px;
   &:disabled {
-    background: #D8D7D5;
+    background: var(--color-font);
   }
   &:hover {
     background: var(--color-purple);

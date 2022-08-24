@@ -8,7 +8,6 @@ interface IInputPropsTypes extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 export const Input: FC<IInputPropsTypes> = ({
-  name,
   type,
   className,
   placeholder,

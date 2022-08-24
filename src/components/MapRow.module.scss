@@ -111,18 +111,15 @@
     }
     right: 0;
   }
-  //////////
   .section {
     display: grid;
     grid-template-columns: repeat(2, minmax(20px, 108px));
     grid-template-rows: min-content min-content min-content;
     gap: 15px;
     @include tablets {
-      // grid-template-columns: repeat(2, minmax(50px, 70px));
       gap: 15px;
     }
     @include phones {
-      // grid-template-columns: repeat(2, minmax(20px, 40px));
       gap: 10px;
     }
     font-size: 16px;

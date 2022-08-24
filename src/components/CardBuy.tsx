@@ -3,7 +3,6 @@ import classNames from "classnames/bind";
 import styles from "./CardBuy.module.scss";
 import { ReactComponent as Cross } from "../assets/icons/cross.svg";
 
-
 const cl = classNames.bind(styles);
 
 interface ICardBuyPropsTypes {
@@ -34,12 +33,12 @@ export const CardBuy: FC<ICardBuyPropsTypes> = ({
           "cardbuy_add",
           { cardbuy_add__true: isItemCart },
           { cardbuy_add__weight: login && !weight },
-          { cardbuy_add__disable: !login && isDisable },
+          { cardbuy_add__disable: !login && isDisable }
         )}
         disabled={isItemCart === true ? false : isDisable}
         onClick={onAddToCart}
       >
-        <Cross className={cl('cross')}/>
+        <Cross className={cl("cross")} />
       </button>
     </div>
   );

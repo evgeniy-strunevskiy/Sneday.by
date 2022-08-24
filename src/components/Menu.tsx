@@ -14,17 +14,14 @@ interface IMenuPropsTypes {
 }
 
 export const Menu: FC<IMenuPropsTypes> = ({ setFalseActive, isActive }) => {
-
   const location = useLocation();
-
 
   const dispatch = useAppDispatch();
   const { login } = useAppSelector((state) => state.login);
   const { cart } = useAppSelector((state) => state.cart);
   const [totalCart, setTotalCart] = useState<number>(0);
 
-
-  const auth = localStorage.getItem('auth')
+  const auth = localStorage.getItem("auth");
 
   const setActive = ({ isActive }: { isActive: boolean }) =>
     isActive ? cl("menu_link", "menu_link_active") : cl("menu_link");
@@ -34,7 +31,6 @@ export const Menu: FC<IMenuPropsTypes> = ({ setFalseActive, isActive }) => {
     dispatch(removeLogin());
   };
 
-
   useEffect(() => {
     const totalCartCount = cart.reduce((sum, item) => sum + 1, 0);
     setTotalCart(totalCartCount);
@@ -42,7 +38,7 @@ export const Menu: FC<IMenuPropsTypes> = ({ setFalseActive, isActive }) => {
 
   useEffect(() => {
     dispatch(getCart());
-  },[])
+  }, []);
 
   return (
     <nav className={cl("menu", { active: isActive })}>
@@ -56,9 +52,9 @@ export const Menu: FC<IMenuPropsTypes> = ({ setFalseActive, isActive }) => {
           <NavLink to="cart" className={setActive}>
             Корзина
           </NavLink>
-          {
-            totalCart > 0 && auth && <div className={cl("menu_cart-count")}>{totalCart}</div>
-          }
+          {totalCart > 0 && auth && (
+            <div className={cl("menu_cart-count")}>{totalCart}</div>
+          )}
         </li>
         <li className={cl("menu_item")} onClick={setFalseActive}>
           <NavLink to="favorites" className={setActive}>
@@ -78,7 +74,11 @@ export const Menu: FC<IMenuPropsTypes> = ({ setFalseActive, isActive }) => {
           </li>
         ) : (
           <li className={cl("menu_item")} onClick={setFalseActive}>
-            <NavLink to="login" className={cl("menu_login")} state={{from: {path: location.pathname}}}>
+            <NavLink
+              to="login"
+              className={cl("menu_login")}
+              state={{ from: { path: location.pathname } }}
+            >
               Войти
             </NavLink>
           </li>

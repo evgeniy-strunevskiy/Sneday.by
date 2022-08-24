@@ -1,7 +1,7 @@
 @use '../sass/media.scss' as *;
 
 .owner-info {
-  border-bottom: 1px solid #a2cc4e;
+  border-bottom: 1px solid var(--color-background-one);
   color: var(--color-font-two);
   padding-bottom: 4%;
   margin-bottom: 4%;

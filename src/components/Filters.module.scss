@@ -19,7 +19,7 @@
   width: 20em;
   height: 2.5em;
   line-height: 2.5;
-  background: #5c6664;
+  background: var(--color-gray);
   overflow: hidden;
   border-radius: 0.25em;
 }
@@ -29,7 +29,6 @@
   top: 0;
   right: 0;
   padding: 0 1em;
-  // background: #2b2e2e;
   cursor: pointer;
   pointer-events: none;
   transition: 0.25s all ease;

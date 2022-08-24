@@ -1,16 +1,20 @@
-import React, { FC, useState } from 'react'
-import styles from './Pagination.module.scss'
-import classNames from 'classnames/bind'
+import React, { FC, useState } from "react";
+import styles from "./Pagination.module.scss";
+import classNames from "classnames/bind";
 
 const cl = classNames.bind(styles);
 
 interface IPaginationPropsTypes {
-  totalPages:  number;
+  totalPages: number;
   page: number;
-  setPage: React.Dispatch<React.SetStateAction<number>>
+  setPage: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export const Pagination:FC<IPaginationPropsTypes> = ({totalPages, page, setPage}) => {
+export const Pagination: FC<IPaginationPropsTypes> = ({
+  totalPages,
+  page,
+  setPage,
+}) => {
   let [portionNumber, setPortionNumber] = useState<number>(1);
 
   const portionSize = 3;
@@ -25,10 +29,10 @@ export const Pagination:FC<IPaginationPropsTypes> = ({totalPages, page, setPage}
   let rightPortionPageNumber = portionNumber * portionSize;
 
   return (
-    <div className={cl('pagination')}>
+    <div className={cl("pagination")}>
       {portionNumber > 1 && (
         <button
-        className={cl('pagination-btn')}
+          className={cl("pagination-btn")}
           onClick={() => {
             setPortionNumber(portionNumber - 1);
           }}
@@ -44,8 +48,8 @@ export const Pagination:FC<IPaginationPropsTypes> = ({totalPages, page, setPage}
           return (
             <span
               className={cl(
-                { 'pagination-item_active': page === p },
-                'pagination-item'
+                { "pagination-item_active": page === p },
+                "pagination-item"
               )}
               key={p}
               onClick={(e) => {
@@ -58,7 +62,7 @@ export const Pagination:FC<IPaginationPropsTypes> = ({totalPages, page, setPage}
         })}
       {PortionCount > portionNumber && (
         <button
-          className={cl('pagination-btn')}
+          className={cl("pagination-btn")}
           onClick={() => {
             setPortionNumber(portionNumber + 1);
           }}
@@ -68,4 +72,4 @@ export const Pagination:FC<IPaginationPropsTypes> = ({totalPages, page, setPage}
       )}
     </div>
   );
-}
+};

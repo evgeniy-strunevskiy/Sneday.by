@@ -11,7 +11,6 @@ interface ICardsPropsTypes {
 }
 
 export const Cards: FC<ICardsPropsTypes> = ({ vegetables }) => {
-
   return (
     <ul className={cl("cards")}>
       {vegetables.map((vegetable) => (

@@ -8,21 +8,21 @@ import { ReactComponent as Viber } from "../../../assets/icons/viber.svg";
 const cl = classNames.bind(styles);
 
 const networks = [
-  { 
-    Telegram: (Telegram as React.ElementType),
-    url: "http://localhost:3000/" ,
-    id: 1
-    },
-    {
-      Telegram: (Viber as React.ElementType),
-      url: "http://localhost:3000/",
-      id: 3
-    },
-    {
-      Telegram: (Twitter as React.ElementType),
-      url: "http://localhost:3000/",
-      id: 2
-     },
+  {
+    Telegram: Telegram as React.ElementType,
+    url: "http://localhost:3000/",
+    id: 1,
+  },
+  {
+    Telegram: Viber as React.ElementType,
+    url: "http://localhost:3000/",
+    id: 3,
+  },
+  {
+    Telegram: Twitter as React.ElementType,
+    url: "http://localhost:3000/",
+    id: 2,
+  },
 ];
 
 interface ISocialPropsTypes {}
@@ -34,7 +34,7 @@ export const Socials: FC<ISocialPropsTypes> = () => {
         {networks.map((network) => (
           <li key={network.id}>
             <a href={network.url} className={cl("socials_link")}>
-              <network.Telegram  className={cl("socials_icon")} />
+              <network.Telegram className={cl("socials_icon")} />
             </a>
           </li>
         ))}
