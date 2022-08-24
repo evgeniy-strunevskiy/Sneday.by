@@ -11,7 +11,7 @@
 
 .favorites_container {
   @include container;
-  color: var(--color-font);
+  color: var(--color-white);
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -24,12 +24,12 @@
 
 .favorites_icon {
   width: 100%;
-  fill: var(--color-font);
+  fill: var(--color-white);
   margin-bottom: 30px;
 }
 
 .favorites_empty-title {
-  color: var(--color-font);
+  color: var(--color-white);
   text-align: center;
   font-size: 24px;
 }

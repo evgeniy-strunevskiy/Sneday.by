@@ -6,8 +6,8 @@
   left: 0;
   width: 100%;
   padding: 1% 0;
-  color: var(--color-font);
-  border-bottom: 1px solid var(--color-background-one);
+  color: var(--color-white);
+  border-bottom: 1px solid var(--color-green-light);
   z-index: 100;
   margin-bottom: 40px;
   &::before {
@@ -22,7 +22,7 @@
 
 .header_container {
   @include container;
-  color: var(--color-font);
+  color: var(--color-white);
 }
 
 .header_body {

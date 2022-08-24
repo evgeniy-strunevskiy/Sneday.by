@@ -7,7 +7,7 @@
 
 .cart_container {
   @include container;
-  color: var(--color-font);
+  color: var(--color-white);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -43,19 +43,19 @@
   font-size: 20px;
 }
 .cart_total-price {
-  color: var(--color-font-two);
+  color: var(--color-black);
   font-weight: bold;
 }
 .cart_total-dash {
   height: 1px;
-  border-bottom: 1px dashed var(--color-font);
+  border-bottom: 1px dashed var(--color-white);
 }
 
 .cart_total-btn {
  background-color: var(--color-purple);
  padding: 15px 20px;
  border-radius: 15px;
- color: var(--color-font);
+ color: var(--color-white);
  transition: 0.2s ease-in-out;
  &:hover {
   background-color: rgba($color: #8a6b92, $alpha: .8);
@@ -72,11 +72,11 @@
 
 .cart_icon {
   width: 100%;
-  fill: var(--color-font);
+  fill: var(--color-white);
 }
 
 .cart_empty-text {
-  color: var(--color-font);
+  color: var(--color-white);
   text-align: center;
   font-size: 24px;
 }

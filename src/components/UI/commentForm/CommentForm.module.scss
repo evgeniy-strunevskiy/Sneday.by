@@ -11,11 +11,11 @@
 }
 
 .comment-form_btn {
-  color: var(--color-font);
-  background: var(--color-background-two);
+  color: var(--color-white);
+  background: var(--color-green);
   padding: 10px 15px;
   border-radius: 10px;
   &:hover {
-    background: var(--color-background-one);
+    background: var(--color-green-light);
   }
 }

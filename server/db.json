@@ -2121,7 +2121,17 @@
     }
   ],
   "favorites": [],
-  "cart": [],
+  "cart": [
+    {
+      "id": 2,
+      "weight": 3.2,
+      "price": 38.4,
+      "vegetable": "beet",
+      "imgUrl": "./image/beet.png",
+      "title": "Свекла",
+      "name": "Атаман"
+    }
+  ],
   "orders": [],
   "comments": [
     {

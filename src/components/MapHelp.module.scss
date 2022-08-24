@@ -1,7 +1,7 @@
 @use '../sass/media.scss' as *;
 
 .map-help_explanations {
-  color: var(--color-drawer);
+  color: var(--color-black);
   display: grid;
   grid-template-columns: repeat(3, max-content) ;
   gap: 10px;
@@ -10,7 +10,7 @@
   }
 }
 .map-help_explanation {
-  color: var(--color-font);
+  color: var(--color-white);
   font-size: 12px;
   display: flex;
   align-items: center;
@@ -25,9 +25,9 @@
     background-color: var(--color-gold);
   }
   &__white {
-    background-color: var(--color-font);
+    background-color: var(--color-white);
   }
   &__gray {
-    background-color: var(--color-body);
+    background-color: var(--color-gray);
   }
 }

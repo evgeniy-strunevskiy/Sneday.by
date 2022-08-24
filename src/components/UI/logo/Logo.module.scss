@@ -2,7 +2,7 @@
 
 .logo {
   grid-area: logo;
-  color: var(--color-font);
+  color: var(--color-white);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -40,7 +40,7 @@
   width: 45px;
   height: 45px;
   margin-right: 10px;
-  fill: var(--color-font);
+  fill: var(--color-white);
   transition: all .2s ease-in-out;
   &__user {
     fill: transparent;

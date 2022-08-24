@@ -3,7 +3,7 @@
 
 .owner_container {
   @include container;
-  color: var(--color-font);
+  color: var(--color-white);
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;

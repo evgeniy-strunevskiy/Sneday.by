@@ -35,9 +35,9 @@
   font-size: 62px;
   font-weight: bold;
   margin: 0 0 20px 0;
-  color: var(--color-light-purple);
-  color: var(--color-font);
-  text-shadow: 5px 5px var(--color-body);
+  color: var(--color-purple-light);
+  color: var(--color-white);
+  text-shadow: 5px 5px var(--color-gray);
   z-index: 10;
   @include laptop {
     font-size: 48px;

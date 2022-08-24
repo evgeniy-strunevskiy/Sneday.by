@@ -5,20 +5,20 @@
 }
 
 .cardbuy_price {
-  color: var(--color-font);
+  color: var(--color-white);
   font-weight: 300;
 }
 
 .cardbuy_sum {
-  color: var(--color-font-two);
+  color: var(--color-black);
   font-weight: bold;
 }
 
 .cardbuy_add {
-  color: var(--color-font-two);
+  color: var(--color-black);
   position: relative;
   .cross {
-    fill: var(--color-logo-one);
+    fill: var(--color-orange-light);
     width: 25px;
     height: 25px;
     transition: .2s ease-in-out;

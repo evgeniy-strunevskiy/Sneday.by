@@ -5,9 +5,8 @@
 // font-family: 'Montserrat', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 // font-family: 'Marck Script', cursive;
-
-//font-family: 'Pacifico', cursive;
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+//font-family: 'Pacifico', cursive;
 
 
 :root {
@@ -18,20 +17,18 @@
   @include phones {
     --html-font-size: 14;
   }
-  --color-body: #666a6b;
-  --color-background-one: #a2cc4e;
-  --color-background-two: #90c527;
-  --color-header: #34383a;
-  --color-logo-one: #f5c86e;
-  --color-logo-two: #ff7400;
+  --color-green: #90c527;
+  --color-green-light: #a2cc4e;
   --color-orange: #FF9C00;
-  --color-drawer: #03070a;
-  --color-font:  #f3f3f3;
-  --color-font-two: #03070a;
+  --color-orange-dark: #ff7400;
+  --color-orange-light: #f5c86e;
+  --color-white: #f3f3f3;
   --color-gold: gold;
   --color-gold-dark: #f2cc00;
   --color-purple: #7b5caf;
-  --color-light-purple: #a384d8;
+  --color-purple-light: #a384d8;
+  --color-black: #03070a;
+  --color-black-light: #34383a;
   --color-gray: #5c6664;
   --color-light-gray: #E4E4E4;
   --color-red: red;

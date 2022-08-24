@@ -2,7 +2,7 @@
 
 .map_container {
   @include container;
-  color: var(--color-font);
+  color: var(--color-white);
 }
 
 .map_description {
@@ -11,7 +11,7 @@
   padding: 10px;
   display: flex;
   justify-content: center;
-  background-color: var(--color-background-one);
+  background-color: var(--color-green-light);
   border-radius: 0px 0px 20px 20px;
 }
 

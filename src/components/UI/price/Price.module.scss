@@ -4,15 +4,15 @@
   display: flex;
   align-items: baseline;
   &:hover {
-    color: var(--color-background-one);
+    color: var(--color-green-light);
     .price_icon {
-      stroke: var(--color-background-one);
+      stroke: var(--color-green-light);
     }
   }
 }
 
 .price_icon  {
   @include icons;
-  stroke: var(--color-font);
+  stroke: var(--color-white);
   margin-right: 5px;
 }

@@ -8,13 +8,13 @@
   border-bottom: 1px solid var(--color-light-gray);
   padding: 10px 0;
   transition: all 0.3s ease 0s;
-  background: var(--color-font);
+  background: var(--color-white);
   &::placeholder {
-    color: var(--color-body);
+    color: var(--color-gray);
     opacity: .3;
   }
   &:focus {
-    border-bottom: 1px solid var(--color-header);
+    border-bottom: 1px solid var(--color-black-light);
   }
 }
 

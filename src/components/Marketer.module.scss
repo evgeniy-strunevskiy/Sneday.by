@@ -4,7 +4,7 @@
   padding: 10%;
   background-color: var(--color-gold);
   border-radius: 20px;
-  color: var(--color-drawer);
+  color: var(--color-black);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: 
@@ -40,8 +40,8 @@
   font-weight: bold;
   margin-bottom: 10%;
   padding: 8% 8%;
-  background-color: var(--color-body);
-  color: var(--color-font);
+  background-color: var(--color-gray);
+  color: var(--color-white);
   border-radius: 20px;
   font-size: 12px;
   @include tablets {

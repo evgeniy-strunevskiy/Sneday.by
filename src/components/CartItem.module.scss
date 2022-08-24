@@ -10,7 +10,7 @@
   grid-template-columns: max-content 1fr minmax(max-content, 1fr) 1fr min-content;
   gap: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid var(--color-background-one);
+  border-bottom: 1px solid var(--color-green-light);
   align-items: center;
   justify-items: start;
   @include phones {
@@ -31,17 +31,17 @@
   position: relative;
   &:hover {
     outline: none;
-    background-color: var(--color-logo-one);
+    background-color: var(--color-orange-light);
 
   }
   &:active {
     outline: none;
-    background-color: var(--color-logo-two);
+    background-color: var(--color-orange-dark);
   }
   &::before, &::after {
     content: '';
     border-radius: 1px;
-    background-color: var(--color-font);
+    background-color: var(--color-white);
     width: 10px;
     height: 1px;
     position: absolute;
@@ -61,7 +61,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  border: 1px solid var(--color-font);
+  border: 1px solid var(--color-white);
   padding: 10px;
   border-radius: 20px;
   @include phones {
