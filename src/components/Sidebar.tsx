@@ -10,9 +10,9 @@ interface ISidebarPropsTypes {}
 
 export const Sidebar: FC<ISidebarPropsTypes> = () => {
   return (
-    <div className={cl("sidebar")}>
+    <aside className={cl("sidebar")}>
       <Stock />
       <Marketer />
-    </div>
+    </aside>
   );
 };
