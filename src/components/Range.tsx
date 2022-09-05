@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import styles from "./Range.module.scss";
 import classNames from "classnames/bind";
-import { Input } from "./UI/input/Input";
+import { Input } from "./UI/myInput/Input";
 
 const cl = classNames.bind(styles);
 

@@ -5,9 +5,9 @@ import { useAppDispatch, useAppSelector } from "../hooks/redux";
 import { getVegetables } from "../store/middleware/vegetables";
 import { getVegetableMap } from "../store/slices/searchMapSlice";
 import { IVegetableItemTypes } from "../types/vegetablesListTypes";
-import { Input } from "./UI/input/Input";
 import { SearchList } from "./SearchList";
 import { SearchMapIcon } from "./SearchMapIcon";
+import { Input } from "./UI/myInput/Input";
 
 const cl = classNames.bind(styles);
 

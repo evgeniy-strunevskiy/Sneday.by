@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import styles from "./Search.module.scss";
 import classNames from "classnames/bind";
 import { IFiltersTypes } from "../types/filtersTypes";
-import { Input } from "./UI/input/Input";
+import { Input } from "./UI/myInput/Input";
 
 const cl = classNames.bind(styles);
 
