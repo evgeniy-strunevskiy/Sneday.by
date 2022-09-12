@@ -29,16 +29,20 @@ export const Comments: FC = () => {
     return Math.ceil(Number(totalCount) / limit);
   };
 
-  useEffect(() => {
+  function fetchComments() {
     dispatch(getComments(limit, page));
     setTotalPages(getPageCount(totalCount, limit));
+  }
+
+  useEffect(() => {
+    fetchComments()
   }, [totalCount, limit, page]);
 
   return (
     <div className={cl("comments")}>
       <div className={cl("comments_container")}>
         <button className={cl("comments_btn")} onClick={() => toggleModal(true)}>Написать комментарий</button>
-        {modal && <Modal visible={modal} setVisible={toggleModal} ><CommentForm  /></Modal>}
+        {modal && <Modal visible={modal} setVisible={toggleModal} ><CommentForm setVisible={toggleModal} fetchComments={fetchComments} /></Modal>}
         {isLoading ? (
           <Loader />
           ) : (

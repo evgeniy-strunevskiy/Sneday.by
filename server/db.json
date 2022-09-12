@@ -3,7 +3,7 @@
     {
       "id": 1,
       "tel": "+375294501274",
-      "owner": "Елизавета Виндзор",
+      "owner": "Кася Гертель",
       "logoUrl": "./image/owner-1.jpg",
       "isBusy": true,
       "vegetables": [
@@ -2123,13 +2123,31 @@
   "favorites": [],
   "cart": [
     {
-      "id": 2,
-      "weight": 3.2,
-      "price": 38.4,
-      "vegetable": "beet",
-      "imgUrl": "./image/beet.png",
-      "title": "Свекла",
-      "name": "Атаман"
+      "id": 86,
+      "weight": 2.5,
+      "price": 17.5,
+      "vegetable": "potate",
+      "imgUrl": "./image/potato.png",
+      "title": "Картофель",
+      "name": "Палац"
+    },
+    {
+      "id": 94,
+      "weight": 3.7,
+      "price": 29.6,
+      "vegetable": "onion",
+      "imgUrl": "./image/onion.png",
+      "title": "Лук",
+      "name": "Ветразь"
+    },
+    {
+      "id": 95,
+      "weight": 2.5,
+      "price": 22.5,
+      "vegetable": "peper",
+      "imgUrl": "./image/peper.png",
+      "title": "Перец",
+      "name": "Алеся"
     }
   ],
   "orders": [],
@@ -2386,54 +2404,11 @@
       "content": "На этом свете вполне можно жить в мире. Для всех на земле есть место – и для медведей, и для луковиц."
     },
     {
-      "id": 1660727604491,
-      "date": "17.08.2022, 12:13:24",
+      "id": 1662961601491,
+      "date": "12.09.2022, 08:46:41",
       "name": "Женя",
       "email": "test@test.com",
-      "content": "dsfsdf"
-    },
-    {
-      "id": 1660727956639,
-      "date": "17.08.2022, 12:19:16",
-      "name": "sadsasd",
-      "email": "valid@mail.com",
-      "content": "sdfsdfsdfsdf"
-    },
-    {
-      "id": 1660728041401,
-      "date": "17.08.2022, 12:20:41",
-      "name": "sadsasd",
-      "email": "valid@mail.com",
-      "content": "sdfsdfsdfsdf"
-    },
-    {
-      "id": 1660728092245,
-      "date": "17.08.2022, 12:21:32",
-      "name": "sadsasd",
-      "email": "valid@mail.com",
-      "content": "sdfsdfsdfsdf"
-    },
-    {
-      "id": 1660729060283,
-      "date": "17.08.2022, 12:37:40",
-      "name": "sadsasd",
-      "email": "valid@mail.com",
-      "content": "sdfsdfsdfsdf"
-    },
-    {
-      "id": 1660729227309,
-      "date": "17.08.2022, 12:40:27",
-      "name": "Женя",
-      "email": "test@test.com",
-      "content": "asdasdasdad",
-      "login": "true"
-    },
-    {
-      "id": 1660737686163,
-      "date": "17.08.2022, 15:01:26",
-      "name": "Женя",
-      "email": "test@test.com",
-      "content": "asdasdasdad",
+      "content": "пвапвап",
       "login": "true"
     }
   ]

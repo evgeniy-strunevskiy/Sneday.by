@@ -11,7 +11,10 @@ import { PointsServer } from "../../../api/PointsServer";
 
 const cl = classNames.bind(styles);
 
-interface ICommentFormPropsTypes {}
+interface ICommentFormPropsTypes {
+  setVisible(modal: boolean): void;
+  fetchComments(): void;
+}
 
 const EmailSchema = yup.object().shape({
   email: yup.string().email("Введите email").required("Обязательно"),
@@ -19,7 +22,7 @@ const EmailSchema = yup.object().shape({
   comment: yup.string().required("Напишите комментарий"),
 });
 
-export const CommentForm: FC<ICommentFormPropsTypes> = () => {
+export const CommentForm: FC<ICommentFormPropsTypes> = ({setVisible, fetchComments}) => {
   const {
     register,
     formState: { errors },
@@ -30,8 +33,6 @@ export const CommentForm: FC<ICommentFormPropsTypes> = () => {
     const today = new Date();
     const login = localStorage.getItem("auth");
 
-    console.log(login);
-
     const comment = {
       id: Date.now(),
       date: today.toLocaleString(),
@@ -40,8 +41,9 @@ export const CommentForm: FC<ICommentFormPropsTypes> = () => {
       content: data.comment,
       login: login,
     };
-    const response = await PointsServer.addComment(comment);
-    console.log(response);
+    await PointsServer.addComment(comment);
+    fetchComments()
+    setVisible(false);
   };
 
   return (
