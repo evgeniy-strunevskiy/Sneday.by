@@ -15,6 +15,7 @@ export const Owner: FC = () => {
   const { isLoading } = useAppSelector((state) => state.owner);
 
   useEffect(() => {
+    window.scroll(0, 0) 
     dispatch(getOwner(id));
   }, []);
 

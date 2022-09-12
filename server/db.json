@@ -2123,31 +2123,22 @@
   "favorites": [],
   "cart": [
     {
-      "id": 86,
-      "weight": 2.5,
-      "price": 17.5,
-      "vegetable": "potate",
-      "imgUrl": "./image/potato.png",
-      "title": "Картофель",
-      "name": "Палац"
+      "id": 22,
+      "weight": 2,
+      "price": 22,
+      "vegetable": "eggplant",
+      "imgUrl": "./image/eggplant.png",
+      "title": "Баклажан",
+      "name": "Черномор"
     },
     {
-      "id": 94,
-      "weight": 3.7,
-      "price": 29.6,
-      "vegetable": "onion",
-      "imgUrl": "./image/onion.png",
-      "title": "Лук",
-      "name": "Ветразь"
-    },
-    {
-      "id": 95,
-      "weight": 2.5,
-      "price": 22.5,
-      "vegetable": "peper",
-      "imgUrl": "./image/peper.png",
-      "title": "Перец",
-      "name": "Алеся"
+      "id": 14,
+      "weight": 1.7,
+      "price": 13.6,
+      "vegetable": "vegetmarrow",
+      "imgUrl": "./image/vegetmarrow.png",
+      "title": "Кабачок",
+      "name": "Хелена"
     }
   ],
   "orders": [],
